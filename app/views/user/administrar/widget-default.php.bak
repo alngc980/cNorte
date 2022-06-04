@@ -1,0 +1,130 @@
+<?php
+$dataVista = $data["dataVista"];
+?>
+<div class="col-xl-12 order-xl-2">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <!-- Card header -->
+                <div class="card-header border-0">
+                    <h3 class="mb-0">Empresas</h3>
+                </div>
+                <!-- Light table -->
+                <div class="table-responsive">
+                    <table class="table align-items-center table-flush">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col" class="sort" data-sort="name">Empresas</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="list" id="tblSupervision">
+                            <?php foreach ($dataVista["datOtrasEmpresa"] as $dat) : ?>
+                                <tr>
+                                    <td><?php echo $dat->cNombre ?></td>
+                                    <td class="text-right">
+                                        <div class="dropdown">
+                                            <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"> </i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                                <a class="dropdown-item btnPass" href="#" data="<?php echo $dat->nId ?>">';
+                                                    Modificar </a>
+                                                <a class="dropdown-item btnDelete" href="#" data="<?php echo $dat->nId ?>">
+                                                    Eliminar </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            <?php endforeach ?>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <!-- Card header -->
+                <div class="card-header border-0">
+                    <h3 class="mb-0">Superivisión</h3>
+                </div>
+                <!-- Light table -->
+                <div class="table-responsive">
+                    <table class="table align-items-center table-flush">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col" class="sort" data-sort="name">Tipo de Supervisión</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="list" id="tblSupervision">
+                        <?php foreach ($dataVista["datsupervision"] as $dat) : ?>
+                                <tr>
+                                    <td><?php echo $dat->cNombre ?></td>
+                                    <td class="text-right">
+                                        <div class="dropdown">
+                                            <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"> </i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                                <a class="dropdown-item btnPass" href="#" data="<?php echo $dat->nId ?>">';
+                                                    Modificar </a>
+                                                <a class="dropdown-item btnDelete" href="#" data="<?php echo $dat->nId ?>">
+                                                    Eliminar </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            <?php endforeach ?>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <!-- Card header -->
+                <div class="card-header border-0">
+                    <h3 class="mb-0">UUNN</h3>
+                </div>
+                <!-- Light table -->
+                <div class="table-responsive">
+                    <table class="table align-items-center table-flush">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col" class="sort" data-sort="name">UUNN</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="list" id="tblNN">
+                        <?php foreach ($dataVista["datUUNN"] as $dat) : ?>
+                                <tr>
+                                    <td><?php echo $dat->cNombre ?></td>
+                                    <td class="text-right">
+                                        <div class="dropdown">
+                                            <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"> </i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                                <a class="dropdown-item btnPass" href="#" data="<?php echo $dat->nId ?>">';
+                                                    Modificar </a>
+                                                <a class="dropdown-item btnDelete" href="#" data="<?php echo $dat->nId ?>">
+                                                    Eliminar </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            <?php endforeach ?>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

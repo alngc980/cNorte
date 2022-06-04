@@ -1,0 +1,44 @@
+[Thu, 13 Jan 2022 16:31:08 +0000] succes 0: select * from persona  where cDoi="40980455"
+[Thu, 13 Jan 2022 16:31:12 +0000] succes 0: call spt_sel_all_User('17')
+[Thu, 13 Jan 2022 16:38:54 +0000] succes 0: call spt_sel_all_User('17')
+[Thu, 13 Jan 2022 16:38:55 +0000] succes 0: call spt_sel_obtienedocumento (17)
+[Thu, 13 Jan 2022 16:41:06 +0000] succes 0: select * from empresa where nFlag = 0
+[Thu, 13 Jan 2022 16:41:06 +0000] succes 0: select * from supervision  where nFlag=0
+[Thu, 13 Jan 2022 16:41:06 +0000] succes 0: select * from uunn  where nFlag=0
+[Thu, 13 Jan 2022 16:41:07 +0000] succes 0: select * from empresa where nFlag = 0
+[Thu, 13 Jan 2022 16:41:07 +0000] succes 0: SELECT `nId`, `cDoi`, `cNombres`, `cApellidos` FROM persona WHERE `nEstado` = 1
+[Thu, 13 Jan 2022 16:41:07 +0000] succes 0: SELECT e.cNombre, p.cNombres, p.cApellidos, p.cDoi, ec.cCargo
+		FROM `empresa_cargo_trabajador` et
+		INNER JOIN `persona` p ON et.nIdPersona = p.nId
+		INNER JOIN `empresa_cargo` ec ON et.nIdEmpresa_Cargo = ec.nId
+		INNER JOIN `empresa` e ON ec.nIdEmpresa = e.nId
+		WHERE et.nFlag = 0
+[Thu, 13 Jan 2022 16:41:08 +0000] succes 0: SELECT ec.`nId`, e.`cNombre`, ec.`cCargo` FROM empresa e
+		INNER JOIN empresa_cargo ec ON e.`nId`= ec.`nIdEmpresa`
+		WHERE e.`nId` = 1 and ec.`nFlag` = 0
+[Thu, 13 Jan 2022 16:41:08 +0000] succes 0: select * from empresa where nFlag = 0
+[Thu, 13 Jan 2022 16:41:09 +0000] succes 0: SELECT EC.nId, E.`cNombre`,EC.`cCargo` FROM `empresa` E
+		JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa`
+		WHERE EC.`nFlag` = 0
+[Thu, 13 Jan 2022 16:41:09 +0000] succes 0: select * from empresa where nFlag = 0
+[Thu, 13 Jan 2022 16:41:09 +0000] succes 0: SELECT EC.nId, E.`cNombre`,EC.`cCargo` FROM `empresa` E
+		JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa`
+		WHERE EC.`nFlag` = 0
+[Thu, 13 Jan 2022 16:41:09 +0000] succes 0: select * from empresa where nFlag = 0
+[Thu, 13 Jan 2022 16:41:09 +0000] succes 0: select * from tipo_vehiculo  where nFlag=0
+[Thu, 13 Jan 2022 16:41:10 +0000] succes 0: SELECT ev.`nId`,  e.`cNombre` empresa,tv.`cNombre` tipo, ev.`cPlaca`  FROM `empresa` e
+		JOIN `empresa_vehiculo` ev ON e.`nId`=ev.`nIdEmpresa` AND ev.`nFlag` = 0
+		JOIN `tipo_vehiculo` tv ON tv.`nId`=ev.`nTipoVehiculo`
+[Thu, 13 Jan 2022 16:41:10 +0000] succes 0: select * from empresa where nFlag = 0
+[Thu, 13 Jan 2022 16:41:10 +0000] succes 0: select * from tipo_vehiculo  where nFlag=0
+[Thu, 13 Jan 2022 16:41:11 +0000] succes 0: SELECT ev.`nId`,  e.`cNombre` empresa,tv.`cNombre` tipo, ev.`cPlaca`  FROM `empresa` e
+		JOIN `empresa_vehiculo` ev ON e.`nId`=ev.`nIdEmpresa` AND ev.`nFlag` = 0
+		JOIN `tipo_vehiculo` tv ON tv.`nId`=ev.`nTipoVehiculo`
+[Thu, 13 Jan 2022 16:41:12 +0000] succes 0: SELECT nId,cDoi,cNombres,cApellidos,cUsuario FROM persona WHERE nId = '17'
+[Thu, 13 Jan 2022 16:41:12 +0000] succes 0: select * from empresa where nFlag = 0
+[Thu, 13 Jan 2022 16:41:12 +0000] succes 0: select * from empresa_normas  where nFlag=0
+[Thu, 13 Jan 2022 16:41:13 +0000] succes 0: SELECT o.`nId`, n.`cDescripcion` control,o.`cValor`,o.`cObservacion` FROM  `empresa_normas` n
+		JOIN empresa_normas_observacion o ON n.`nId`=o.`nId_empresa_norma`
+		AND o.nFlag = 0
+[Thu, 13 Jan 2022 16:41:14 +0000] succes 0: call spt_sel_all_User('17')
+[Thu, 13 Jan 2022 16:53:40 +0000] succes 0: call spt_sel_all_User('17')

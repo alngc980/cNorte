@@ -1,0 +1,5 @@
+[Wed, 12 Jan 2022 02:26:30 +0000] succes 0: select * from persona  where cDoi="40980455"
+[Wed, 12 Jan 2022 02:26:36 +0000] succes 0: call spt_sel_all_User('17')
+[Wed, 12 Jan 2022 02:26:44 +0000] succes 0: call spt_sel_all_User('17')
+[Wed, 12 Jan 2022 02:26:51 +0000] succes 0: call spt_sel_obtienedocumento (17)
+[Wed, 12 Jan 2022 02:27:03 +0000] succes 0: SELECT nId,cDoi,cNombres,cApellidos,cUsuario FROM persona WHERE nId = '17'

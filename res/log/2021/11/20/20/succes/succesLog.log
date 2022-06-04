@@ -1,0 +1,1431 @@
+[Sat, 20 Nov 2021 20:05:56 +0000] succes 0: select * from persona  where cDoi="41174808"
+[Sat, 20 Nov 2021 20:06:03 +0000] succes 0: select * from persona  where cDoi="44174808"
+[Sat, 20 Nov 2021 20:06:11 +0000] succes 0: select * from empresa  where nTipo=1
+[Sat, 20 Nov 2021 20:06:11 +0000] succes 0: select * from empresa  where nTipo=0
+[Sat, 20 Nov 2021 20:06:11 +0000] succes 0: select * from tipo_documento  where nFlag=0
+[Sat, 20 Nov 2021 20:06:11 +0000] succes 0: select * from tarea  where nFlag=0
+[Sat, 20 Nov 2021 20:06:11 +0000] succes 0: select * from uunn  where nFlag=0
+[Sat, 20 Nov 2021 20:06:11 +0000] succes 0: select * from programa  where nFlag=0
+[Sat, 20 Nov 2021 20:06:11 +0000] succes 0: select * from supervision  where nFlag=0
+[Sat, 20 Nov 2021 20:06:13 +0000] succes 0: SELECT r.`nId`,p.`cNombres`,p.`cApellidos` FROM responsable r
+	JOIN persona p ON p.`nId` = r.`nIdPersona`
+	JOIN empresa e ON e.`nId`=r.`nIdEmpresa` 
+	WHERE e.nId = 0
+	/*WHERE e.`nTipo`=1*/
+[Sat, 20 Nov 2021 20:06:13 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 0 
+[Sat, 20 Nov 2021 20:06:15 +0000] succes 0: select * from programa  where nFlag=0 and nId=1
+[Sat, 20 Nov 2021 20:07:04 +0000] succes 0: SELECT r.`nId`,p.`cNombres`,p.`cApellidos` FROM responsable r
+	JOIN persona p ON p.`nId` = r.`nIdPersona`
+	JOIN empresa e ON e.`nId`=r.`nIdEmpresa` 
+	WHERE e.nId = 13
+	/*WHERE e.`nTipo`=1*/
+[Sat, 20 Nov 2021 20:07:04 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 13 
+[Sat, 20 Nov 2021 20:08:49 +0000] succes 0: call spt_ins_documento(
+		"18",
+		"1",
+		"1",
+		"1",
+		"13",
+		"8",
+		"55",
+		"61",
+		"1",
+		"LIMPIEZA DE AISLADORES E INSTALACIÓN DE ATERRAMIENTOS EN POSTES DE MEDIA TENSIÓN. ",
+		"SERVICIO DE MANTENIMIENTO EN MEDÍA TENSIÓN, SUBESTACIONES, BAJA TENSIÓN Y ALUMBRADO PÚBLICO: CHICLAYO, PERIODO 2018 - 2021 ELECTRONORTE S.A.",
+		"C.P. SAN LUIS – CHOSICA DEL NORTE.",
+		"UMD",
+		"2021-11-13",
+		"2005",
+		"ENSA")
+[Sat, 20 Nov 2021 20:11:59 +0000] succes 0: select * from informe  where nFlag=0 and nId=141
+[Sat, 20 Nov 2021 20:11:59 +0000] succes 0: select * from tarea  where nFlag=0 and nId=1
+[Sat, 20 Nov 2021 20:11:59 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 20:11:59 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =100  AND cvalor NOT IN (100)
+[Sat, 20 Nov 2021 20:11:59 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)
+[Sat, 20 Nov 2021 20:11:59 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nId NOT IN (1) and nOrden >0
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 20:11:59 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:11:59 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		 and nOrden < 0 
+		ORDER BY norden desc LIMIT 0,1
+[Sat, 20 Nov 2021 20:12:17 +0000] succes 0: call spt_ins_documento_detalle(
+		"141",
+		"1",
+		"1",
+		"0",
+		"PERSONAL OPERATIVO, CONTIENE DE IMPLEMENTOS BÁSICOS DE PROTECCIÓN PERSONAL: ROPA DE TRABAJO, CASCO DIELÉCTRICO CON BARBIQUEJO, CALZADO DE SEGURIDAD DIELÉCTRICO, CHALECO, GUANTES DIELÉCTRICOS BT Y MT, RESPIRADOR, MASCARILLA, LENTES DE SEGURIDAD Y HERRAMIENTAS MANUALES OPERATIVAS.")
+[Sat, 20 Nov 2021 20:12:17 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:12:38 +0000] succes 0: call spt_ins_documento_detalle(
+		"141",
+		"1",
+		"1",
+		"0",
+		"PERSONAL TÉCNICO, CUENTA CON EQUIPO DE PROTECCIÓN CONTRA CAÍDAS (ARNÉS DE SEGURIDAD TIPO LINIERO, LÍNEA Y FAJA DE ANCLAJE) Y ESCALERA TIPO TELESCÓPICA CON SISTEMA DE ESCALAMIENTO")
+[Sat, 20 Nov 2021 20:12:38 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:12:58 +0000] succes 0: call spt_ins_documento_detalle(
+		"141",
+		"1",
+		"1",
+		"0",
+		"PERSONAL TÉCNICO, CUENTA CON HERRAMIENTAS MANUALES EN ESTADO OPERATIVO.")
+[Sat, 20 Nov 2021 20:12:58 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:14:30 +0000] succes 531: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,1,'uploads/141/1/1.png','1.png')
+[Sat, 20 Nov 2021 20:14:30 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 1
+[Sat, 20 Nov 2021 20:14:30 +0000] succes 532: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,1,'uploads/141/1/2.png','2.png')
+[Sat, 20 Nov 2021 20:14:30 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 1
+[Sat, 20 Nov 2021 20:14:31 +0000] succes 533: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,1,'uploads/141/1/3.png','3.png')
+[Sat, 20 Nov 2021 20:14:31 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 1
+[Sat, 20 Nov 2021 20:14:31 +0000] succes 534: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,1,'uploads/141/1/4.png','4.png')
+[Sat, 20 Nov 2021 20:14:31 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 1
+[Sat, 20 Nov 2021 20:14:31 +0000] succes 535: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,1,'uploads/141/1/5.png','5.png')
+[Sat, 20 Nov 2021 20:14:31 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 1
+[Sat, 20 Nov 2021 20:15:59 +0000] succes 536: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,1,'uploads/141/1/45.png','45.png')
+[Sat, 20 Nov 2021 20:15:59 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 1
+[Sat, 20 Nov 2021 20:16:06 +0000] succes 0: select * from informe  where nFlag=0 and nId=141
+[Sat, 20 Nov 2021 20:16:06 +0000] succes 0: select * from tarea  where nFlag=0 and nId=1
+[Sat, 20 Nov 2021 20:16:06 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nOrden in (2)
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 20:16:06 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =100  AND cvalor NOT IN (100)
+[Sat, 20 Nov 2021 20:16:06 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)
+[Sat, 20 Nov 2021 20:16:06 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nId NOT IN (2) and nOrden >2
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 20:16:06 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=2
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:16:06 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		 and nOrden < 2 
+		ORDER BY norden desc LIMIT 0,1
+[Sat, 20 Nov 2021 20:16:19 +0000] succes 0: call spt_ins_documento_detalle(
+		"141",
+		"2",
+		"1",
+		"0",
+		"GRUPO DE TRABAJO, REALIZA LA SEÑALIZACIÓN Y DELIMITACIÓN DE ÁREAS DE TRABAJO (CONOS DE SEGURIDAD Y BARRAS RETRACTILES).")
+[Sat, 20 Nov 2021 20:16:19 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=2
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:16:49 +0000] succes 537: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,2,'uploads/141/2/7.png','7.png')
+[Sat, 20 Nov 2021 20:16:49 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 2
+[Sat, 20 Nov 2021 20:16:49 +0000] succes 538: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,2,'uploads/141/2/8.png','8.png')
+[Sat, 20 Nov 2021 20:16:49 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 2
+[Sat, 20 Nov 2021 20:16:49 +0000] succes 539: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,2,'uploads/141/2/10.png','10.png')
+[Sat, 20 Nov 2021 20:16:49 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 2
+[Sat, 20 Nov 2021 20:16:49 +0000] succes 540: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,2,'uploads/141/2/11.png','11.png')
+[Sat, 20 Nov 2021 20:16:49 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 2
+[Sat, 20 Nov 2021 20:16:49 +0000] succes 541: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,2,'uploads/141/2/12.png','12.png')
+[Sat, 20 Nov 2021 20:16:49 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 2
+[Sat, 20 Nov 2021 20:16:49 +0000] succes 542: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,2,'uploads/141/2/13.png','13.png')
+[Sat, 20 Nov 2021 20:16:49 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 2
+[Sat, 20 Nov 2021 20:16:57 +0000] succes 0: select * from informe  where nFlag=0 and nId=141
+[Sat, 20 Nov 2021 20:16:57 +0000] succes 0: select * from tarea  where nFlag=0 and nId=1
+[Sat, 20 Nov 2021 20:16:57 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nOrden in (3)
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 20:16:57 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =100  AND cvalor NOT IN (100)
+[Sat, 20 Nov 2021 20:16:57 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)
+[Sat, 20 Nov 2021 20:16:57 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nId NOT IN (3) and nOrden >3
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 20:16:57 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=3
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:16:57 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		 and nOrden < 3 
+		ORDER BY norden desc LIMIT 0,1
+[Sat, 20 Nov 2021 20:17:12 +0000] succes 0: call spt_ins_documento_detalle(
+		"141",
+		"3",
+		"1",
+		"0",
+		"UNIDADES MÓVILES DE PLACAS T9R-821, T5I-871 (CAMIONETAS), DESTINADO AL TRANSPORTE DE PERSONAL Y MATERIALES, CUENTA CON DOCUMENTACIÓN DE CIRCULACIÓN, EXTINTOR, BOTIQUÍN DE PRIMEROS AUXILIOS, ALARMA DE RETROCESO, CONOS, TACOS Y HERRAMIENTAS VARIAS.")
+[Sat, 20 Nov 2021 20:17:12 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=3
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:17:20 +0000] succes 0: call spt_ins_documento_detalle(
+		"141",
+		"3",
+		"1",
+		"0",
+		"UNIDADES MÓVILES DE PLACA AJD-700 (CAMIÓN GRÚA), DESTINADO AL TRANSPORTE DE MATERIAL Y TRABAJOS OPERATIVOS, CUENTA CON DOCUMENTACIÓN DE CIRCULACIÓN, EXTINTOR, BOTIQUÍN DE PRIMEROS AUXILIOS, ALARMA DE RETROCESO, ESLINGAS, CORREAS Y FAJAS, CONOS, TACOS, HERRAMIENTAS VARIAS Y CERTIFICADO DE OPERATIVIDAD DE BRAZO HIDRÁULICO.")
+[Sat, 20 Nov 2021 20:17:20 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=3
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:18:13 +0000] succes 543: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,3,'uploads/141/3/14.png','14.png')
+[Sat, 20 Nov 2021 20:18:14 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 3
+[Sat, 20 Nov 2021 20:18:14 +0000] succes 544: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,3,'uploads/141/3/15.png','15.png')
+[Sat, 20 Nov 2021 20:18:14 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 3
+[Sat, 20 Nov 2021 20:18:14 +0000] succes 545: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,3,'uploads/141/3/16.png','16.png')
+[Sat, 20 Nov 2021 20:18:14 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 3
+[Sat, 20 Nov 2021 20:18:14 +0000] succes 546: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,3,'uploads/141/3/17.png','17.png')
+[Sat, 20 Nov 2021 20:18:14 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 3
+[Sat, 20 Nov 2021 20:18:14 +0000] succes 547: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,3,'uploads/141/3/18.png','18.png')
+[Sat, 20 Nov 2021 20:18:14 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 3
+[Sat, 20 Nov 2021 20:18:14 +0000] succes 548: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,3,'uploads/141/3/19.png','19.png')
+[Sat, 20 Nov 2021 20:18:14 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 3
+[Sat, 20 Nov 2021 20:18:14 +0000] succes 549: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,3,'uploads/141/3/20.png','20.png')
+[Sat, 20 Nov 2021 20:18:14 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 3
+[Sat, 20 Nov 2021 20:18:14 +0000] succes 550: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,3,'uploads/141/3/21.png','21.png')
+[Sat, 20 Nov 2021 20:18:14 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 3
+[Sat, 20 Nov 2021 20:18:14 +0000] succes 551: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,3,'uploads/141/3/22.png','22.png')
+[Sat, 20 Nov 2021 20:18:14 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 3
+[Sat, 20 Nov 2021 20:18:29 +0000] succes 0: select * from informe  where nFlag=0 and nId=141
+[Sat, 20 Nov 2021 20:18:29 +0000] succes 0: select * from tarea  where nFlag=0 and nId=1
+[Sat, 20 Nov 2021 20:18:29 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nOrden in (4)
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 20:18:29 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =100  AND cvalor NOT IN (100)
+[Sat, 20 Nov 2021 20:18:29 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)
+[Sat, 20 Nov 2021 20:18:29 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nId NOT IN (4) and nOrden >4
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 20:18:29 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=4
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:18:29 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		 and nOrden < 4 
+		ORDER BY norden desc LIMIT 0,1
+[Sat, 20 Nov 2021 20:18:50 +0000] succes 0: call spt_ins_documento_detalle(
+		"141",
+		"4",
+		"1",
+		"0",
+		"GRUPO DE TRABAJO EVIDENCIA COPIAS DE PÓLIZAS SCTR (SALUD Y PENSIÓN) Y PÓLIZA DE SEGURO VIDA LEY, VIGENTES")
+[Sat, 20 Nov 2021 20:18:50 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=4
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:18:59 +0000] succes 0: call spt_ins_documento_detalle(
+		"141",
+		"4",
+		"1",
+		"0",
+		"GRUPO DE TRABAJO, EVIDENCIA EL REGISTRO DE LA CHARLA DE SEGURIDAD; PREVIO AL DESARROLLO DE LA ACTIVIDAD")
+[Sat, 20 Nov 2021 20:18:59 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=4
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:19:07 +0000] succes 0: call spt_ins_documento_detalle(
+		"141",
+		"4",
+		"1",
+		"0",
+		"GRUPO DE TRABAJO CUENTA CON PETS, IPERC Y PLAN DE CONTINGENCIAS EN ZONA DE TRABAJO, ASÍ MISMO EVIDENCIA DIFUSIÓN RESPECTIVA.")
+[Sat, 20 Nov 2021 20:19:07 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=4
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:19:17 +0000] succes 0: call spt_ins_documento_detalle(
+		"141",
+		"4",
+		"1",
+		"0",
+		"GRUPO DE TRABAJO EVIDENCIA ORDEN DE TRABAJO, PERMISO DE TRABAJOS EN ALTURA Y AUTORIZACIÓN DE INTERVENCIÓN. ")
+[Sat, 20 Nov 2021 20:19:17 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=4
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:19:27 +0000] succes 0: call spt_ins_documento_detalle(
+		"141",
+		"4",
+		"1",
+		"0",
+		"CONDUCTOR MARCO A. ROQUE PINZÓN, OMAR MEDINA RIVADENEIRA, CUENTAN CON LICENCIAS DE CONDUCIR VIGENTES Y ACORDE A CATEGORÍA DE VEHÍCULO A CONDUCIR Y OPERADOR (SAÚL FUSTAMANTE FUSTAMANTE), DE CAMIÓN GRÚA CUENTA CON LICENCIA CONDUCIR VIGENTE Y CERTIFICADO DE OPERADOR VIGENTE.")
+[Sat, 20 Nov 2021 20:19:27 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=4
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 552: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,4,'uploads/141/4/23.png','23.png')
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 4
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 553: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,4,'uploads/141/4/24.png','24.png')
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 4
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 554: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,4,'uploads/141/4/25.png','25.png')
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 4
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 555: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,4,'uploads/141/4/26.png','26.png')
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 4
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 556: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,4,'uploads/141/4/27.png','27.png')
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 4
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 557: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,4,'uploads/141/4/28.png','28.png')
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 4
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 558: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,4,'uploads/141/4/29.png','29.png')
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 4
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 559: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,4,'uploads/141/4/30.png','30.png')
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 4
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 560: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,4,'uploads/141/4/31.png','31.png')
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 4
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 561: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,4,'uploads/141/4/32.png','32.png')
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 4
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 562: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,4,'uploads/141/4/33.png','33.png')
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 4
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 563: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,4,'uploads/141/4/34.png','34.png')
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 4
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 564: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,4,'uploads/141/4/35.png','35.png')
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 4
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 565: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,4,'uploads/141/4/36.png','36.png')
+[Sat, 20 Nov 2021 20:20:38 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 4
+[Sat, 20 Nov 2021 20:20:51 +0000] succes 0: select * from informe  where nFlag=0 and nId=141
+[Sat, 20 Nov 2021 20:20:51 +0000] succes 0: select * from tarea  where nFlag=0 and nId=1
+[Sat, 20 Nov 2021 20:20:51 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nOrden in (5)
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 20:20:51 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =100  AND cvalor NOT IN (100)
+[Sat, 20 Nov 2021 20:20:51 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)
+[Sat, 20 Nov 2021 20:20:51 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nId NOT IN (5) and nOrden >5
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 20:20:51 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=5
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:20:51 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		 and nOrden < 5 
+		ORDER BY norden desc LIMIT 0,1
+[Sat, 20 Nov 2021 20:21:06 +0000] succes 0: call spt_ins_documento_detalle(
+		"141",
+		"5",
+		"1",
+		"0",
+		"SUPERVISIÓN POR PARTE DEL CONTRATISTA (INGENIEROS DE CAMPO Y SUPERVISOR DE SEGURIDAD), EN ZONA DE TRABAJO, DURANTE DESARROLLO DE LA ACTIVIDAD")
+[Sat, 20 Nov 2021 20:21:06 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=5
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:21:20 +0000] succes 0: call spt_ins_documento_detalle(
+		"141",
+		"5",
+		"1",
+		"0",
+		"PERSONAL HACE USO DE EQUIPOS DE PROTECCIÓN CONTRA CAÍDAS Y SISTEMA DE ESCALAMIENTO, SEGÚN ZONA DE TRABAJO PARA REALIZAR TRABAJOS EN ALTURA.")
+[Sat, 20 Nov 2021 20:21:20 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=5
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:22:01 +0000] succes 566: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,5,'uploads/141/5/37.png','37.png')
+[Sat, 20 Nov 2021 20:22:01 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 5
+[Sat, 20 Nov 2021 20:22:01 +0000] succes 567: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,5,'uploads/141/5/38.png','38.png')
+[Sat, 20 Nov 2021 20:22:01 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 5
+[Sat, 20 Nov 2021 20:22:01 +0000] succes 568: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,5,'uploads/141/5/39.png','39.png')
+[Sat, 20 Nov 2021 20:22:01 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 5
+[Sat, 20 Nov 2021 20:22:08 +0000] succes 0: select * from informe  where nFlag=0 and nId=141
+[Sat, 20 Nov 2021 20:22:08 +0000] succes 0: select * from tarea  where nFlag=0 and nId=1
+[Sat, 20 Nov 2021 20:22:08 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nOrden in (6)
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 20:22:08 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =100  AND cvalor NOT IN (100)
+[Sat, 20 Nov 2021 20:22:08 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)
+[Sat, 20 Nov 2021 20:22:08 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nId NOT IN (6) and nOrden >6
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 20:22:08 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=6
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:22:08 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		 and nOrden < 6 
+		ORDER BY norden desc LIMIT 0,1
+[Sat, 20 Nov 2021 20:22:35 +0000] succes 0: call spt_ins_documento_detalle(
+		"141",
+		"6",
+		"1",
+		"0",
+		"GRUPO DE TRABAJO, HACE USO DE ELEMENTOS DE BIOSEGURIDAD; Y, CONTIENE DE BLOQUEADOR SOLAR Y AGUA PARA SU CONSUMO, DURANTE EL DESARROLLO DE LAS ACTIVIDADES OPERATIVAS, EN ZONA DE TRABAJO.")
+[Sat, 20 Nov 2021 20:22:35 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=6
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:22:54 +0000] succes 569: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,6,'uploads/141/6/40.png','40.png')
+[Sat, 20 Nov 2021 20:22:54 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 6
+[Sat, 20 Nov 2021 20:22:54 +0000] succes 570: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,6,'uploads/141/6/41.png','41.png')
+[Sat, 20 Nov 2021 20:22:54 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 6
+[Sat, 20 Nov 2021 20:23:12 +0000] succes 0: select * from informe  where nFlag=0 and nId=141
+[Sat, 20 Nov 2021 20:23:12 +0000] succes 0: select * from tarea  where nFlag=0 and nId=1
+[Sat, 20 Nov 2021 20:23:12 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nOrden in (7)
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 20:23:12 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =200  AND cvalor NOT IN (200)
+[Sat, 20 Nov 2021 20:23:12 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)
+[Sat, 20 Nov 2021 20:23:12 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nId NOT IN (7) and nOrden >7
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 20:23:12 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=7
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:23:12 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		 and nOrden < 7 
+		ORDER BY norden desc LIMIT 0,1
+[Sat, 20 Nov 2021 20:23:53 +0000] succes 0: call spt_ins_documento_detalle(
+		"141",
+		"7",
+		"1",
+		"0",
+		"1. PERSONAL OPERATIVO, CUENTA CON EPP Y EQUIPOS DE MANIOBRA, PARA EJECUCIÓN DE ACTIVIDADES OPERATIVAS.
+2. GRUPO DE TRABAJO REALIZA LA SEÑALIZACIÓN Y DELIMITACIÓN DE ÁREAS DE TRABAJO.
+3. UNIDADES MÓVILES CON EQUIPAMIENTO BÁSICO.
+4. GRUPO DE TRABAJO CONTIENE DE DOCUMENTACIÓN DE SEGURIDAD.
+5. CONTRATISTA HA DOTADO DE ALCOHOL Y MASCARILLAS PARA PROTECCIÓN DE CONTAGIO DE ENFERMEDAD COVID19.")
+[Sat, 20 Nov 2021 20:23:53 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=7
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:24:24 +0000] succes 0: call spt_ins_documento_detalle(
+		"141",
+		"7",
+		"2",
+		"1",
+		"1. INSPECCIONAR PERIÓDICAMENTE EL ESTADO DE LOS EPP A PERSONAL OPERATIVO SEGÚN ACTIVIDAD Y RIESGOS EXPUESTOS.
+2. UNIDADES MÓVILES DEBE CONTAR CON PERMISO POR LA AUTORIDAD DE COMPETENCIA SEGÚN LO ESTIPULA EL REGLAMENTO DE TRÁNSITO DEL MTC, PARA EL TRANSPORTE DE PERSONAL 
+3. REALIZAR INSPECCIONES PERIÓDICAS DE ELEMENTOS DE PROTECCIÓN CONTRA CAÍDAS.
+4. EVALUAR RIESGOS, SEGÚN LAS ACTIVIDADES QUE SE EJECUTAN Y POR GRUPOS DE TRABAJO.
+5. SUPERVISAR EFICAZ Y CONSTANTEMENTE A LAS ACTIVIDADES QUE SE EJECUTA EN CAMPO.")
+[Sat, 20 Nov 2021 20:24:24 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=7
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:24:30 +0000] succes 0: select * from informe  where nFlag=0 and nId=141
+[Sat, 20 Nov 2021 20:24:30 +0000] succes 0: select * from tarea  where nFlag=0 and nId=1
+[Sat, 20 Nov 2021 20:24:30 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nOrden in (8)
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 20:24:30 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =300  AND cvalor NOT IN (300)
+[Sat, 20 Nov 2021 20:24:30 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)
+[Sat, 20 Nov 2021 20:24:30 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nId NOT IN (8) and nOrden >8
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 20:24:30 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=8
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:24:30 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		 and nOrden < 8 
+		ORDER BY norden desc LIMIT 0,1
+[Sat, 20 Nov 2021 20:24:46 +0000] succes 0: call spt_ins_documento_detalle(
+		"141",
+		"8",
+		"1",
+		"0",
+		"1.	SE COORDINÓ CON SUPERVISOR DE SEGURIDAD EL ING. JOSÉ MOLLEDA CUEVA, DE LA CONTRATISTA, IMPLEMENTAR RECOMENDACIONES DADAS EN EL PRESENTE INFORME DANDO CUMPLIMIENTO AL RESESATE 2013 Y NORMAS DE SEGURIDAD. ")
+[Sat, 20 Nov 2021 20:24:46 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=8
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:25:05 +0000] succes 571: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,8,'uploads/141/8/42.png','42.png')
+[Sat, 20 Nov 2021 20:25:05 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 8
+[Sat, 20 Nov 2021 20:25:05 +0000] succes 572: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(141,8,'uploads/141/8/43.png','43.png')
+[Sat, 20 Nov 2021 20:25:05 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 8
+[Sat, 20 Nov 2021 20:25:10 +0000] succes 0: select * from informe  where nFlag=0 and nId=141
+[Sat, 20 Nov 2021 20:25:10 +0000] succes 0: select * from tarea  where nFlag=0 and nId=1
+[Sat, 20 Nov 2021 20:25:10 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nOrden in (9)
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 20:25:10 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =400  AND cvalor NOT IN (400)
+[Sat, 20 Nov 2021 20:25:10 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)
+[Sat, 20 Nov 2021 20:25:10 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nId NOT IN (9) and nOrden >9
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 20:25:10 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=9
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:25:10 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		 and nOrden < 9 
+		ORDER BY norden desc LIMIT 0,1
+[Sat, 20 Nov 2021 20:25:10 +0000] succes 0: select * from informe  where nFlag=0 and nId=141
+[Sat, 20 Nov 2021 20:25:10 +0000] succes 0: select * from tipo_vehiculo  where nFlag=0
+[Sat, 20 Nov 2021 20:25:10 +0000] succes 0: SELECT c.nIdTarea, c.`nId`,c.`cCodigo`,c.`cNombre`,c.`nModelo`  FROM `informe` i
+		JOIN `cumplimiento` c ON c.`nIdTarea`= i.`nIdTarea`
+		WHERE i.NID=141 AND c.nFlag = 0
+[Sat, 20 Nov 2021 20:25:10 +0000] succes 0: SELECT CONCAT(p.`cApellidos`, ' ',p.`cNombres`)'Descripcion',ec.`nIdEmpresa`,ect.`nId`, ec.`nId` nIdCargo, ec.`cCargo` FROM  
+		`empresa_cargo_trabajador` ect
+		JOIN `empresa_cargo` ec ON ec.`nId`=ect.`nIdEmpresa_Cargo`
+		JOIN `persona` p ON p.`nId`=ect.`nIdPersona`
+		WHERE ec.nIdEmpresa = 13
+		
+[Sat, 20 Nov 2021 20:25:10 +0000] succes 0: SELECT eno.`nId`, CONCAT("(",eno.`cValor`,")",en.`cDescripcion`," / ", eno.`cObservacion`) cDescripcion,en.nTipo FROM `empresa_normas` en
+			JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.nid
+		
+[Sat, 20 Nov 2021 20:25:10 +0000] succes 0: SELECT e.`nId`, CONCAT(cPlaca,' / ',cNombre) cDescripcion FROM `empresa_vehiculo` e
+		JOIN `tipo_vehiculo` t ON e.`nTipoVehiculo`=t.`nId`
+		WHERE e.nIdEmpresa = 13 AND IFNULL(e.nFlag, 0) = 0
+[Sat, 20 Nov 2021 20:25:26 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		LEFT JOIN `empresa_normas` en ON en.`nIdEmpresa`= i.`nIdEmpresa`
+		LEFT JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 141 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sat, 20 Nov 2021 20:25:55 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 13 
+[Sat, 20 Nov 2021 20:25:59 +0000] succes 0: select * from persona  where cDoi="12345678"
+[Sat, 20 Nov 2021 20:25:59 +0000] succes 0: call stp_ins_responsable(
+		"12345678",
+		"JORGE",
+		"BENITES CHUNGA",
+		"13");
+[Sat, 20 Nov 2021 20:25:59 +0000] succes 69: INSERT INTO `empresa_cargo_trabajador`(`nIdEmpresa_Cargo`, `nIdPersona`, `nFlag`) VALUES(57, 127, 0)
+[Sat, 20 Nov 2021 20:25:59 +0000] succes 0: SELECT CONCAT(p.`cApellidos`, ' ',p.`cNombres`)'Descripcion',ec.`nIdEmpresa`,ect.`nId`, ec.`nId` nIdCargo, ec.`cCargo` FROM  
+		`empresa_cargo_trabajador` ect
+		JOIN `empresa_cargo` ec ON ec.`nId`=ect.`nIdEmpresa_Cargo`
+		JOIN `persona` p ON p.`nId`=ect.`nIdPersona`
+		WHERE ec.nIdEmpresa = 13
+		
+[Sat, 20 Nov 2021 20:26:18 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 13 
+[Sat, 20 Nov 2021 20:26:23 +0000] succes 0: select * from persona  where cDoi="12345678"
+[Sat, 20 Nov 2021 20:26:23 +0000] succes 0: call stp_ins_responsable(
+		"12345678",
+		"OMAR ",
+		"MEDINA RIVADENEIRA",
+		"13");
+[Sat, 20 Nov 2021 20:26:23 +0000] succes 70: INSERT INTO `empresa_cargo_trabajador`(`nIdEmpresa_Cargo`, `nIdPersona`, `nFlag`) VALUES(57, 128, 0)
+[Sat, 20 Nov 2021 20:26:23 +0000] succes 0: SELECT CONCAT(p.`cApellidos`, ' ',p.`cNombres`)'Descripcion',ec.`nIdEmpresa`,ect.`nId`, ec.`nId` nIdCargo, ec.`cCargo` FROM  
+		`empresa_cargo_trabajador` ect
+		JOIN `empresa_cargo` ec ON ec.`nId`=ect.`nIdEmpresa_Cargo`
+		JOIN `persona` p ON p.`nId`=ect.`nIdPersona`
+		WHERE ec.nIdEmpresa = 13
+		
+[Sat, 20 Nov 2021 20:26:44 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 13 
+[Sat, 20 Nov 2021 20:27:00 +0000] succes 0: select * from persona  where cDoi="12345678"
+[Sat, 20 Nov 2021 20:27:00 +0000] succes 0: call stp_ins_responsable(
+		"12345678",
+		"MARCO A",
+		"ROQUE PINZÓN",
+		"13");
+[Sat, 20 Nov 2021 20:27:00 +0000] succes 76: insert into empresa_cargo (nIdEmpresa,cCargo) values (13,'CONDUCTOR');
+[Sat, 20 Nov 2021 20:27:00 +0000] succes 0: SELECT MAX(EC.`nId`) nId, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 13 AND EC.nFlag = 0
+[Sat, 20 Nov 2021 20:27:00 +0000] succes 71: INSERT INTO `empresa_cargo_trabajador`(`nIdEmpresa_Cargo`, `nIdPersona`, `nFlag`) VALUES(76, 129, 0)
+[Sat, 20 Nov 2021 20:27:00 +0000] succes 0: SELECT CONCAT(p.`cApellidos`, ' ',p.`cNombres`)'Descripcion',ec.`nIdEmpresa`,ect.`nId`, ec.`nId` nIdCargo, ec.`cCargo` FROM  
+		`empresa_cargo_trabajador` ect
+		JOIN `empresa_cargo` ec ON ec.`nId`=ect.`nIdEmpresa_Cargo`
+		JOIN `persona` p ON p.`nId`=ect.`nIdPersona`
+		WHERE ec.nIdEmpresa = 13
+		
+[Sat, 20 Nov 2021 20:27:33 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 13 
+[Sat, 20 Nov 2021 20:27:37 +0000] succes 0: select * from persona  where cDoi="12345678"
+[Sat, 20 Nov 2021 20:27:37 +0000] succes 0: call stp_ins_responsable(
+		"12345678",
+		"JUAN ELOY ",
+		"CALLO MAMANI ",
+		"13");
+[Sat, 20 Nov 2021 20:27:37 +0000] succes 72: INSERT INTO `empresa_cargo_trabajador`(`nIdEmpresa_Cargo`, `nIdPersona`, `nFlag`) VALUES(57, 130, 0)
+[Sat, 20 Nov 2021 20:27:37 +0000] succes 0: SELECT CONCAT(p.`cApellidos`, ' ',p.`cNombres`)'Descripcion',ec.`nIdEmpresa`,ect.`nId`, ec.`nId` nIdCargo, ec.`cCargo` FROM  
+		`empresa_cargo_trabajador` ect
+		JOIN `empresa_cargo` ec ON ec.`nId`=ect.`nIdEmpresa_Cargo`
+		JOIN `persona` p ON p.`nId`=ect.`nIdPersona`
+		WHERE ec.nIdEmpresa = 13
+		
+[Sat, 20 Nov 2021 20:27:57 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 13 
+[Sat, 20 Nov 2021 20:28:01 +0000] succes 0: select * from persona  where cDoi="12345678"
+[Sat, 20 Nov 2021 20:28:01 +0000] succes 0: call stp_ins_responsable(
+		"12345678",
+		"WILLIAN",
+		"ACOSTA BANCES",
+		"13");
+[Sat, 20 Nov 2021 20:28:01 +0000] succes 73: INSERT INTO `empresa_cargo_trabajador`(`nIdEmpresa_Cargo`, `nIdPersona`, `nFlag`) VALUES(57, 131, 0)
+[Sat, 20 Nov 2021 20:28:01 +0000] succes 0: SELECT CONCAT(p.`cApellidos`, ' ',p.`cNombres`)'Descripcion',ec.`nIdEmpresa`,ect.`nId`, ec.`nId` nIdCargo, ec.`cCargo` FROM  
+		`empresa_cargo_trabajador` ect
+		JOIN `empresa_cargo` ec ON ec.`nId`=ect.`nIdEmpresa_Cargo`
+		JOIN `persona` p ON p.`nId`=ect.`nIdPersona`
+		WHERE ec.nIdEmpresa = 13
+		
+[Sat, 20 Nov 2021 20:28:20 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 13 
+[Sat, 20 Nov 2021 20:28:24 +0000] succes 0: select * from persona  where cDoi="12345678"
+[Sat, 20 Nov 2021 20:28:24 +0000] succes 0: call stp_ins_responsable(
+		"12345678",
+		"VICTOR",
+		"SUYON SANTISTEBAN",
+		"13");
+[Sat, 20 Nov 2021 20:28:24 +0000] succes 74: INSERT INTO `empresa_cargo_trabajador`(`nIdEmpresa_Cargo`, `nIdPersona`, `nFlag`) VALUES(57, 132, 0)
+[Sat, 20 Nov 2021 20:28:24 +0000] succes 0: SELECT CONCAT(p.`cApellidos`, ' ',p.`cNombres`)'Descripcion',ec.`nIdEmpresa`,ect.`nId`, ec.`nId` nIdCargo, ec.`cCargo` FROM  
+		`empresa_cargo_trabajador` ect
+		JOIN `empresa_cargo` ec ON ec.`nId`=ect.`nIdEmpresa_Cargo`
+		JOIN `persona` p ON p.`nId`=ect.`nIdPersona`
+		WHERE ec.nIdEmpresa = 13
+		
+[Sat, 20 Nov 2021 20:28:52 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 13 
+[Sat, 20 Nov 2021 20:29:00 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 13 
+[Sat, 20 Nov 2021 20:29:07 +0000] succes 0: select * from persona  where cDoi="12345678"
+[Sat, 20 Nov 2021 20:29:07 +0000] succes 0: call stp_ins_responsable(
+		"12345678",
+		"SAUL ",
+		"FUSTAMANTE FUSTAMANTE",
+		"13");
+[Sat, 20 Nov 2021 20:29:07 +0000] succes 75: INSERT INTO `empresa_cargo_trabajador`(`nIdEmpresa_Cargo`, `nIdPersona`, `nFlag`) VALUES(58, 133, 0)
+[Sat, 20 Nov 2021 20:29:07 +0000] succes 0: SELECT CONCAT(p.`cApellidos`, ' ',p.`cNombres`)'Descripcion',ec.`nIdEmpresa`,ect.`nId`, ec.`nId` nIdCargo, ec.`cCargo` FROM  
+		`empresa_cargo_trabajador` ect
+		JOIN `empresa_cargo` ec ON ec.`nId`=ect.`nIdEmpresa_Cargo`
+		JOIN `persona` p ON p.`nId`=ect.`nIdPersona`
+		WHERE ec.nIdEmpresa = 13
+		
+[Sat, 20 Nov 2021 20:29:29 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 13 
+[Sat, 20 Nov 2021 20:29:35 +0000] succes 0: select * from persona  where cDoi="12345678"
+[Sat, 20 Nov 2021 20:29:35 +0000] succes 0: call stp_ins_responsable(
+		"12345678",
+		"JOSÉ ",
+		"MOLLEDA CUEVAS",
+		"13");
+[Sat, 20 Nov 2021 20:29:35 +0000] succes 76: INSERT INTO `empresa_cargo_trabajador`(`nIdEmpresa_Cargo`, `nIdPersona`, `nFlag`) VALUES(60, 134, 0)
+[Sat, 20 Nov 2021 20:29:35 +0000] succes 0: SELECT CONCAT(p.`cApellidos`, ' ',p.`cNombres`)'Descripcion',ec.`nIdEmpresa`,ect.`nId`, ec.`nId` nIdCargo, ec.`cCargo` FROM  
+		`empresa_cargo_trabajador` ect
+		JOIN `empresa_cargo` ec ON ec.`nId`=ect.`nIdEmpresa_Cargo`
+		JOIN `persona` p ON p.`nId`=ect.`nIdPersona`
+		WHERE ec.nIdEmpresa = 13
+		
+[Sat, 20 Nov 2021 20:32:16 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 13 
+[Sat, 20 Nov 2021 20:32:19 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 13 
+[Sat, 20 Nov 2021 20:32:34 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 13 
+[Sat, 20 Nov 2021 20:32:41 +0000] succes 0: select * from persona  where cDoi="12345678"
+[Sat, 20 Nov 2021 20:32:41 +0000] succes 0: call stp_ins_responsable(
+		"12345678",
+		"MARCO",
+		"NUNURA CHUMAN",
+		"13");
+[Sat, 20 Nov 2021 20:32:41 +0000] succes 77: INSERT INTO `empresa_cargo_trabajador`(`nIdEmpresa_Cargo`, `nIdPersona`, `nFlag`) VALUES(61, 135, 0)
+[Sat, 20 Nov 2021 20:32:41 +0000] succes 0: SELECT CONCAT(p.`cApellidos`, ' ',p.`cNombres`)'Descripcion',ec.`nIdEmpresa`,ect.`nId`, ec.`nId` nIdCargo, ec.`cCargo` FROM  
+		`empresa_cargo_trabajador` ect
+		JOIN `empresa_cargo` ec ON ec.`nId`=ect.`nIdEmpresa_Cargo`
+		JOIN `persona` p ON p.`nId`=ect.`nIdPersona`
+		WHERE ec.nIdEmpresa = 13
+		
+[Sat, 20 Nov 2021 20:33:21 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 13 
+[Sat, 20 Nov 2021 20:33:29 +0000] succes 0: select * from persona  where cDoi="12345678"
+[Sat, 20 Nov 2021 20:33:29 +0000] succes 0: call stp_ins_responsable(
+		"12345678",
+		"ELMER",
+		"SANTISTEBAN TUÑOQUE",
+		"13");
+[Sat, 20 Nov 2021 20:33:29 +0000] succes 78: INSERT INTO `empresa_cargo_trabajador`(`nIdEmpresa_Cargo`, `nIdPersona`, `nFlag`) VALUES(59, 136, 0)
+[Sat, 20 Nov 2021 20:33:29 +0000] succes 0: SELECT CONCAT(p.`cApellidos`, ' ',p.`cNombres`)'Descripcion',ec.`nIdEmpresa`,ect.`nId`, ec.`nId` nIdCargo, ec.`cCargo` FROM  
+		`empresa_cargo_trabajador` ect
+		JOIN `empresa_cargo` ec ON ec.`nId`=ect.`nIdEmpresa_Cargo`
+		JOIN `persona` p ON p.`nId`=ect.`nIdPersona`
+		WHERE ec.nIdEmpresa = 13
+		
+[Sat, 20 Nov 2021 20:33:58 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 13 
+[Sat, 20 Nov 2021 20:34:04 +0000] succes 0: select * from persona  where cDoi="12345678"
+[Sat, 20 Nov 2021 20:34:04 +0000] succes 0: call stp_ins_responsable(
+		"12345678",
+		"EVERTH",
+		"FARROÑAN SANDOVAL",
+		"13");
+[Sat, 20 Nov 2021 20:34:04 +0000] succes 79: INSERT INTO `empresa_cargo_trabajador`(`nIdEmpresa_Cargo`, `nIdPersona`, `nFlag`) VALUES(57, 137, 0)
+[Sat, 20 Nov 2021 20:34:04 +0000] succes 0: SELECT CONCAT(p.`cApellidos`, ' ',p.`cNombres`)'Descripcion',ec.`nIdEmpresa`,ect.`nId`, ec.`nId` nIdCargo, ec.`cCargo` FROM  
+		`empresa_cargo_trabajador` ect
+		JOIN `empresa_cargo` ec ON ec.`nId`=ect.`nIdEmpresa_Cargo`
+		JOIN `persona` p ON p.`nId`=ect.`nIdPersona`
+		WHERE ec.nIdEmpresa = 13
+		
+[Sat, 20 Nov 2021 20:34:23 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 13 
+[Sat, 20 Nov 2021 20:35:18 +0000] succes 0: select * from persona  where cDoi="12345678"
+[Sat, 20 Nov 2021 20:35:18 +0000] succes 0: call stp_ins_responsable(
+		"12345678",
+		"CRISTHIAN",
+		"SANTISTEBAN SALDAÑA",
+		"13");
+[Sat, 20 Nov 2021 20:35:18 +0000] succes 77: insert into empresa_cargo (nIdEmpresa,cCargo) values (13,'ASISTENTE DE SUPERVISIÓN');
+[Sat, 20 Nov 2021 20:35:18 +0000] succes 0: SELECT MAX(EC.`nId`) nId, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 13 AND EC.nFlag = 0
+[Sat, 20 Nov 2021 20:35:18 +0000] succes 80: INSERT INTO `empresa_cargo_trabajador`(`nIdEmpresa_Cargo`, `nIdPersona`, `nFlag`) VALUES(77, 138, 0)
+[Sat, 20 Nov 2021 20:35:19 +0000] succes 0: SELECT CONCAT(p.`cApellidos`, ' ',p.`cNombres`)'Descripcion',ec.`nIdEmpresa`,ect.`nId`, ec.`nId` nIdCargo, ec.`cCargo` FROM  
+		`empresa_cargo_trabajador` ect
+		JOIN `empresa_cargo` ec ON ec.`nId`=ect.`nIdEmpresa_Cargo`
+		JOIN `persona` p ON p.`nId`=ect.`nIdPersona`
+		WHERE ec.nIdEmpresa = 13
+		
+[Sat, 20 Nov 2021 20:35:49 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 13 
+[Sat, 20 Nov 2021 20:35:52 +0000] succes 0: select * from persona  where cDoi="12345678"
+[Sat, 20 Nov 2021 20:35:52 +0000] succes 0: call stp_ins_responsable(
+		"12345678",
+		"VÍCTOR",
+		"LUMBA CABANILLAS",
+		"13");
+[Sat, 20 Nov 2021 20:35:52 +0000] succes 81: INSERT INTO `empresa_cargo_trabajador`(`nIdEmpresa_Cargo`, `nIdPersona`, `nFlag`) VALUES(59, 139, 0)
+[Sat, 20 Nov 2021 20:35:52 +0000] succes 0: SELECT CONCAT(p.`cApellidos`, ' ',p.`cNombres`)'Descripcion',ec.`nIdEmpresa`,ect.`nId`, ec.`nId` nIdCargo, ec.`cCargo` FROM  
+		`empresa_cargo_trabajador` ect
+		JOIN `empresa_cargo` ec ON ec.`nId`=ect.`nIdEmpresa_Cargo`
+		JOIN `persona` p ON p.`nId`=ect.`nIdPersona`
+		WHERE ec.nIdEmpresa = 13
+		
+[Sat, 20 Nov 2021 20:35:56 +0000] succes 0: SELECT iv.`nId`, T.`cNombre`,tv.`cPlaca`, ENO.`cValor` FROM `informe` i
+		JOIN `inf_vehiculo_det` iv ON i.`nId`=iv.`nIdInforme`
+		JOIN `empresa_normas_observacion` ENO ON ENO.`nId`=iv.`nId_Emp_nor_obs`
+		JOIN `empresa_vehiculo` tv ON tv.`nIdEmpresa`=  i.nIdEmpresa AND iv.nIdEmp_Veh = tv.nId
+		JOIN `tipo_vehiculo` T ON T.`nId` =tv.`nTipoVehiculo`
+		WHERE iv.nIdInforme = 141 AND iv.nFlag = 0 AND IFNULL(tv.nFlag, 0) = 0
+[Sat, 20 Nov 2021 20:36:21 +0000] succes 37: insert into empresa_vehiculo (nIdEmpresa,nTipoVehiculo,cPlaca,nFlag) values (13,4,'CJD - 700',0);
+[Sat, 20 Nov 2021 20:36:21 +0000] succes 0: SELECT e.nId AS nIdEmpresa, ve.nId AS nIdVehiculo, tv.cNombre, ve.cPlaca
+		FROM `empresa` e
+		INNER JOIN `empresa_vehiculo` ve ON e.nId = ve.nIdEmpresa
+		INNER JOIN `tipo_vehiculo` tv ON ve.nTipoVehiculo = tv.nId
+		WHERE e.nId = 13 AND ve.nFlag = 0
+[Sat, 20 Nov 2021 20:36:41 +0000] succes 38: insert into empresa_vehiculo (nIdEmpresa,nTipoVehiculo,cPlaca,nFlag) values (13,1,'TR9 - 821',0);
+[Sat, 20 Nov 2021 20:36:41 +0000] succes 0: SELECT e.nId AS nIdEmpresa, ve.nId AS nIdVehiculo, tv.cNombre, ve.cPlaca
+		FROM `empresa` e
+		INNER JOIN `empresa_vehiculo` ve ON e.nId = ve.nIdEmpresa
+		INNER JOIN `tipo_vehiculo` tv ON ve.nTipoVehiculo = tv.nId
+		WHERE e.nId = 13 AND ve.nFlag = 0
+[Sat, 20 Nov 2021 20:37:17 +0000] succes 39: insert into empresa_vehiculo (nIdEmpresa,nTipoVehiculo,cPlaca,nFlag) values (13,1,'T5I - 871',0);
+[Sat, 20 Nov 2021 20:37:18 +0000] succes 0: SELECT e.nId AS nIdEmpresa, ve.nId AS nIdVehiculo, tv.cNombre, ve.cPlaca
+		FROM `empresa` e
+		INNER JOIN `empresa_vehiculo` ve ON e.nId = ve.nIdEmpresa
+		INNER JOIN `tipo_vehiculo` tv ON ve.nTipoVehiculo = tv.nId
+		WHERE e.nId = 13 AND ve.nFlag = 0
+[Sat, 20 Nov 2021 20:37:21 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		LEFT JOIN `empresa_normas` en ON en.`nIdEmpresa`= i.`nIdEmpresa`
+		LEFT JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 141 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sat, 20 Nov 2021 20:37:33 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		LEFT JOIN `empresa_normas` en ON en.`nIdEmpresa`= i.`nIdEmpresa`
+		LEFT JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 141 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sat, 20 Nov 2021 20:37:43 +0000] succes 0: SELECT iv.`nId`, T.`cNombre`,tv.`cPlaca`, ENO.`cValor` FROM `informe` i
+		JOIN `inf_vehiculo_det` iv ON i.`nId`=iv.`nIdInforme`
+		JOIN `empresa_normas_observacion` ENO ON ENO.`nId`=iv.`nId_Emp_nor_obs`
+		JOIN `empresa_vehiculo` tv ON tv.`nIdEmpresa`=  i.nIdEmpresa AND iv.nIdEmp_Veh = tv.nId
+		JOIN `tipo_vehiculo` T ON T.`nId` =tv.`nTipoVehiculo`
+		WHERE iv.nIdInforme = 141 AND iv.nFlag = 0 AND IFNULL(tv.nFlag, 0) = 0
+[Sat, 20 Nov 2021 20:37:44 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		LEFT JOIN `empresa_normas` en ON en.`nIdEmpresa`= i.`nIdEmpresa`
+		LEFT JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 141 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sat, 20 Nov 2021 20:38:04 +0000] succes 0: select * from informe  where nFlag=0 and nId=141
+[Sat, 20 Nov 2021 20:38:04 +0000] succes 0: select * from tarea  where nFlag=0 and nId=1
+[Sat, 20 Nov 2021 20:38:04 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nOrden in (9)
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 20:38:04 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =400  AND cvalor NOT IN (400)
+[Sat, 20 Nov 2021 20:38:04 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)
+[Sat, 20 Nov 2021 20:38:04 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nId NOT IN (9) and nOrden >9
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 20:38:04 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=9
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:38:04 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		 and nOrden < 9 
+		ORDER BY norden desc LIMIT 0,1
+[Sat, 20 Nov 2021 20:38:04 +0000] succes 0: select * from informe  where nFlag=0 and nId=141
+[Sat, 20 Nov 2021 20:38:04 +0000] succes 0: select * from tipo_vehiculo  where nFlag=0
+[Sat, 20 Nov 2021 20:38:04 +0000] succes 0: SELECT c.nIdTarea, c.`nId`,c.`cCodigo`,c.`cNombre`,c.`nModelo`  FROM `informe` i
+		JOIN `cumplimiento` c ON c.`nIdTarea`= i.`nIdTarea`
+		WHERE i.NID=141 AND c.nFlag = 0
+[Sat, 20 Nov 2021 20:38:04 +0000] succes 0: SELECT CONCAT(p.`cApellidos`, ' ',p.`cNombres`)'Descripcion',ec.`nIdEmpresa`,ect.`nId`, ec.`nId` nIdCargo, ec.`cCargo` FROM  
+		`empresa_cargo_trabajador` ect
+		JOIN `empresa_cargo` ec ON ec.`nId`=ect.`nIdEmpresa_Cargo`
+		JOIN `persona` p ON p.`nId`=ect.`nIdPersona`
+		WHERE ec.nIdEmpresa = 13
+		
+[Sat, 20 Nov 2021 20:38:04 +0000] succes 0: SELECT eno.`nId`, CONCAT("(",eno.`cValor`,")",en.`cDescripcion`," / ", eno.`cObservacion`) cDescripcion,en.nTipo FROM `empresa_normas` en
+			JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.nid
+		
+[Sat, 20 Nov 2021 20:38:04 +0000] succes 0: SELECT e.`nId`, CONCAT(cPlaca,' / ',cNombre) cDescripcion FROM `empresa_vehiculo` e
+		JOIN `tipo_vehiculo` t ON e.`nTipoVehiculo`=t.`nId`
+		WHERE e.nIdEmpresa = 13 AND IFNULL(e.nFlag, 0) = 0
+[Sat, 20 Nov 2021 20:38:08 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		LEFT JOIN `empresa_normas` en ON en.`nIdEmpresa`= i.`nIdEmpresa`
+		LEFT JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 141 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sat, 20 Nov 2021 20:38:40 +0000] succes 69: INSERT INTO inf_trabajadoressupervisados_det (`nIdInforme`,`nId_E_C_T`,`nId_emp_nor_obs`)
+			VALUES(141,69,117)
+			
+[Sat, 20 Nov 2021 20:38:40 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		LEFT JOIN `empresa_normas` en ON en.`nIdEmpresa`= i.`nIdEmpresa`
+		LEFT JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 141 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sat, 20 Nov 2021 20:38:45 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		LEFT JOIN `empresa_normas` en ON en.`nIdEmpresa`= i.`nIdEmpresa`
+		LEFT JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 141 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sat, 20 Nov 2021 20:38:54 +0000] succes 70: INSERT INTO inf_trabajadoressupervisados_det (`nIdInforme`,`nId_E_C_T`,`nId_emp_nor_obs`)
+			VALUES(141,70,1)
+			
+[Sat, 20 Nov 2021 20:38:54 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		LEFT JOIN `empresa_normas` en ON en.`nIdEmpresa`= i.`nIdEmpresa`
+		LEFT JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 141 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sat, 20 Nov 2021 20:39:10 +0000] succes 71: INSERT INTO inf_trabajadoressupervisados_det (`nIdInforme`,`nId_E_C_T`,`nId_emp_nor_obs`)
+			VALUES(141,71,1)
+			
+[Sat, 20 Nov 2021 20:39:10 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		LEFT JOIN `empresa_normas` en ON en.`nIdEmpresa`= i.`nIdEmpresa`
+		LEFT JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 141 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sat, 20 Nov 2021 20:39:23 +0000] succes 72: INSERT INTO inf_trabajadoressupervisados_det (`nIdInforme`,`nId_E_C_T`,`nId_emp_nor_obs`)
+			VALUES(141,72,1)
+			
+[Sat, 20 Nov 2021 20:39:23 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		LEFT JOIN `empresa_normas` en ON en.`nIdEmpresa`= i.`nIdEmpresa`
+		LEFT JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 141 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sat, 20 Nov 2021 20:39:35 +0000] succes 73: INSERT INTO inf_trabajadoressupervisados_det (`nIdInforme`,`nId_E_C_T`,`nId_emp_nor_obs`)
+			VALUES(141,26,1)
+			
+[Sat, 20 Nov 2021 20:39:35 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		LEFT JOIN `empresa_normas` en ON en.`nIdEmpresa`= i.`nIdEmpresa`
+		LEFT JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 141 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sat, 20 Nov 2021 20:39:49 +0000] succes 74: INSERT INTO inf_trabajadoressupervisados_det (`nIdInforme`,`nId_E_C_T`,`nId_emp_nor_obs`)
+			VALUES(141,74,1)
+			
+[Sat, 20 Nov 2021 20:39:49 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		LEFT JOIN `empresa_normas` en ON en.`nIdEmpresa`= i.`nIdEmpresa`
+		LEFT JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 141 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sat, 20 Nov 2021 20:40:02 +0000] succes 75: INSERT INTO inf_trabajadoressupervisados_det (`nIdInforme`,`nId_E_C_T`,`nId_emp_nor_obs`)
+			VALUES(141,75,1)
+			
+[Sat, 20 Nov 2021 20:40:02 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		LEFT JOIN `empresa_normas` en ON en.`nIdEmpresa`= i.`nIdEmpresa`
+		LEFT JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 141 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sat, 20 Nov 2021 20:40:19 +0000] succes 76: INSERT INTO inf_trabajadoressupervisados_det (`nIdInforme`,`nId_E_C_T`,`nId_emp_nor_obs`)
+			VALUES(141,30,1)
+			
+[Sat, 20 Nov 2021 20:40:19 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		LEFT JOIN `empresa_normas` en ON en.`nIdEmpresa`= i.`nIdEmpresa`
+		LEFT JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 141 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sat, 20 Nov 2021 20:40:31 +0000] succes 77: INSERT INTO inf_trabajadoressupervisados_det (`nIdInforme`,`nId_E_C_T`,`nId_emp_nor_obs`)
+			VALUES(141,31,1)
+			
+[Sat, 20 Nov 2021 20:40:31 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		LEFT JOIN `empresa_normas` en ON en.`nIdEmpresa`= i.`nIdEmpresa`
+		LEFT JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 141 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sat, 20 Nov 2021 20:40:43 +0000] succes 78: INSERT INTO inf_trabajadoressupervisados_det (`nIdInforme`,`nId_E_C_T`,`nId_emp_nor_obs`)
+			VALUES(141,78,1)
+			
+[Sat, 20 Nov 2021 20:40:43 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		LEFT JOIN `empresa_normas` en ON en.`nIdEmpresa`= i.`nIdEmpresa`
+		LEFT JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 141 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sat, 20 Nov 2021 20:40:52 +0000] succes 79: INSERT INTO inf_trabajadoressupervisados_det (`nIdInforme`,`nId_E_C_T`,`nId_emp_nor_obs`)
+			VALUES(141,79,1)
+			
+[Sat, 20 Nov 2021 20:40:52 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		LEFT JOIN `empresa_normas` en ON en.`nIdEmpresa`= i.`nIdEmpresa`
+		LEFT JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 141 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sat, 20 Nov 2021 20:41:07 +0000] succes 80: INSERT INTO inf_trabajadoressupervisados_det (`nIdInforme`,`nId_E_C_T`,`nId_emp_nor_obs`)
+			VALUES(141,80,1)
+			
+[Sat, 20 Nov 2021 20:41:07 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		LEFT JOIN `empresa_normas` en ON en.`nIdEmpresa`= i.`nIdEmpresa`
+		LEFT JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 141 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sat, 20 Nov 2021 20:41:22 +0000] succes 81: INSERT INTO inf_trabajadoressupervisados_det (`nIdInforme`,`nId_E_C_T`,`nId_emp_nor_obs`)
+			VALUES(141,81,1)
+			
+[Sat, 20 Nov 2021 20:41:22 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		LEFT JOIN `empresa_normas` en ON en.`nIdEmpresa`= i.`nIdEmpresa`
+		LEFT JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 141 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sat, 20 Nov 2021 20:41:24 +0000] succes 0: SELECT iv.`nId`, T.`cNombre`,tv.`cPlaca`, ENO.`cValor` FROM `informe` i
+		JOIN `inf_vehiculo_det` iv ON i.`nId`=iv.`nIdInforme`
+		JOIN `empresa_normas_observacion` ENO ON ENO.`nId`=iv.`nId_Emp_nor_obs`
+		JOIN `empresa_vehiculo` tv ON tv.`nIdEmpresa`=  i.nIdEmpresa AND iv.nIdEmp_Veh = tv.nId
+		JOIN `tipo_vehiculo` T ON T.`nId` =tv.`nTipoVehiculo`
+		WHERE iv.nIdInforme = 141 AND iv.nFlag = 0 AND IFNULL(tv.nFlag, 0) = 0
+[Sat, 20 Nov 2021 20:41:40 +0000] succes 24: INSERT INTO inf_vehiculo_det (`nIdInforme`,`nIdEmp_Veh`,`nId_Emp_nor_obs`)
+			VALUES(141,37,118)
+			
+[Sat, 20 Nov 2021 20:41:42 +0000] succes 0: SELECT iv.`nId`, T.`cNombre`,tv.`cPlaca`, ENO.`cValor` FROM `informe` i
+		JOIN `inf_vehiculo_det` iv ON i.`nId`=iv.`nIdInforme`
+		JOIN `empresa_normas_observacion` ENO ON ENO.`nId`=iv.`nId_Emp_nor_obs`
+		JOIN `empresa_vehiculo` tv ON tv.`nIdEmpresa`=  i.nIdEmpresa AND iv.nIdEmp_Veh = tv.nId
+		JOIN `tipo_vehiculo` T ON T.`nId` =tv.`nTipoVehiculo`
+		WHERE iv.nIdInforme = 141 AND iv.nFlag = 0 AND IFNULL(tv.nFlag, 0) = 0
+[Sat, 20 Nov 2021 20:42:20 +0000] succes 25: INSERT INTO inf_vehiculo_det (`nIdInforme`,`nIdEmp_Veh`,`nId_Emp_nor_obs`)
+			VALUES(141,35,71)
+			
+[Sat, 20 Nov 2021 20:42:20 +0000] succes 0: SELECT iv.`nId`, T.`cNombre`,tv.`cPlaca`, ENO.`cValor` FROM `informe` i
+		JOIN `inf_vehiculo_det` iv ON i.`nId`=iv.`nIdInforme`
+		JOIN `empresa_normas_observacion` ENO ON ENO.`nId`=iv.`nId_Emp_nor_obs`
+		JOIN `empresa_vehiculo` tv ON tv.`nIdEmpresa`=  i.nIdEmpresa AND iv.nIdEmp_Veh = tv.nId
+		JOIN `tipo_vehiculo` T ON T.`nId` =tv.`nTipoVehiculo`
+		WHERE iv.nIdInforme = 141 AND iv.nFlag = 0 AND IFNULL(tv.nFlag, 0) = 0
+[Sat, 20 Nov 2021 20:42:29 +0000] succes 26: INSERT INTO inf_vehiculo_det (`nIdInforme`,`nIdEmp_Veh`,`nId_Emp_nor_obs`)
+			VALUES(141,39,71)
+			
+[Sat, 20 Nov 2021 20:42:29 +0000] succes 0: SELECT iv.`nId`, T.`cNombre`,tv.`cPlaca`, ENO.`cValor` FROM `informe` i
+		JOIN `inf_vehiculo_det` iv ON i.`nId`=iv.`nIdInforme`
+		JOIN `empresa_normas_observacion` ENO ON ENO.`nId`=iv.`nId_Emp_nor_obs`
+		JOIN `empresa_vehiculo` tv ON tv.`nIdEmpresa`=  i.nIdEmpresa AND iv.nIdEmp_Veh = tv.nId
+		JOIN `tipo_vehiculo` T ON T.`nId` =tv.`nTipoVehiculo`
+		WHERE iv.nIdInforme = 141 AND iv.nFlag = 0 AND IFNULL(tv.nFlag, 0) = 0
+[Sat, 20 Nov 2021 20:42:47 +0000] succes 0: UPDATE `informe` SET crutaActa ='uploads/141/44.png' WHERE nid =141
+[Sat, 20 Nov 2021 20:42:47 +0000] succes 0: select * from informe  where nFlag=0 and nId=141
+[Sat, 20 Nov 2021 20:43:15 +0000] succes 0: call spt_sel_obtienedocumento (18)
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: select * from informe  where nFlag=0 and nId=141
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: select * from programa  where nFlag=0 and nId=1
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: SELECT * FROM empresa WHERE nId= 13 and nFlag = 0
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: SELECT c.nIdTarea, c.`nId`,c.`cCodigo`,c.`cNombre`,c.`nModelo`  FROM `informe` i
+		JOIN `cumplimiento` c ON c.`nIdTarea`= i.`nIdTarea`
+		WHERE i.NID=141 AND c.nFlag = 0
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: call stp_sel_resumen_informe(141)
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =400  AND cvalor NOT IN (400)
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=9
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: select * from uunn WHERE `nId` = 8 AND nFlag=0
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: select * from supervision where nId = 1 AND nFlag=0
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: SELECT p.nId,p.cDoi,p.cNombres,p.cApellidos,p.cUsuario FROM `responsable`res 
+		JOIN persona p on p.nId=res.nIdPersona where res.nId = '61'
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		LEFT JOIN `empresa_normas` en ON en.`nIdEmpresa`= i.`nIdEmpresa`
+		LEFT JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 141 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: SELECT iv.`nId`, T.`cNombre`,tv.`cPlaca`, ENO.`cValor` FROM `informe` i
+		JOIN `inf_vehiculo_det` iv ON i.`nId`=iv.`nIdInforme`
+		JOIN `empresa_normas_observacion` ENO ON ENO.`nId`=iv.`nId_Emp_nor_obs`
+		JOIN `empresa_vehiculo` tv ON tv.`nIdEmpresa`=  i.nIdEmpresa AND iv.nIdEmp_Veh = tv.nId
+		JOIN `tipo_vehiculo` T ON T.`nId` =tv.`nTipoVehiculo`
+		WHERE iv.nIdInforme = 141 AND iv.nFlag = 0 AND IFNULL(tv.nFlag, 0) = 0
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 1
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=2
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 2
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=3
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 3
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=4
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 4
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=5
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 5
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=6
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 6
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=7
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=141 AND i.`nIdCumplimiento`=8
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:43:21 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 141 and nIdCumplimiento= 8
+[Sat, 20 Nov 2021 20:43:25 +0000] succes 0: CALL stp_sel_resumen_informe2 (141);
+[Sat, 20 Nov 2021 20:45:13 +0000] succes 0: call spt_sel_obtienedocumento (18)
+[Sat, 20 Nov 2021 20:50:27 +0000] succes 0: select * from empresa  where nTipo=1
+[Sat, 20 Nov 2021 20:50:27 +0000] succes 0: select * from empresa  where nTipo=0
+[Sat, 20 Nov 2021 20:50:27 +0000] succes 0: select * from tipo_documento  where nFlag=0
+[Sat, 20 Nov 2021 20:50:27 +0000] succes 0: select * from tarea  where nFlag=0
+[Sat, 20 Nov 2021 20:50:27 +0000] succes 0: select * from uunn  where nFlag=0
+[Sat, 20 Nov 2021 20:50:27 +0000] succes 0: select * from programa  where nFlag=0
+[Sat, 20 Nov 2021 20:50:27 +0000] succes 0: select * from supervision  where nFlag=0
+[Sat, 20 Nov 2021 20:50:28 +0000] succes 0: SELECT r.`nId`,p.`cNombres`,p.`cApellidos` FROM responsable r
+	JOIN persona p ON p.`nId` = r.`nIdPersona`
+	JOIN empresa e ON e.`nId`=r.`nIdEmpresa` 
+	WHERE e.nId = 0
+	/*WHERE e.`nTipo`=1*/
+[Sat, 20 Nov 2021 20:50:28 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 0 
+[Sat, 20 Nov 2021 20:50:41 +0000] succes 0: call spt_sel_obtienedocumento (18)
+[Sat, 20 Nov 2021 20:50:43 +0000] succes 0: select * from empresa  where nTipo=1
+[Sat, 20 Nov 2021 20:50:43 +0000] succes 0: select * from empresa  where nTipo=0
+[Sat, 20 Nov 2021 20:50:43 +0000] succes 0: select * from tipo_documento  where nFlag=0
+[Sat, 20 Nov 2021 20:50:43 +0000] succes 0: select * from tarea  where nFlag=0
+[Sat, 20 Nov 2021 20:50:43 +0000] succes 0: select * from uunn  where nFlag=0
+[Sat, 20 Nov 2021 20:50:43 +0000] succes 0: select * from programa  where nFlag=0
+[Sat, 20 Nov 2021 20:50:43 +0000] succes 0: select * from supervision  where nFlag=0
+[Sat, 20 Nov 2021 20:50:43 +0000] succes 0: SELECT r.`nId`,p.`cNombres`,p.`cApellidos` FROM responsable r
+	JOIN persona p ON p.`nId` = r.`nIdPersona`
+	JOIN empresa e ON e.`nId`=r.`nIdEmpresa` 
+	WHERE e.nId = 0
+	/*WHERE e.`nTipo`=1*/
+[Sat, 20 Nov 2021 20:50:44 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 0 
+[Sat, 20 Nov 2021 20:50:50 +0000] succes 0: select * from programa  where nFlag=0 and nId=1
+[Sat, 20 Nov 2021 20:51:29 +0000] succes 17: INSERT INTO empresa(`cNombre`, `cRazonSocial`, `nFlag`, `nTipo`) 
+				VALUES('JASA CONTRATISTAS Y SERVICIOS ', 'JASA CONTRATISTAS Y SERVICIOS ', 0, 0)
+[Sat, 20 Nov 2021 20:51:30 +0000] succes 0: select * from empresa  where nTipo=0
+[Sat, 20 Nov 2021 20:51:36 +0000] succes 0: SELECT r.`nId`,p.`cNombres`,p.`cApellidos` FROM responsable r
+	JOIN persona p ON p.`nId` = r.`nIdPersona`
+	JOIN empresa e ON e.`nId`=r.`nIdEmpresa` 
+	WHERE e.nId = 17
+	/*WHERE e.`nTipo`=1*/
+[Sat, 20 Nov 2021 20:51:36 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 17 
+[Sat, 20 Nov 2021 20:52:39 +0000] succes 0: select * from persona  where cDoi="12345678"
+[Sat, 20 Nov 2021 20:52:39 +0000] succes 0: call stp_ins_responsable(
+		"12345678",
+		"JUAN CARLOS",
+		"ARICOCHE SAAVEDRA",
+		"17");
+[Sat, 20 Nov 2021 20:52:39 +0000] succes 0: SELECT r.`nId`,p.`cNombres`,p.`cApellidos` FROM responsable r
+	JOIN persona p ON p.`nId` = r.`nIdPersona`
+	JOIN empresa e ON e.`nId`=r.`nIdEmpresa` 
+	WHERE e.nId = 17
+	/*WHERE e.`nTipo`=1*/
+[Sat, 20 Nov 2021 20:52:51 +0000] succes 78: insert into empresa_cargo (nIdEmpresa,cCargo) values (17,'TECNICO');
+[Sat, 20 Nov 2021 20:52:52 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 17 
+[Sat, 20 Nov 2021 20:53:05 +0000] succes 79: insert into empresa_cargo (nIdEmpresa,cCargo) values (17,'TECNICO');
+[Sat, 20 Nov 2021 20:53:05 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 17 
+[Sat, 20 Nov 2021 20:55:13 +0000] succes 0: call spt_ins_documento(
+		"18",
+		"1",
+		"1",
+		"1",
+		"17",
+		"8",
+		"78",
+		"119",
+		"4",
+		"APERTURA, SOLDADO, PINTADO Y CODIFICADO DE TAPA DE MEDIDOR.",
+		"CONTRATACIÓN DEL SERVICIO DE ACTIVIDADES COMPLEMENTARIAS AL CONTRASTE Y/O VERIFICACIÓN DE MEDIDORES DE ENERGÍA ELÉCTRICA EN EL ÁREA DE CONCESIÓN DE ELECTRONORTE S.A - UNIDADES DE NEGOCIO CHICLAYO Y UNIDAD DE NEGOCIO SUCURSALES",
+		"TUPAC AMARUC MZ 36 – LTE. 09 – CHOSICA DEL NORTE.",
+		"COMERCIAL",
+		"2021-11-13",
+		"2006",
+		"ENSA")
+[Sat, 20 Nov 2021 20:55:15 +0000] succes 0: select * from informe  where nFlag=0 and nId=143
+[Sat, 20 Nov 2021 20:55:15 +0000] succes 0: select * from tarea  where nFlag=0 and nId=1
+[Sat, 20 Nov 2021 20:55:15 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 20:55:15 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =100  AND cvalor NOT IN (100)
+[Sat, 20 Nov 2021 20:55:15 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)
+[Sat, 20 Nov 2021 20:55:15 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nId NOT IN (1) and nOrden >0
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 20:55:15 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=143 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:55:15 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		 and nOrden < 0 
+		ORDER BY norden desc LIMIT 0,1
+[Sat, 20 Nov 2021 20:55:32 +0000] succes 0: call spt_ins_documento_detalle(
+		"143",
+		"1",
+		"1",
+		"0",
+		"PERSONAL OPERATIVO TIENE IMPLEMENTOS DE PROTECCIÓN PERSONAL: ROPA DE TRABAJO, CALZADO DE SEGURIDAD, CASCO DIELÉCTRICO CON BARBIQUEJO, LENTES, PROTECCIÓN BUCONASAL, PROTECCIÓN FACIAL, GUANTES DIELÉCTRICOS BT, SOBREGUANTE, IMPLEMENTOS PARA TRABAJOS DE SOLDADURA Y FOTOCHECK DE IDENTIFICACIÓN")
+[Sat, 20 Nov 2021 20:55:32 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=143 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:55:42 +0000] succes 0: call spt_ins_documento_detalle(
+		"143",
+		"1",
+		"1",
+		"0",
+		"PERSONAL OPERATIVO CUENTA CON HERRAMIENTAS MANUALES, CAJA PORTAHERRAMIENTAS Y HERRAMIENTAS PARA TRABAJOS OPERATIVOS EN CAMPO: ALICATES, DESTORNILLADORES, MÁQUINA DE SOLDAR, AMOLADORAS, COMBA Y CINCEL.")
+[Sat, 20 Nov 2021 20:55:42 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=143 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:55:46 +0000] succes 0: call spt_ins_documento_detalle(
+		"143",
+		"1",
+		"1",
+		"0",
+		"PERSONAL OPERATIVO CUENTA CON HERRAMIENTAS MANUALES, CAJA PORTAHERRAMIENTAS Y HERRAMIENTAS PARA TRABAJOS OPERATIVOS EN CAMPO: ALICATES, DESTORNILLADORES, MÁQUINA DE SOLDAR, AMOLADORAS, COMBA Y CINCEL.")
+[Sat, 20 Nov 2021 20:55:46 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=143 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:56:04 +0000] succes 0: UPDATE inf_cumplimiento_des SET `nFlag` = 1 WHERE `nId` = 672
+[Sat, 20 Nov 2021 20:56:04 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=143 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:56:18 +0000] succes 0: call spt_ins_documento_detalle(
+		"143",
+		"1",
+		"1",
+		"0",
+		"PERSONAL OPERATIVO, CUENTA CON MANDIL DE CUERO, CARETA Y MANGAS DE CUERO, EN EL DESARROLLO DE LABORES COMPLEMENTARIAS DE SOLDADURA.")
+[Sat, 20 Nov 2021 20:56:18 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=143 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 20:56:47 +0000] succes 0: call spt_ins_documento_detalle(
+		"143",
+		"1",
+		"2",
+		"51",
+		"PERSONAL OPERATIVO JUAN CARLOS ARICOCHE SAAVEDRA, NO USA MANDIL DE CUERO, MANGAS DE CUERO, ESCARPINES Y GUANTES DE SOLDAR, ASÍ MISMO NO UTILIZA ADECUADAMENTE LA CARETA DE SOLDAR. CONDUCTOR FREDY JUAN CARLOS MENOR MONTENEGRO, NO USA CASCO EN EL DESARROLLO DE SUS ACTIVIDADES DE CAMPO   INCUMPLIMIENTO A LOS PROCEDIMIENTOS DE ELECTRONORTE S.A. – ART. 25 J, 54 A, Y 102 DEL RESESATE 2013. REGLA 411.B DEL CNE- SUMINISTRO 2011. ART. 60 LEY 29783. ")
+[Sat, 20 Nov 2021 20:56:47 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=143 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0

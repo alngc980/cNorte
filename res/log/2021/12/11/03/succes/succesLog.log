@@ -1,0 +1,31 @@
+[Sat, 11 Dec 2021 03:21:46 +0000] succes 0: select * from persona  where cDoi="40980455"
+[Sat, 11 Dec 2021 03:21:50 +0000] succes 0: call spt_sel_all_User('17')
+[Sat, 11 Dec 2021 03:21:51 +0000] succes 0: call spt_sel_all_User('17')
+[Sat, 11 Dec 2021 03:21:52 +0000] succes 0: call spt_sel_obtienedocumento (17)
+[Sat, 11 Dec 2021 03:21:54 +0000] succes 0: call spt_sel_obtienedocumento (17)
+[Sat, 11 Dec 2021 03:21:55 +0000] succes 0: select * from empresa where nFlag = 0
+[Sat, 11 Dec 2021 03:21:55 +0000] succes 0: select * from supervision  where nFlag=0
+[Sat, 11 Dec 2021 03:21:55 +0000] succes 0: select * from uunn  where nFlag=0
+[Sat, 11 Dec 2021 03:21:55 +0000] succes 0: select * from empresa where nFlag = 0
+[Sat, 11 Dec 2021 03:21:55 +0000] succes 0: SELECT `nId`, `cDoi`, `cNombres`, `cApellidos` FROM persona WHERE `nEstado` = 1
+[Sat, 11 Dec 2021 03:21:55 +0000] succes 0: SELECT e.cNombre, p.cNombres, p.cApellidos, p.cDoi, ec.cCargo
+		FROM `empresa_cargo_trabajador` et
+		INNER JOIN `persona` p ON et.nIdPersona = p.nId
+		INNER JOIN `empresa_cargo` ec ON et.nIdEmpresa_Cargo = ec.nId
+		INNER JOIN `empresa` e ON ec.nIdEmpresa = e.nId
+		WHERE et.nFlag = 0
+[Sat, 11 Dec 2021 03:21:56 +0000] succes 0: SELECT ec.`nId`, e.`cNombre`, ec.`cCargo` FROM empresa e
+		INNER JOIN empresa_cargo ec ON e.`nId`= ec.`nIdEmpresa`
+		WHERE e.`nId` = 1 and ec.`nFlag` = 0
+[Sat, 11 Dec 2021 03:21:57 +0000] succes 0: select * from empresa where nFlag = 0
+[Sat, 11 Dec 2021 03:21:57 +0000] succes 0: select * from tipo_vehiculo  where nFlag=0
+[Sat, 11 Dec 2021 03:21:57 +0000] succes 0: SELECT ev.`nId`,  e.`cNombre` empresa,tv.`cNombre` tipo, ev.`cPlaca`  FROM `empresa` e
+		JOIN `empresa_vehiculo` ev ON e.`nId`=ev.`nIdEmpresa` AND ev.`nFlag` = 0
+		JOIN `tipo_vehiculo` tv ON tv.`nId`=ev.`nTipoVehiculo`
+[Sat, 11 Dec 2021 03:21:58 +0000] succes 0: select * from empresa where nFlag = 0
+[Sat, 11 Dec 2021 03:21:58 +0000] succes 0: select * from empresa_normas  where nFlag=0
+[Sat, 11 Dec 2021 03:21:59 +0000] succes 0: SELECT o.`nId`, n.`cDescripcion` control,o.`cValor`,o.`cObservacion` FROM  `empresa_normas` n
+		JOIN empresa_normas_observacion o ON n.`nId`=o.`nId_empresa_norma`
+		AND o.nFlag = 0
+[Sat, 11 Dec 2021 03:21:59 +0000] succes 0: SELECT nId,cDoi,cNombres,cApellidos,cUsuario FROM persona WHERE nId = '17'
+[Sat, 11 Dec 2021 03:44:03 +0000] succes 0: SELECT nId,cDoi,cNombres,cApellidos,cUsuario FROM persona WHERE nId = '17'

@@ -1,0 +1,5 @@
+<body><h1>Registro Exitoso</h1>
+      <p>Ahora debes activar tu cuenta en el siguiente link:</p>
+      <p><a href='http://youhost/app/index.php?r=index/processactivation&e=446d15754b3e2cd4d151970a53839358ac1c0674&c=313b0d0cf51ded5f6cb6270ed121b4bf0a29813e'>Activa tu cuenta:</a></p>
+      <p>O tambien puedes usar el siguiente codigo de activacion: 8hi6xp</p>
+      </body>

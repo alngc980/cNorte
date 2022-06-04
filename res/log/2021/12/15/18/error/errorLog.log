@@ -1,0 +1,12 @@
+[***INICIO: 2 ***]
+[15/12/21 18:20 pm] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[15/12/21 18:20 pm] [2. LIN] : 20
+[15/12/21 18:20 pm] [3. DES] : A non-numeric value encountered
+[15/12/21 18:20 pm] [4. CON] : {"sql":"select * from persona  where cDoi=\"40980455\"","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[15/12/21 18:20 pm] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[15/12/21 18:20 pm] [2. LIN] : 20
+[15/12/21 18:20 pm] [3. DES] : A non-numeric value encountered
+[15/12/21 18:20 pm] [4. CON] : {"sql":"call spt_sel_all_User('17')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]

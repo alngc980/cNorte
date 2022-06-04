@@ -1,0 +1,74 @@
+[Tue, 16 Nov 2021 05:27:49 +0000] succes 0: call spt_sel_obtienedocumento (3)
+[Tue, 16 Nov 2021 05:28:34 +0000] succes 0: call spt_sel_obtienedocumento (3)
+[Tue, 16 Nov 2021 05:28:59 +0000] succes 0: call spt_sel_obtienedocumento (3)
+[Tue, 16 Nov 2021 05:39:42 +0000] succes 0: select * from persona  where cDoi="70885762"
+[Tue, 16 Nov 2021 05:39:46 +0000] succes 0: call spt_sel_all_User('1')
+[Tue, 16 Nov 2021 05:39:48 +0000] succes 0: call spt_sel_obtienedocumento (1)
+[Tue, 16 Nov 2021 05:39:50 +0000] succes 0: call spt_sel_obtienedocumento (1)
+[Tue, 16 Nov 2021 05:39:50 +0000] succes 0: call spt_sel_obtienedocumento (1)
+[Tue, 16 Nov 2021 05:40:04 +0000] succes 0: select * from empresa where nFlag = 0
+[Tue, 16 Nov 2021 05:40:04 +0000] succes 0: select * from supervision  where nFlag=0
+[Tue, 16 Nov 2021 05:40:04 +0000] succes 0: select * from uunn  where nFlag=0
+[Tue, 16 Nov 2021 05:40:06 +0000] succes 0: call spt_sel_obtienedocumento (1)
+[Tue, 16 Nov 2021 05:40:08 +0000] succes 0: call spt_sel_obtienedocumento (1)
+[Tue, 16 Nov 2021 05:40:08 +0000] succes 0: call spt_sel_obtienedocumento (1)
+[Tue, 16 Nov 2021 05:40:10 +0000] succes 0: call spt_sel_all_User('1')
+[Tue, 16 Nov 2021 05:40:11 +0000] succes 0: call spt_sel_all_User('1')
+[Tue, 16 Nov 2021 05:40:12 +0000] succes 0: call spt_sel_all_User('1')
+[Tue, 16 Nov 2021 05:40:14 +0000] succes 0: call spt_sel_all_User('1')
+[Tue, 16 Nov 2021 05:40:15 +0000] succes 0: call spt_sel_obtienedocumento (1)
+[Tue, 16 Nov 2021 05:40:21 +0000] succes 0: call spt_sel_obtienedocumento (1)
+[Tue, 16 Nov 2021 05:40:25 +0000] succes 0: select * from empresa where nFlag = 0
+[Tue, 16 Nov 2021 05:40:25 +0000] succes 0: select * from supervision  where nFlag=0
+[Tue, 16 Nov 2021 05:40:25 +0000] succes 0: select * from uunn  where nFlag=0
+[Tue, 16 Nov 2021 05:40:28 +0000] succes 0: select * from empresa where nFlag = 0
+[Tue, 16 Nov 2021 05:40:28 +0000] succes 0: SELECT `nId`, `cDoi`, `cNombres`, `cApellidos` FROM persona WHERE `nEstado` = 1
+[Tue, 16 Nov 2021 05:40:28 +0000] succes 0: SELECT e.cNombre, p.cNombres, p.cApellidos, p.cDoi, ec.cCargo
+		FROM `empresa_cargo_trabajador` et
+		INNER JOIN `persona` p ON et.nIdPersona = p.nId
+		INNER JOIN `empresa_cargo` ec ON et.nIdEmpresa_Cargo = ec.nId
+		INNER JOIN `empresa` e ON ec.nIdEmpresa = e.nId
+		WHERE et.nFlag = 0
+[Tue, 16 Nov 2021 05:40:28 +0000] succes 0: SELECT ec.`nId`, e.`cNombre`, ec.`cCargo` FROM empresa e
+		INNER JOIN empresa_cargo ec ON e.`nId`= ec.`nIdEmpresa`
+		WHERE e.`nId` = 1 and ec.`nFlag` = 0
+[Tue, 16 Nov 2021 05:40:30 +0000] succes 0: select * from empresa where nFlag = 0
+[Tue, 16 Nov 2021 05:40:30 +0000] succes 0: select * from supervision  where nFlag=0
+[Tue, 16 Nov 2021 05:40:30 +0000] succes 0: select * from uunn  where nFlag=0
+[Tue, 16 Nov 2021 05:40:31 +0000] succes 0: select * from empresa where nFlag = 0
+[Tue, 16 Nov 2021 05:40:31 +0000] succes 0: select * from supervision  where nFlag=0
+[Tue, 16 Nov 2021 05:40:31 +0000] succes 0: select * from uunn  where nFlag=0
+[Tue, 16 Nov 2021 05:40:32 +0000] succes 0: call spt_sel_obtienedocumento (1)
+[Tue, 16 Nov 2021 05:40:58 +0000] succes 0: call spt_sel_obtienedocumento (1)
+[Tue, 16 Nov 2021 05:40:59 +0000] succes 0: call spt_sel_obtienedocumento (1)
+[Tue, 16 Nov 2021 05:40:59 +0000] succes 0: call spt_sel_obtienedocumento (1)
+[Tue, 16 Nov 2021 05:40:59 +0000] succes 0: call spt_sel_obtienedocumento (1)
+[Tue, 16 Nov 2021 05:41:00 +0000] succes 0: call spt_sel_obtienedocumento (1)
+[Tue, 16 Nov 2021 05:41:00 +0000] succes 0: call spt_sel_obtienedocumento (1)
+[Tue, 16 Nov 2021 05:41:00 +0000] succes 0: call spt_sel_obtienedocumento (1)
+[Tue, 16 Nov 2021 05:41:01 +0000] succes 0: call spt_sel_obtienedocumento (1)
+[Tue, 16 Nov 2021 05:41:10 +0000] succes 0: call spt_sel_obtienedocumento (1)
+[Tue, 16 Nov 2021 05:41:33 +0000] succes 0: call spt_sel_obtienedocumento (1)
+[Tue, 16 Nov 2021 05:41:51 +0000] succes 0: call spt_sel_obtienedocumento (1)
+[Tue, 16 Nov 2021 05:43:15 +0000] succes 0: select * from persona  where cDoi="71856984"
+[Tue, 16 Nov 2021 05:43:21 +0000] succes 0: call spt_sel_all_User('3')
+[Tue, 16 Nov 2021 05:43:24 +0000] succes 0: call spt_sel_obtienedocumento (3)
+[Tue, 16 Nov 2021 05:43:30 +0000] succes 0: select * from informe  where nFlag=0 and nId=121
+[Tue, 16 Nov 2021 05:43:30 +0000] succes 0: select * from tarea  where nFlag=0 and nId=1
+[Tue, 16 Nov 2021 05:43:30 +0000] succes 0: select * from tipo_vehiculo  where nFlag=0
+[Tue, 16 Nov 2021 05:43:30 +0000] succes 0: SELECT c.nIdTarea, c.`nId`,c.`cCodigo`,c.`cNombre`,c.`nModelo`  FROM `informe` i
+		JOIN `cumplimiento` c ON c.`nIdTarea`= i.`nIdTarea`
+		WHERE i.NID=121 AND c.nFlag = 0
+[Tue, 16 Nov 2021 05:43:30 +0000] succes 0: SELECT CONCAT(p.`cApellidos`, ' ',p.`cNombres`)'Descripcion',ec.`nIdEmpresa`,ect.`nId`, ec.`nId` nIdCargo, ec.`cCargo` FROM  
+		`empresa_cargo_trabajador` ect
+		JOIN `empresa_cargo` ec ON ec.`nId`=ect.`nIdEmpresa_Cargo`
+		JOIN `persona` p ON p.`nId`=ect.`nIdPersona`
+		WHERE ec.nIdEmpresa = 8
+		
+[Tue, 16 Nov 2021 05:43:30 +0000] succes 0: SELECT eno.`nId`, CONCAT("(",eno.`cValor`,")",en.`cDescripcion`," / ", eno.`cObservacion`) cDescripcion,en.nTipo FROM `empresa_normas` en
+			JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.nid
+		
+[Tue, 16 Nov 2021 05:43:30 +0000] succes 0: SELECT e.`nId`, CONCAT(cPlaca,' / ',cNombre) cDescripcion FROM `empresa_vehiculo` e
+		JOIN `tipo_vehiculo` t ON e.`nTipoVehiculo`=t.`nId`
+		WHERE e.nIdEmpresa = 8 AND IFNULL(e.nFlag, 0) = 0
+[Tue, 16 Nov 2021 05:43:30 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)

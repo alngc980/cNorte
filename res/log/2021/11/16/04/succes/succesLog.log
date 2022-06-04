@@ -1,0 +1,22 @@
+[Tue, 16 Nov 2021 04:57:46 +0000] succes 0: select * from persona  where cDoi="70885762"
+[Tue, 16 Nov 2021 04:57:51 +0000] succes 0: call spt_sel_all_User('1')
+[Tue, 16 Nov 2021 04:58:06 +0000] succes 0: call spt_sel_obtienedocumento
+[Tue, 16 Nov 2021 04:58:15 +0000] succes 0: select * from informe  where nFlag=0 and nId=121
+[Tue, 16 Nov 2021 04:58:15 +0000] succes 0: select * from tarea  where nFlag=0 and nId=1
+[Tue, 16 Nov 2021 04:58:15 +0000] succes 0: select * from tipo_vehiculo  where nFlag=0
+[Tue, 16 Nov 2021 04:58:15 +0000] succes 0: SELECT c.nIdTarea, c.`nId`,c.`cCodigo`,c.`cNombre`,c.`nModelo`  FROM `informe` i
+		JOIN `cumplimiento` c ON c.`nIdTarea`= i.`nIdTarea`
+		WHERE i.NID=121 AND c.nFlag = 0
+[Tue, 16 Nov 2021 04:58:15 +0000] succes 0: SELECT CONCAT(p.`cApellidos`, ' ',p.`cNombres`)'Descripcion',ec.`nIdEmpresa`,ect.`nId`, ec.`nId` nIdCargo, ec.`cCargo` FROM  
+		`empresa_cargo_trabajador` ect
+		JOIN `empresa_cargo` ec ON ec.`nId`=ect.`nIdEmpresa_Cargo`
+		JOIN `persona` p ON p.`nId`=ect.`nIdPersona`
+		WHERE ec.nIdEmpresa = 8
+		
+[Tue, 16 Nov 2021 04:58:15 +0000] succes 0: SELECT eno.`nId`, CONCAT("(",eno.`cValor`,")",en.`cDescripcion`," / ", eno.`cObservacion`) cDescripcion,en.nTipo FROM `empresa_normas` en
+			JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.nid
+		
+[Tue, 16 Nov 2021 04:58:15 +0000] succes 0: SELECT e.`nId`, CONCAT(cPlaca,' / ',cNombre) cDescripcion FROM `empresa_vehiculo` e
+		JOIN `tipo_vehiculo` t ON e.`nTipoVehiculo`=t.`nId`
+		WHERE e.nIdEmpresa = 8 AND IFNULL(e.nFlag, 0) = 0
+[Tue, 16 Nov 2021 04:58:15 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)

@@ -1,0 +1,42 @@
+[***INICIO: 1 ***]
+[18/12/21 05:51 am] [1. FIC] :user Controller
+[18/12/21 05:51 am] [2. LIN] : 1218
+[18/12/21 05:51 am] [3. DES] : verifcasesion
+[18/12/21 05:51 am] [4. CON] : ""
+[***FIN***]
+[***INICIO: 2 ***]
+[18/12/21 05:51 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[18/12/21 05:51 am] [2. LIN] : 20
+[18/12/21 05:51 am] [3. DES] : A non-numeric value encountered
+[18/12/21 05:51 am] [4. CON] : {"sql":"select * from informe  where nFlag=0 and nId=130","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[18/12/21 05:51 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[18/12/21 05:51 am] [2. LIN] : 20
+[18/12/21 05:51 am] [3. DES] : A non-numeric value encountered
+[18/12/21 05:51 am] [4. CON] : {"sql":"select * from tarea  where nFlag=0 and nId=2","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[18/12/21 05:51 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[18/12/21 05:51 am] [2. LIN] : 20
+[18/12/21 05:51 am] [3. DES] : A non-numeric value encountered
+[18/12/21 05:51 am] [4. CON] : {"sql":"select * from tipo_vehiculo  where nFlag=0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[18/12/21 05:51 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[18/12/21 05:51 am] [2. LIN] : 20
+[18/12/21 05:51 am] [3. DES] : A non-numeric value encountered
+[18/12/21 05:51 am] [4. CON] : {"sql":"SELECT c.nIdTarea, c.`nId`,c.`cCodigo`,c.`cNombre`,c.`nModelo`  FROM `informe` i\n\t\tJOIN `cumplimiento` c ON c.`nIdTarea`= i.`nIdTarea`\n\t\tWHERE i.nId=130 AND c.nFlag = 0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[18/12/21 05:51 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[18/12/21 05:51 am] [2. LIN] : 20
+[18/12/21 05:51 am] [3. DES] : A non-numeric value encountered
+[18/12/21 05:51 am] [4. CON] : {"sql":"SELECT CONCAT(p.`cApellidos`, ' ',p.`cNombres`)'Descripcion',ec.`nIdEmpresa`,ect.`nId`, ec.`nId` nIdCargo, ec.`cCargo` FROM  \n\t\t`empresa_cargo_trabajador` ect\n\t\tJOIN `empresa_cargo` ec ON ec.`nId`=ect.`nIdEmpresa_Cargo`\n\t\tJOIN `persona` p ON p.`nId`=ect.`nIdPersona`\n\t\tWHERE ec.nIdEmpresa = 8\n\t\t","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[18/12/21 05:51 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[18/12/21 05:51 am] [2. LIN] : 20
+[18/12/21 05:51 am] [3. DES] : A non-numeric value encountered
+[18/12/21 05:51 am] [4. CON] : {"sql":"SELECT eno.`nId`, CONCAT(\"(\",eno.`cValor`,\")\",en.`cDescripcion`,\" \/ \", eno.`cObservacion`) cDescripcion,en.nTipo FROM `empresa_normas` en\n\t\t\tJOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.nid and eno.`nId`=117\n\t\t\tUNION ALL\n\t\t\tSELECT eno.`nId`, CONCAT(\"(\",eno.`cValor`,\")\",en.`cDescripcion`,\" \/ \", eno.`cObservacion`) cDescripcion,en.nTipo FROM `empresa_normas` en\n\t\t\tJOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.nid and eno.`nId`=118\n\t\t\tUNION ALL\n\t\t\tSELECT eno.`nId`, CONCAT(\"(\",eno.`cValor`,\")\",en.`cDescripcion`,\" \/ \", eno.`cObservacion`) cDescripcion,en.nTipo FROM `empresa_normas` en\n\t\t\tJOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.nid\n\t\t","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]

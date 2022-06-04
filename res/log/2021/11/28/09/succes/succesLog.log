@@ -1,0 +1,1385 @@
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: select * from informe  where nFlag=0 and nId=137
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 137 and nIdCumplimiento= 21
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: select * from programa  where nFlag=0 and nId=1
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: SELECT * FROM empresa WHERE nId= 12 and nFlag = 0
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: SELECT c.nIdTarea, c.`nId`,c.`cCodigo`,c.`cNombre`,c.`nModelo`  FROM `informe` i
+		JOIN `cumplimiento` c ON c.`nIdTarea`= i.`nIdTarea`
+		WHERE i.NID=137 AND c.nFlag = 0
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: call stp_sel_resumen_informe(137)
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =400  AND cvalor NOT IN (400)
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=137 AND i.`nIdCumplimiento`=9
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: select * from uunn WHERE `nId` = 7 AND nFlag=0
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: select * from supervision where nId = 4 AND nFlag=0
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: SELECT p.nId,p.cDoi,p.cNombres,p.cApellidos,p.cUsuario FROM `responsable`res 
+		JOIN persona p on p.nId=res.nIdPersona where res.nId = '44'
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		INNER JOIN `empresa_normas` en ON en.`nIdEmpresa`= en.`nIdEmpresa`
+		INNER JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 137 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: SELECT iv.`nId`, T.`cNombre`,tv.`cPlaca`, ENO.`cValor` FROM `informe` i
+		JOIN `inf_vehiculo_det` iv ON i.`nId`=iv.`nIdInforme`
+		JOIN `empresa_normas_observacion` ENO ON ENO.`nId`=iv.`nId_Emp_nor_obs`
+		JOIN `empresa_vehiculo` tv ON tv.`nIdEmpresa`=  i.nIdEmpresa AND iv.nIdEmp_Veh = tv.nId
+		JOIN `tipo_vehiculo` T ON T.`nId` =tv.`nTipoVehiculo`
+		WHERE iv.nIdInforme = 137 AND iv.nFlag = 0 AND IFNULL(tv.nFlag, 0) = 0
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=137 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 137 and nIdCumplimiento= 1
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=137 AND i.`nIdCumplimiento`=2
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 137 and nIdCumplimiento= 2
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=137 AND i.`nIdCumplimiento`=3
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 137 and nIdCumplimiento= 3
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=137 AND i.`nIdCumplimiento`=4
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 137 and nIdCumplimiento= 4
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=137 AND i.`nIdCumplimiento`=5
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 137 and nIdCumplimiento= 5
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=137 AND i.`nIdCumplimiento`=6
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 137 and nIdCumplimiento= 6
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=137 AND i.`nIdCumplimiento`=7
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=137 AND i.`nIdCumplimiento`=8
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 137 and nIdCumplimiento= 8
+[Sun, 28 Nov 2021 09:17:39 +0000] succes 0: CALL stp_sel_resumen_informe2 (137);
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: select * from informe  where nFlag=0 and nId=137
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 137 and nIdCumplimiento= 21
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: select * from programa  where nFlag=0 and nId=1
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: SELECT * FROM empresa WHERE nId= 12 and nFlag = 0
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: SELECT c.nIdTarea, c.`nId`,c.`cCodigo`,c.`cNombre`,c.`nModelo`  FROM `informe` i
+		JOIN `cumplimiento` c ON c.`nIdTarea`= i.`nIdTarea`
+		WHERE i.NID=137 AND c.nFlag = 0
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: call stp_sel_resumen_informe(137)
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =400  AND cvalor NOT IN (400)
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=137 AND i.`nIdCumplimiento`=9
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: select * from uunn WHERE `nId` = 7 AND nFlag=0
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: select * from supervision where nId = 4 AND nFlag=0
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: SELECT p.nId,p.cDoi,p.cNombres,p.cApellidos,p.cUsuario FROM `responsable`res 
+		JOIN persona p on p.nId=res.nIdPersona where res.nId = '44'
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		INNER JOIN `empresa_normas` en ON en.`nIdEmpresa`= en.`nIdEmpresa`
+		INNER JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 137 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: SELECT iv.`nId`, T.`cNombre`,tv.`cPlaca`, ENO.`cValor` FROM `informe` i
+		JOIN `inf_vehiculo_det` iv ON i.`nId`=iv.`nIdInforme`
+		JOIN `empresa_normas_observacion` ENO ON ENO.`nId`=iv.`nId_Emp_nor_obs`
+		JOIN `empresa_vehiculo` tv ON tv.`nIdEmpresa`=  i.nIdEmpresa AND iv.nIdEmp_Veh = tv.nId
+		JOIN `tipo_vehiculo` T ON T.`nId` =tv.`nTipoVehiculo`
+		WHERE iv.nIdInforme = 137 AND iv.nFlag = 0 AND IFNULL(tv.nFlag, 0) = 0
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=137 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 137 and nIdCumplimiento= 1
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=137 AND i.`nIdCumplimiento`=2
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 137 and nIdCumplimiento= 2
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=137 AND i.`nIdCumplimiento`=3
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 137 and nIdCumplimiento= 3
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=137 AND i.`nIdCumplimiento`=4
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 137 and nIdCumplimiento= 4
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=137 AND i.`nIdCumplimiento`=5
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 137 and nIdCumplimiento= 5
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=137 AND i.`nIdCumplimiento`=6
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 137 and nIdCumplimiento= 6
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=137 AND i.`nIdCumplimiento`=7
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=137 AND i.`nIdCumplimiento`=8
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:17:51 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 137 and nIdCumplimiento= 8
+[Sun, 28 Nov 2021 09:17:52 +0000] succes 0: CALL stp_sel_resumen_informe2 (137);
+[Sun, 28 Nov 2021 09:18:24 +0000] succes 0: call spt_sel_obtienedocumento (3)
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: select * from informe  where nFlag=0 and nId=140
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 21
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: select * from programa  where nFlag=0 and nId=1
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: SELECT * FROM empresa WHERE nId= 8 and nFlag = 0
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: SELECT c.nIdTarea, c.`nId`,c.`cCodigo`,c.`cNombre`,c.`nModelo`  FROM `informe` i
+		JOIN `cumplimiento` c ON c.`nIdTarea`= i.`nIdTarea`
+		WHERE i.NID=140 AND c.nFlag = 0
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: call stp_sel_resumen_informe(140)
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =400  AND cvalor NOT IN (400)
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=9
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: select * from uunn WHERE `nId` = 8 AND nFlag=0
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: select * from supervision where nId = 4 AND nFlag=0
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: SELECT p.nId,p.cDoi,p.cNombres,p.cApellidos,p.cUsuario FROM `responsable`res 
+		JOIN persona p on p.nId=res.nIdPersona where res.nId = '100'
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		INNER JOIN `empresa_normas` en ON en.`nIdEmpresa`= en.`nIdEmpresa`
+		INNER JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 140 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: SELECT iv.`nId`, T.`cNombre`,tv.`cPlaca`, ENO.`cValor` FROM `informe` i
+		JOIN `inf_vehiculo_det` iv ON i.`nId`=iv.`nIdInforme`
+		JOIN `empresa_normas_observacion` ENO ON ENO.`nId`=iv.`nId_Emp_nor_obs`
+		JOIN `empresa_vehiculo` tv ON tv.`nIdEmpresa`=  i.nIdEmpresa AND iv.nIdEmp_Veh = tv.nId
+		JOIN `tipo_vehiculo` T ON T.`nId` =tv.`nTipoVehiculo`
+		WHERE iv.nIdInforme = 140 AND iv.nFlag = 0 AND IFNULL(tv.nFlag, 0) = 0
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 1
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=2
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 2
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=3
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 3
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=4
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 4
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=5
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 5
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=6
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 6
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=7
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=8
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:18:31 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 8
+[Sun, 28 Nov 2021 09:18:32 +0000] succes 0: CALL stp_sel_resumen_informe2 (140);
+[Sun, 28 Nov 2021 09:18:38 +0000] succes 0: call spt_sel_obtienedocumento (3)
+[Sun, 28 Nov 2021 09:18:43 +0000] succes 0: select * from informe  where nFlag=0 and nId=145
+[Sun, 28 Nov 2021 09:18:43 +0000] succes 0: select * from tarea  where nFlag=0 and nId=1
+[Sun, 28 Nov 2021 09:18:43 +0000] succes 0: select * from tipo_vehiculo  where nFlag=0
+[Sun, 28 Nov 2021 09:18:43 +0000] succes 0: SELECT c.nIdTarea, c.`nId`,c.`cCodigo`,c.`cNombre`,c.`nModelo`  FROM `informe` i
+		JOIN `cumplimiento` c ON c.`nIdTarea`= i.`nIdTarea`
+		WHERE i.NID=145 AND c.nFlag = 0
+[Sun, 28 Nov 2021 09:18:43 +0000] succes 0: SELECT CONCAT(p.`cApellidos`, ' ',p.`cNombres`)'Descripcion',ec.`nIdEmpresa`,ect.`nId`, ec.`nId` nIdCargo, ec.`cCargo` FROM  
+		`empresa_cargo_trabajador` ect
+		JOIN `empresa_cargo` ec ON ec.`nId`=ect.`nIdEmpresa_Cargo`
+		JOIN `persona` p ON p.`nId`=ect.`nIdPersona`
+		WHERE ec.nIdEmpresa = 8
+		
+[Sun, 28 Nov 2021 09:18:43 +0000] succes 0: SELECT eno.`nId`, CONCAT("(",eno.`cValor`,")",en.`cDescripcion`," / ", eno.`cObservacion`) cDescripcion,en.nTipo FROM `empresa_normas` en
+			JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.nid
+		
+[Sun, 28 Nov 2021 09:18:43 +0000] succes 0: SELECT e.`nId`, CONCAT(cPlaca,' / ',cNombre) cDescripcion FROM `empresa_vehiculo` e
+		JOIN `tipo_vehiculo` t ON e.`nTipoVehiculo`=t.`nId`
+		WHERE e.nIdEmpresa = 8 AND IFNULL(e.nFlag, 0) = 0
+[Sun, 28 Nov 2021 09:18:43 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)
+[Sun, 28 Nov 2021 09:18:45 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 21
+[Sun, 28 Nov 2021 09:18:56 +0000] succes 0: call spt_sel_obtienedocumento (3)
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: select * from informe  where nFlag=0 and nId=145
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 21
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: select * from programa  where nFlag=0 and nId=1
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: SELECT * FROM empresa WHERE nId= 8 and nFlag = 0
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: SELECT c.nIdTarea, c.`nId`,c.`cCodigo`,c.`cNombre`,c.`nModelo`  FROM `informe` i
+		JOIN `cumplimiento` c ON c.`nIdTarea`= i.`nIdTarea`
+		WHERE i.NID=145 AND c.nFlag = 0
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: call stp_sel_resumen_informe(145)
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =400  AND cvalor NOT IN (400)
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=9
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: select * from uunn WHERE `nId` = 7 AND nFlag=0
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: select * from supervision where nId = 1 AND nFlag=0
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: SELECT p.nId,p.cDoi,p.cNombres,p.cApellidos,p.cUsuario FROM `responsable`res 
+		JOIN persona p on p.nId=res.nIdPersona where res.nId = '124'
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		INNER JOIN `empresa_normas` en ON en.`nIdEmpresa`= en.`nIdEmpresa`
+		INNER JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 145 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: SELECT iv.`nId`, T.`cNombre`,tv.`cPlaca`, ENO.`cValor` FROM `informe` i
+		JOIN `inf_vehiculo_det` iv ON i.`nId`=iv.`nIdInforme`
+		JOIN `empresa_normas_observacion` ENO ON ENO.`nId`=iv.`nId_Emp_nor_obs`
+		JOIN `empresa_vehiculo` tv ON tv.`nIdEmpresa`=  i.nIdEmpresa AND iv.nIdEmp_Veh = tv.nId
+		JOIN `tipo_vehiculo` T ON T.`nId` =tv.`nTipoVehiculo`
+		WHERE iv.nIdInforme = 145 AND iv.nFlag = 0 AND IFNULL(tv.nFlag, 0) = 0
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 1
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=2
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 2
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=3
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 3
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=4
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 4
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=5
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 5
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=6
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 6
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=7
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=8
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:19:00 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 8
+[Sun, 28 Nov 2021 09:19:01 +0000] succes 0: CALL stp_sel_resumen_informe2 (145);
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: select * from informe  where nFlag=0 and nId=145
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 21
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: select * from programa  where nFlag=0 and nId=1
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: SELECT * FROM empresa WHERE nId= 8 and nFlag = 0
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: SELECT c.nIdTarea, c.`nId`,c.`cCodigo`,c.`cNombre`,c.`nModelo`  FROM `informe` i
+		JOIN `cumplimiento` c ON c.`nIdTarea`= i.`nIdTarea`
+		WHERE i.NID=145 AND c.nFlag = 0
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: call stp_sel_resumen_informe(145)
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =400  AND cvalor NOT IN (400)
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=9
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: select * from uunn WHERE `nId` = 7 AND nFlag=0
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: select * from supervision where nId = 1 AND nFlag=0
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: SELECT p.nId,p.cDoi,p.cNombres,p.cApellidos,p.cUsuario FROM `responsable`res 
+		JOIN persona p on p.nId=res.nIdPersona where res.nId = '124'
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		INNER JOIN `empresa_normas` en ON en.`nIdEmpresa`= en.`nIdEmpresa`
+		INNER JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 145 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: SELECT iv.`nId`, T.`cNombre`,tv.`cPlaca`, ENO.`cValor` FROM `informe` i
+		JOIN `inf_vehiculo_det` iv ON i.`nId`=iv.`nIdInforme`
+		JOIN `empresa_normas_observacion` ENO ON ENO.`nId`=iv.`nId_Emp_nor_obs`
+		JOIN `empresa_vehiculo` tv ON tv.`nIdEmpresa`=  i.nIdEmpresa AND iv.nIdEmp_Veh = tv.nId
+		JOIN `tipo_vehiculo` T ON T.`nId` =tv.`nTipoVehiculo`
+		WHERE iv.nIdInforme = 145 AND iv.nFlag = 0 AND IFNULL(tv.nFlag, 0) = 0
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 1
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=2
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 2
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=3
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 3
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=4
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 4
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=5
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 5
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=6
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 6
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=7
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=8
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 8
+[Sun, 28 Nov 2021 09:20:00 +0000] succes 0: CALL stp_sel_resumen_informe2 (145);
+[Sun, 28 Nov 2021 09:27:34 +0000] succes 0: call spt_sel_all_User('3')
+[Sun, 28 Nov 2021 09:27:37 +0000] succes 0: call spt_sel_obtienedocumento (3)
+[Sun, 28 Nov 2021 09:27:38 +0000] succes 0: select * from empresa  where nTipo=1
+[Sun, 28 Nov 2021 09:27:38 +0000] succes 0: select * from empresa  where nTipo=0
+[Sun, 28 Nov 2021 09:27:38 +0000] succes 0: select * from tipo_documento  where nFlag=0
+[Sun, 28 Nov 2021 09:27:38 +0000] succes 0: select * from tarea  where nFlag=0
+[Sun, 28 Nov 2021 09:27:38 +0000] succes 0: select * from uunn  where nFlag=0
+[Sun, 28 Nov 2021 09:27:38 +0000] succes 0: select * from programa  where nFlag=0
+[Sun, 28 Nov 2021 09:27:38 +0000] succes 0: select * from supervision  where nFlag=0
+[Sun, 28 Nov 2021 09:27:38 +0000] succes 0: SELECT r.`nId`,p.`cNombres`,p.`cApellidos` FROM responsable r
+	JOIN persona p ON p.`nId` = r.`nIdPersona`
+	JOIN empresa e ON e.`nId`=r.`nIdEmpresa` 
+	WHERE e.nId = 0
+	/*WHERE e.`nTipo`=1*/
+[Sun, 28 Nov 2021 09:27:38 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 0 
+[Sun, 28 Nov 2021 09:27:42 +0000] succes 0: SELECT r.`nId`,p.`cNombres`,p.`cApellidos` FROM responsable r
+	JOIN persona p ON p.`nId` = r.`nIdPersona`
+	JOIN empresa e ON e.`nId`=r.`nIdEmpresa` 
+	WHERE e.nId = 2
+	/*WHERE e.`nTipo`=1*/
+[Sun, 28 Nov 2021 09:27:42 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 2 
+[Sun, 28 Nov 2021 09:32:03 +0000] succes 0: call spt_sel_obtienedocumento (3)
+[Sun, 28 Nov 2021 09:32:08 +0000] succes 0: select * from informe  where nFlag=0 and nId=130
+[Sun, 28 Nov 2021 09:32:08 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 130 and nIdCumplimiento= 21
+[Sun, 28 Nov 2021 09:32:08 +0000] succes 0: select * from programa  where nFlag=0 and nId=1
+[Sun, 28 Nov 2021 09:32:08 +0000] succes 0: SELECT * FROM empresa WHERE nId= 8 and nFlag = 0
+[Sun, 28 Nov 2021 09:32:08 +0000] succes 0: SELECT c.nIdTarea, c.`nId`,c.`cCodigo`,c.`cNombre`,c.`nModelo`  FROM `informe` i
+		JOIN `cumplimiento` c ON c.`nIdTarea`= i.`nIdTarea`
+		WHERE i.NID=130 AND c.nFlag = 0
+[Sun, 28 Nov 2021 09:32:08 +0000] succes 0: call stp_sel_resumen_informe(130)
+[Sun, 28 Nov 2021 09:32:08 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =400  AND cvalor NOT IN (400)
+[Sun, 28 Nov 2021 09:32:08 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=130 AND i.`nIdCumplimiento`=9
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:32:08 +0000] succes 0: select * from uunn WHERE `nId` = 4 AND nFlag=0
+[Sun, 28 Nov 2021 09:32:08 +0000] succes 0: select * from supervision where nId = 1 AND nFlag=0
+[Sun, 28 Nov 2021 09:32:08 +0000] succes 0: SELECT p.nId,p.cDoi,p.cNombres,p.cApellidos,p.cUsuario FROM `responsable`res 
+		JOIN persona p on p.nId=res.nIdPersona where res.nId = '68'
+[Sun, 28 Nov 2021 09:32:08 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		INNER JOIN `empresa_normas` en ON en.`nIdEmpresa`= en.`nIdEmpresa`
+		INNER JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 130 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sun, 28 Nov 2021 09:32:08 +0000] succes 0: SELECT iv.`nId`, T.`cNombre`,tv.`cPlaca`, ENO.`cValor` FROM `informe` i
+		JOIN `inf_vehiculo_det` iv ON i.`nId`=iv.`nIdInforme`
+		JOIN `empresa_normas_observacion` ENO ON ENO.`nId`=iv.`nId_Emp_nor_obs`
+		JOIN `empresa_vehiculo` tv ON tv.`nIdEmpresa`=  i.nIdEmpresa AND iv.nIdEmp_Veh = tv.nId
+		JOIN `tipo_vehiculo` T ON T.`nId` =tv.`nTipoVehiculo`
+		WHERE iv.nIdInforme = 130 AND iv.nFlag = 0 AND IFNULL(tv.nFlag, 0) = 0
+[Sun, 28 Nov 2021 09:32:08 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=130 AND i.`nIdCumplimiento`=12
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:32:08 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 130 and nIdCumplimiento= 12
+[Sun, 28 Nov 2021 09:32:08 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=130 AND i.`nIdCumplimiento`=13
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:32:08 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 130 and nIdCumplimiento= 13
+[Sun, 28 Nov 2021 09:32:08 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=130 AND i.`nIdCumplimiento`=14
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:32:08 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 130 and nIdCumplimiento= 14
+[Sun, 28 Nov 2021 09:32:08 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=130 AND i.`nIdCumplimiento`=15
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:32:08 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 130 and nIdCumplimiento= 15
+[Sun, 28 Nov 2021 09:32:08 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=130 AND i.`nIdCumplimiento`=16
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:32:08 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 130 and nIdCumplimiento= 16
+[Sun, 28 Nov 2021 09:32:08 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=130 AND i.`nIdCumplimiento`=17
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:32:08 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 130 and nIdCumplimiento= 17
+[Sun, 28 Nov 2021 09:32:09 +0000] succes 0: CALL stp_sel_resumen_informe2 (130);
+[Sun, 28 Nov 2021 09:32:43 +0000] succes 0: call spt_sel_obtienedocumento (3)
+[Sun, 28 Nov 2021 09:32:47 +0000] succes 0: select * from informe  where nFlag=0 and nId=145
+[Sun, 28 Nov 2021 09:32:47 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 21
+[Sun, 28 Nov 2021 09:32:47 +0000] succes 0: select * from programa  where nFlag=0 and nId=1
+[Sun, 28 Nov 2021 09:32:47 +0000] succes 0: SELECT * FROM empresa WHERE nId= 8 and nFlag = 0
+[Sun, 28 Nov 2021 09:32:47 +0000] succes 0: SELECT c.nIdTarea, c.`nId`,c.`cCodigo`,c.`cNombre`,c.`nModelo`  FROM `informe` i
+		JOIN `cumplimiento` c ON c.`nIdTarea`= i.`nIdTarea`
+		WHERE i.NID=145 AND c.nFlag = 0
+[Sun, 28 Nov 2021 09:32:47 +0000] succes 0: call stp_sel_resumen_informe(145)
+[Sun, 28 Nov 2021 09:32:48 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =400  AND cvalor NOT IN (400)
+[Sun, 28 Nov 2021 09:32:48 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=9
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:32:48 +0000] succes 0: select * from uunn WHERE `nId` = 7 AND nFlag=0
+[Sun, 28 Nov 2021 09:32:48 +0000] succes 0: select * from supervision where nId = 1 AND nFlag=0
+[Sun, 28 Nov 2021 09:32:48 +0000] succes 0: SELECT p.nId,p.cDoi,p.cNombres,p.cApellidos,p.cUsuario FROM `responsable`res 
+		JOIN persona p on p.nId=res.nIdPersona where res.nId = '124'
+[Sun, 28 Nov 2021 09:32:48 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		INNER JOIN `empresa_normas` en ON en.`nIdEmpresa`= en.`nIdEmpresa`
+		INNER JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 145 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sun, 28 Nov 2021 09:32:48 +0000] succes 0: SELECT iv.`nId`, T.`cNombre`,tv.`cPlaca`, ENO.`cValor` FROM `informe` i
+		JOIN `inf_vehiculo_det` iv ON i.`nId`=iv.`nIdInforme`
+		JOIN `empresa_normas_observacion` ENO ON ENO.`nId`=iv.`nId_Emp_nor_obs`
+		JOIN `empresa_vehiculo` tv ON tv.`nIdEmpresa`=  i.nIdEmpresa AND iv.nIdEmp_Veh = tv.nId
+		JOIN `tipo_vehiculo` T ON T.`nId` =tv.`nTipoVehiculo`
+		WHERE iv.nIdInforme = 145 AND iv.nFlag = 0 AND IFNULL(tv.nFlag, 0) = 0
+[Sun, 28 Nov 2021 09:32:48 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:32:48 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 1
+[Sun, 28 Nov 2021 09:32:48 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=2
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:32:48 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 2
+[Sun, 28 Nov 2021 09:32:48 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=3
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:32:48 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 3
+[Sun, 28 Nov 2021 09:32:48 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=4
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:32:48 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 4
+[Sun, 28 Nov 2021 09:32:48 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=5
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:32:48 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 5
+[Sun, 28 Nov 2021 09:32:48 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=6
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:32:48 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 6
+[Sun, 28 Nov 2021 09:32:48 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=7
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:32:48 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=8
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:32:48 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 8
+[Sun, 28 Nov 2021 09:32:48 +0000] succes 0: CALL stp_sel_resumen_informe2 (145);
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: select * from informe  where nFlag=0 and nId=145
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 21
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: select * from programa  where nFlag=0 and nId=1
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: SELECT * FROM empresa WHERE nId= 8 and nFlag = 0
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: SELECT c.nIdTarea, c.`nId`,c.`cCodigo`,c.`cNombre`,c.`nModelo`  FROM `informe` i
+		JOIN `cumplimiento` c ON c.`nIdTarea`= i.`nIdTarea`
+		WHERE i.NID=145 AND c.nFlag = 0
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: call stp_sel_resumen_informe(145)
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =400  AND cvalor NOT IN (400)
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=9
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: select * from uunn WHERE `nId` = 7 AND nFlag=0
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: select * from supervision where nId = 1 AND nFlag=0
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: SELECT p.nId,p.cDoi,p.cNombres,p.cApellidos,p.cUsuario FROM `responsable`res 
+		JOIN persona p on p.nId=res.nIdPersona where res.nId = '124'
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		INNER JOIN `empresa_normas` en ON en.`nIdEmpresa`= en.`nIdEmpresa`
+		INNER JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 145 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: SELECT iv.`nId`, T.`cNombre`,tv.`cPlaca`, ENO.`cValor` FROM `informe` i
+		JOIN `inf_vehiculo_det` iv ON i.`nId`=iv.`nIdInforme`
+		JOIN `empresa_normas_observacion` ENO ON ENO.`nId`=iv.`nId_Emp_nor_obs`
+		JOIN `empresa_vehiculo` tv ON tv.`nIdEmpresa`=  i.nIdEmpresa AND iv.nIdEmp_Veh = tv.nId
+		JOIN `tipo_vehiculo` T ON T.`nId` =tv.`nTipoVehiculo`
+		WHERE iv.nIdInforme = 145 AND iv.nFlag = 0 AND IFNULL(tv.nFlag, 0) = 0
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 1
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=2
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 2
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=3
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 3
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=4
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 4
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=5
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 5
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=6
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 6
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=7
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=145 AND i.`nIdCumplimiento`=8
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:40:15 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 145 and nIdCumplimiento= 8
+[Sun, 28 Nov 2021 09:40:16 +0000] succes 0: CALL stp_sel_resumen_informe2 (145);
+[Sun, 28 Nov 2021 09:43:47 +0000] succes 0: call spt_sel_obtienedocumento (3)
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: select * from informe  where nFlag=0 and nId=130
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 130 and nIdCumplimiento= 21
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: select * from programa  where nFlag=0 and nId=1
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: SELECT * FROM empresa WHERE nId= 8 and nFlag = 0
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: SELECT c.nIdTarea, c.`nId`,c.`cCodigo`,c.`cNombre`,c.`nModelo`  FROM `informe` i
+		JOIN `cumplimiento` c ON c.`nIdTarea`= i.`nIdTarea`
+		WHERE i.NID=130 AND c.nFlag = 0
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: call stp_sel_resumen_informe(130)
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =400  AND cvalor NOT IN (400)
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=130 AND i.`nIdCumplimiento`=9
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: select * from uunn WHERE `nId` = 4 AND nFlag=0
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: select * from supervision where nId = 1 AND nFlag=0
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: SELECT p.nId,p.cDoi,p.cNombres,p.cApellidos,p.cUsuario FROM `responsable`res 
+		JOIN persona p on p.nId=res.nIdPersona where res.nId = '68'
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		INNER JOIN `empresa_normas` en ON en.`nIdEmpresa`= en.`nIdEmpresa`
+		INNER JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 130 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: SELECT iv.`nId`, T.`cNombre`,tv.`cPlaca`, ENO.`cValor` FROM `informe` i
+		JOIN `inf_vehiculo_det` iv ON i.`nId`=iv.`nIdInforme`
+		JOIN `empresa_normas_observacion` ENO ON ENO.`nId`=iv.`nId_Emp_nor_obs`
+		JOIN `empresa_vehiculo` tv ON tv.`nIdEmpresa`=  i.nIdEmpresa AND iv.nIdEmp_Veh = tv.nId
+		JOIN `tipo_vehiculo` T ON T.`nId` =tv.`nTipoVehiculo`
+		WHERE iv.nIdInforme = 130 AND iv.nFlag = 0 AND IFNULL(tv.nFlag, 0) = 0
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=130 AND i.`nIdCumplimiento`=12
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 130 and nIdCumplimiento= 12
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=130 AND i.`nIdCumplimiento`=13
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 130 and nIdCumplimiento= 13
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=130 AND i.`nIdCumplimiento`=14
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 130 and nIdCumplimiento= 14
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=130 AND i.`nIdCumplimiento`=15
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 130 and nIdCumplimiento= 15
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=130 AND i.`nIdCumplimiento`=16
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 130 and nIdCumplimiento= 16
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=130 AND i.`nIdCumplimiento`=17
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 130 and nIdCumplimiento= 17
+[Sun, 28 Nov 2021 09:43:51 +0000] succes 0: CALL stp_sel_resumen_informe2 (130);
+[Sun, 28 Nov 2021 09:44:00 +0000] succes 0: call spt_sel_obtienedocumento (3)
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: select * from informe  where nFlag=0 and nId=118
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 21
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: select * from programa  where nFlag=0 and nId=1
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: SELECT * FROM empresa WHERE nId= 11 and nFlag = 0
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: SELECT c.nIdTarea, c.`nId`,c.`cCodigo`,c.`cNombre`,c.`nModelo`  FROM `informe` i
+		JOIN `cumplimiento` c ON c.`nIdTarea`= i.`nIdTarea`
+		WHERE i.NID=118 AND c.nFlag = 0
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: call stp_sel_resumen_informe(118)
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =400  AND cvalor NOT IN (400)
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=9
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: select * from uunn WHERE `nId` = 7 AND nFlag=0
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: select * from supervision where nId = 4 AND nFlag=0
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: SELECT p.nId,p.cDoi,p.cNombres,p.cApellidos,p.cUsuario FROM `responsable`res 
+		JOIN persona p on p.nId=res.nIdPersona where res.nId = '43'
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		INNER JOIN `empresa_normas` en ON en.`nIdEmpresa`= en.`nIdEmpresa`
+		INNER JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 118 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: SELECT iv.`nId`, T.`cNombre`,tv.`cPlaca`, ENO.`cValor` FROM `informe` i
+		JOIN `inf_vehiculo_det` iv ON i.`nId`=iv.`nIdInforme`
+		JOIN `empresa_normas_observacion` ENO ON ENO.`nId`=iv.`nId_Emp_nor_obs`
+		JOIN `empresa_vehiculo` tv ON tv.`nIdEmpresa`=  i.nIdEmpresa AND iv.nIdEmp_Veh = tv.nId
+		JOIN `tipo_vehiculo` T ON T.`nId` =tv.`nTipoVehiculo`
+		WHERE iv.nIdInforme = 118 AND iv.nFlag = 0 AND IFNULL(tv.nFlag, 0) = 0
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 1
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=2
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 2
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=3
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 3
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=4
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 4
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=5
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 5
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=6
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 6
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=7
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=8
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 8
+[Sun, 28 Nov 2021 09:44:05 +0000] succes 0: CALL stp_sel_resumen_informe2 (118);
+[Sun, 28 Nov 2021 09:46:24 +0000] succes 0: call spt_sel_obtienedocumento (3)
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: select * from informe  where nFlag=0 and nId=118
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 21
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: select * from programa  where nFlag=0 and nId=1
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: SELECT * FROM empresa WHERE nId= 11 and nFlag = 0
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: SELECT c.nIdTarea, c.`nId`,c.`cCodigo`,c.`cNombre`,c.`nModelo`  FROM `informe` i
+		JOIN `cumplimiento` c ON c.`nIdTarea`= i.`nIdTarea`
+		WHERE i.NID=118 AND c.nFlag = 0
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: call stp_sel_resumen_informe(118)
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =400  AND cvalor NOT IN (400)
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=9
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: select * from uunn WHERE `nId` = 7 AND nFlag=0
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: select * from supervision where nId = 4 AND nFlag=0
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: SELECT p.nId,p.cDoi,p.cNombres,p.cApellidos,p.cUsuario FROM `responsable`res 
+		JOIN persona p on p.nId=res.nIdPersona where res.nId = '43'
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		INNER JOIN `empresa_normas` en ON en.`nIdEmpresa`= en.`nIdEmpresa`
+		INNER JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 118 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: SELECT iv.`nId`, T.`cNombre`,tv.`cPlaca`, ENO.`cValor` FROM `informe` i
+		JOIN `inf_vehiculo_det` iv ON i.`nId`=iv.`nIdInforme`
+		JOIN `empresa_normas_observacion` ENO ON ENO.`nId`=iv.`nId_Emp_nor_obs`
+		JOIN `empresa_vehiculo` tv ON tv.`nIdEmpresa`=  i.nIdEmpresa AND iv.nIdEmp_Veh = tv.nId
+		JOIN `tipo_vehiculo` T ON T.`nId` =tv.`nTipoVehiculo`
+		WHERE iv.nIdInforme = 118 AND iv.nFlag = 0 AND IFNULL(tv.nFlag, 0) = 0
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 1
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=2
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 2
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=3
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 3
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=4
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 4
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=5
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 5
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=6
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 6
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=7
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=8
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 8
+[Sun, 28 Nov 2021 09:46:27 +0000] succes 0: CALL stp_sel_resumen_informe2 (118);
+[Sun, 28 Nov 2021 09:46:35 +0000] succes 0: call spt_sel_obtienedocumento (3)
+[Sun, 28 Nov 2021 09:46:39 +0000] succes 0: select * from informe  where nFlag=0 and nId=118
+[Sun, 28 Nov 2021 09:46:39 +0000] succes 0: select * from tarea  where nFlag=0 and nId=1
+[Sun, 28 Nov 2021 09:46:39 +0000] succes 0: select * from tipo_vehiculo  where nFlag=0
+[Sun, 28 Nov 2021 09:46:39 +0000] succes 0: SELECT c.nIdTarea, c.`nId`,c.`cCodigo`,c.`cNombre`,c.`nModelo`  FROM `informe` i
+		JOIN `cumplimiento` c ON c.`nIdTarea`= i.`nIdTarea`
+		WHERE i.NID=118 AND c.nFlag = 0
+[Sun, 28 Nov 2021 09:46:39 +0000] succes 0: SELECT CONCAT(p.`cApellidos`, ' ',p.`cNombres`)'Descripcion',ec.`nIdEmpresa`,ect.`nId`, ec.`nId` nIdCargo, ec.`cCargo` FROM  
+		`empresa_cargo_trabajador` ect
+		JOIN `empresa_cargo` ec ON ec.`nId`=ect.`nIdEmpresa_Cargo`
+		JOIN `persona` p ON p.`nId`=ect.`nIdPersona`
+		WHERE ec.nIdEmpresa = 11
+		
+[Sun, 28 Nov 2021 09:46:39 +0000] succes 0: SELECT eno.`nId`, CONCAT("(",eno.`cValor`,")",en.`cDescripcion`," / ", eno.`cObservacion`) cDescripcion,en.nTipo FROM `empresa_normas` en
+			JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.nid
+		
+[Sun, 28 Nov 2021 09:46:39 +0000] succes 0: SELECT e.`nId`, CONCAT(cPlaca,' / ',cNombre) cDescripcion FROM `empresa_vehiculo` e
+		JOIN `tipo_vehiculo` t ON e.`nTipoVehiculo`=t.`nId`
+		WHERE e.nIdEmpresa = 11 AND IFNULL(e.nFlag, 0) = 0
+[Sun, 28 Nov 2021 09:46:39 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)
+[Sun, 28 Nov 2021 09:46:41 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:46:41 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 1
+[Sun, 28 Nov 2021 09:46:43 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 2
+[Sun, 28 Nov 2021 09:46:43 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=2
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:46:44 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=3
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:46:44 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 3
+[Sun, 28 Nov 2021 09:46:44 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=4
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:46:44 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 4
+[Sun, 28 Nov 2021 09:46:45 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 5
+[Sun, 28 Nov 2021 09:46:45 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=5
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:46:47 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		INNER JOIN `empresa_normas` en ON en.`nIdEmpresa`= en.`nIdEmpresa`
+		INNER JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 118 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sun, 28 Nov 2021 09:46:48 +0000] succes 0: SELECT CONCAT(p.`cApellidos`, ' ',p.`cNombres`)'Descripcion',ec.`nIdEmpresa`,ect.`nId`, ec.`nId` nIdCargo, ec.`cCargo` FROM  
+		`empresa_cargo_trabajador` ect
+		JOIN `empresa_cargo` ec ON ec.`nId`=ect.`nIdEmpresa_Cargo`
+		JOIN `persona` p ON p.`nId`=ect.`nIdPersona`
+		WHERE ec.nIdEmpresa = 11
+		
+[Sun, 28 Nov 2021 09:46:54 +0000] succes 91: INSERT INTO inf_trabajadoressupervisados_det (`nIdInforme`,`nId_E_C_T`,`nId_emp_nor_obs`)
+			VALUES(118,20,2)
+			
+[Sun, 28 Nov 2021 09:46:54 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		INNER JOIN `empresa_normas` en ON en.`nIdEmpresa`= en.`nIdEmpresa`
+		INNER JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 118 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sun, 28 Nov 2021 09:46:58 +0000] succes 0: call spt_sel_obtienedocumento (3)
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: select * from informe  where nFlag=0 and nId=118
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 21
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: select * from programa  where nFlag=0 and nId=1
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: SELECT * FROM empresa WHERE nId= 11 and nFlag = 0
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: SELECT c.nIdTarea, c.`nId`,c.`cCodigo`,c.`cNombre`,c.`nModelo`  FROM `informe` i
+		JOIN `cumplimiento` c ON c.`nIdTarea`= i.`nIdTarea`
+		WHERE i.NID=118 AND c.nFlag = 0
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: call stp_sel_resumen_informe(118)
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =400  AND cvalor NOT IN (400)
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=9
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: select * from uunn WHERE `nId` = 7 AND nFlag=0
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: select * from supervision where nId = 4 AND nFlag=0
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: SELECT p.nId,p.cDoi,p.cNombres,p.cApellidos,p.cUsuario FROM `responsable`res 
+		JOIN persona p on p.nId=res.nIdPersona where res.nId = '43'
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: SELECT it.`nId`, p.`cNombres`,p.`cApellidos`,ec.`cCargo`, IF(eno.`nId` IS NULL, '', eno.`nId`) nCodigo, IF(eno.`cValor` IS NULL, '', eno.`cValor`) cCodigo FROM `informe` i
+		JOIN `inf_trabajadoressupervisados_det` it ON it.`nIdInforme`=i.`nId`
+		JOIN `empresa_cargo_trabajador` ect ON ect.`nId`=it.`nId_E_C_T`
+		JOIN `empresa_cargo` ec ON ect.`nIdEmpresa_Cargo`=ec.`nId`
+		JOIN persona p ON p.`nId`=ect.`nIdPersona`
+		INNER JOIN `empresa_normas` en ON en.`nIdEmpresa`= en.`nIdEmpresa`
+		INNER JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.`nId` AND eno.`nId`=it.`nId_emp_nor_obs`
+		WHERE it.nIdInforme = 118 AND it.nFlag = 0 /*AND eno.nFlag = 0*/
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: SELECT iv.`nId`, T.`cNombre`,tv.`cPlaca`, ENO.`cValor` FROM `informe` i
+		JOIN `inf_vehiculo_det` iv ON i.`nId`=iv.`nIdInforme`
+		JOIN `empresa_normas_observacion` ENO ON ENO.`nId`=iv.`nId_Emp_nor_obs`
+		JOIN `empresa_vehiculo` tv ON tv.`nIdEmpresa`=  i.nIdEmpresa AND iv.nIdEmp_Veh = tv.nId
+		JOIN `tipo_vehiculo` T ON T.`nId` =tv.`nTipoVehiculo`
+		WHERE iv.nIdInforme = 118 AND iv.nFlag = 0 AND IFNULL(tv.nFlag, 0) = 0
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 1
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=2
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 2
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=3
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 3
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=4
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 4
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=5
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 5
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=6
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 6
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=7
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=118 AND i.`nIdCumplimiento`=8
+		AND i.nFlag = 0
+[Sun, 28 Nov 2021 09:47:01 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 118 and nIdCumplimiento= 8
+[Sun, 28 Nov 2021 09:47:02 +0000] succes 0: CALL stp_sel_resumen_informe2 (118);

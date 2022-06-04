@@ -1,0 +1,3 @@
+[Wed, 17 Nov 2021 15:09:48 +0000] succes 0: select * from persona  where cDoi="16740328"
+[Wed, 17 Nov 2021 15:09:52 +0000] succes 0: call spt_sel_all_User('19')
+[Wed, 17 Nov 2021 15:09:55 +0000] succes 0: call spt_sel_obtienedocumento (19)

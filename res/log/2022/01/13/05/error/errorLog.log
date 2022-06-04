@@ -1,0 +1,12 @@
+[***INICIO: 1 ***]
+[13/01/22 05:37 am] [1. FIC] :user Controller
+[13/01/22 05:37 am] [2. LIN] : 1218
+[13/01/22 05:37 am] [3. DES] : verifcasesion
+[13/01/22 05:37 am] [4. CON] : ""
+[***FIN***]
+[***INICIO: CDTAM0001  ***]
+[13/01/22 05:37 am] [1. FIC] :call spt_sel_obtienedocumento ()
+[13/01/22 05:37 am] [2. LIN] : lin:17
+[13/01/22 05:37 am] [3. DES] : Incorrect number of arguments for PROCEDURE gqouvkku_dbinterna.spt_sel_obtienedocumento; expected 1, got 0
+[13/01/22 05:37 am] [4. CON] : "executor.php"
+[***FIN***]

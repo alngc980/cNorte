@@ -1,0 +1,5 @@
+<body><h1>Codigo de recuperacion</h1>
+        <p>Ahora puedes recuperar tu cuenta en el siguiente link:</p>
+        <p><a href='http://youhost/app/index.php?r=index/processcode&e=f3e32e8fc2c088eec9df3607182f00c707cd931b&c=67a74306b06d0c01624fe0d0249a570f4d093747'>Activa tu cuenta:</a></p>
+        <p>O tambien puedes usar el siguiente codigo de activacion: </p>
+        </body>

@@ -1,0 +1,8 @@
+[Mon, 22 Nov 2021 16:51:15 +0000] succes 0: select * from persona  where cDoi="44174808"
+[Mon, 22 Nov 2021 16:51:19 +0000] succes 0: call spt_sel_all_User('18')
+[Mon, 22 Nov 2021 16:52:17 +0000] succes 0: select * from persona  where cDoi="16740328"
+[Mon, 22 Nov 2021 16:52:21 +0000] succes 0: call spt_sel_all_User('19')
+[Mon, 22 Nov 2021 16:52:42 +0000] succes 0: select * from persona  where cDoi="44435153"
+[Mon, 22 Nov 2021 16:52:54 +0000] succes 0: select * from persona  where cDoi="44335153"
+[Mon, 22 Nov 2021 16:52:58 +0000] succes 0: call spt_sel_all_User('20')
+[Mon, 22 Nov 2021 16:54:35 +0000] succes 0: SELECT nId,cDoi,cNombres,cApellidos,cUsuario FROM persona WHERE nId = '20'

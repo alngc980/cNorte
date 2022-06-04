@@ -1,0 +1,50 @@
+[Wed, 15 Dec 2021 03:28:08 +0000] succes 0: select * from informe  where nFlag=0 and nId=139
+[Wed, 15 Dec 2021 03:28:08 +0000] succes 0: select * from tarea  where nFlag=0 and nId=1
+[Wed, 15 Dec 2021 03:28:08 +0000] succes 0: select * from tipo_vehiculo  where nFlag=0
+[Wed, 15 Dec 2021 03:28:08 +0000] succes 0: SELECT c.nIdTarea, c.`nId`,c.`cCodigo`,c.`cNombre`,c.`nModelo`  FROM `informe` i
+		JOIN `cumplimiento` c ON c.`nIdTarea`= i.`nIdTarea`
+		WHERE i.nId=139 AND c.nFlag = 0
+[Wed, 15 Dec 2021 03:28:08 +0000] succes 0: SELECT CONCAT(p.`cApellidos`, ' ',p.`cNombres`)'Descripcion',ec.`nIdEmpresa`,ect.`nId`, ec.`nId` nIdCargo, ec.`cCargo` FROM  
+		`empresa_cargo_trabajador` ect
+		JOIN `empresa_cargo` ec ON ec.`nId`=ect.`nIdEmpresa_Cargo`
+		JOIN `persona` p ON p.`nId`=ect.`nIdPersona`
+		WHERE ec.nIdEmpresa = 16
+		
+[Wed, 15 Dec 2021 03:28:08 +0000] succes 0: SELECT eno.`nId`, CONCAT("(",eno.`cValor`,")",en.`cDescripcion`," / ", eno.`cObservacion`) cDescripcion,en.nTipo FROM `empresa_normas` en
+			JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.nid
+		
+[Wed, 15 Dec 2021 03:28:08 +0000] succes 0: SELECT e.`nId`, CONCAT(cPlaca,' / ',cNombre) cDescripcion FROM `empresa_vehiculo` e
+		JOIN `tipo_vehiculo` t ON e.`nTipoVehiculo`=t.`nId`
+		WHERE e.nIdEmpresa = 16 AND IFNULL(e.nFlag, 0) = 0
+[Wed, 15 Dec 2021 03:28:08 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)
+[Wed, 15 Dec 2021 03:47:33 +0000] succes 0: select * from persona  where cDoi="40980455"
+[Wed, 15 Dec 2021 03:47:38 +0000] succes 0: call spt_sel_all_User('17')
+[Wed, 15 Dec 2021 03:47:40 +0000] succes 0: call spt_sel_obtienedocumento (17)
+[Wed, 15 Dec 2021 03:48:47 +0000] succes 0: select * from informe  where nFlag=0 and nId=121
+[Wed, 15 Dec 2021 03:48:47 +0000] succes 0: select * from tarea  where nFlag=0 and nId=1
+[Wed, 15 Dec 2021 03:48:47 +0000] succes 0: select * from tipo_vehiculo  where nFlag=0
+[Wed, 15 Dec 2021 03:48:47 +0000] succes 0: SELECT c.nIdTarea, c.`nId`,c.`cCodigo`,c.`cNombre`,c.`nModelo`  FROM `informe` i
+		JOIN `cumplimiento` c ON c.`nIdTarea`= i.`nIdTarea`
+		WHERE i.nId=121 AND c.nFlag = 0
+[Wed, 15 Dec 2021 03:48:47 +0000] succes 0: SELECT CONCAT(p.`cApellidos`, ' ',p.`cNombres`)'Descripcion',ec.`nIdEmpresa`,ect.`nId`, ec.`nId` nIdCargo, ec.`cCargo` FROM  
+		`empresa_cargo_trabajador` ect
+		JOIN `empresa_cargo` ec ON ec.`nId`=ect.`nIdEmpresa_Cargo`
+		JOIN `persona` p ON p.`nId`=ect.`nIdPersona`
+		WHERE ec.nIdEmpresa = 8
+		
+[Wed, 15 Dec 2021 03:48:47 +0000] succes 0: SELECT eno.`nId`, CONCAT("(",eno.`cValor`,")",en.`cDescripcion`," / ", eno.`cObservacion`) cDescripcion,en.nTipo FROM `empresa_normas` en
+			JOIN `empresa_normas_observacion` eno ON eno.`nId_empresa_norma`=en.nid
+		
+[Wed, 15 Dec 2021 03:48:47 +0000] succes 0: SELECT e.`nId`, CONCAT(cPlaca,' / ',cNombre) cDescripcion FROM `empresa_vehiculo` e
+		JOIN `tipo_vehiculo` t ON e.`nTipoVehiculo`=t.`nId`
+		WHERE e.nIdEmpresa = 8 AND IFNULL(e.nFlag, 0) = 0
+[Wed, 15 Dec 2021 03:48:47 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)
+[Wed, 15 Dec 2021 03:48:49 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=121 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Wed, 15 Dec 2021 03:48:49 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 121 and nIdCumplimiento= 1

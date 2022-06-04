@@ -1,0 +1,415 @@
+[Sat, 20 Nov 2021 00:00:10 +0000] succes 0: call spt_ins_documento(
+		"18",
+		"1",
+		"1",
+		"1",
+		"8",
+		"8",
+		"67",
+		"100",
+		"4",
+		"INSPECCIÓN DE EPPS, EQUIPOS Y HERRAMIENTAS, UNIDAD MÓVIL Y PERSONAL OPERATIVO, PREVIO AL INICIO DE ACTIVIDADES – INSTALACIÓN DE MEDIDORES POR TELEMETRÍA.",
+		"ACTIVIDADES TÉCNICO COMERCIALES DE CLIENTES MAYORES.",
+		"AV. SÁENZ PEÑA 1750 - CHICLAYO",
+		"COMERCIAL",
+		"2021-11-12",
+		"2004",
+		"ENSA")
+[Sat, 20 Nov 2021 00:00:11 +0000] succes 0: select * from informe  where nFlag=0 and nId=140
+[Sat, 20 Nov 2021 00:00:11 +0000] succes 0: select * from tarea  where nFlag=0 and nId=1
+[Sat, 20 Nov 2021 00:00:11 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 00:00:11 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =100  AND cvalor NOT IN (100)
+[Sat, 20 Nov 2021 00:00:11 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)
+[Sat, 20 Nov 2021 00:00:11 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nId NOT IN (1) and nOrden >0
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 00:00:11 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 00:00:11 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		 and nOrden < 0 
+		ORDER BY norden desc LIMIT 0,1
+[Sat, 20 Nov 2021 00:00:28 +0000] succes 0: call spt_ins_documento_detalle(
+		"140",
+		"1",
+		"1",
+		"0",
+		"GRUPO DE TRABAJO, CONTIENEN DE EPPS BÁSICOS: CASCO DIELÉCTRICO CON BARBIQUEJO, ROPA DE TRABAJO (ANTIFLAMA), GUANTES DE CUERO, CALZADO DIELÉCTRICO, GUANTES DE MT, CHALECO DE ALTA VISIBILIDAD Y FOTOCHECK DE IDENTIFICACIÓN.")
+[Sat, 20 Nov 2021 00:00:28 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 00:00:36 +0000] succes 0: call spt_ins_documento_detalle(
+		"140",
+		"1",
+		"1",
+		"0",
+		"GRUPO DE TRABAJO, QUE REALIZA TRABAJOS EN ALTURA CONTIENE DE ESTROBOS Ó PASOS DE ESCALAMIENTO, EQUIPO DE PROTECCIÓN CONTRA CAÍDAS (ARNÉS DE SEGURIDAD TIPO LINIERO, LÍNEA Y FAJA DE ANCLAJE) Y ESCALERA TELESCÓPICA (NUEVA) Y BANDERÍN. ")
+[Sat, 20 Nov 2021 00:00:36 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 00:00:43 +0000] succes 0: call spt_ins_documento_detalle(
+		"140",
+		"1",
+		"1",
+		"0",
+		"TÉCNICO CESAR AUGUSTO DIOSES LEZCANO, EVIDENCIA PINZA AMPERÍMETRICA CON CERTIFICADO DE CALIBRACIÓN VIGENTE. ")
+[Sat, 20 Nov 2021 00:00:43 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 00:01:14 +0000] succes 0: call spt_ins_documento_detalle(
+		"140",
+		"1",
+		"2",
+		"6",
+		"PERSONAL OPERATIVO MANUEL DÁVILA MENOR, CESAR AUGUSTO DIOSES LEZCANO, EDILBERTO RAMOS ARÉVALO, CARECE DE PANTALLA DE PROTECCIÓN FACIAL (CARETA ANTI-ARCO, ASÍ MISMO CARECEN DE SOGAS DE AMARRE Y SISTEMA DE ESCALAMIENTO PARA USO CON ESCALERA TELESCÓPICA. INCUMPLIMIENTO ART. 25 J, 45 B, 54 C, E, G, O, 102, 104, 109 B, DEL RESESATE 2013 – REGLA 411.B.2, 420 K DEL CNE SUMINISTRO 2011. ART. 60 LEY 29783")
+[Sat, 20 Nov 2021 00:01:14 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=1
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 00:02:53 +0000] succes 501: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,1,'uploads/140/1/1.png','1.png')
+[Sat, 20 Nov 2021 00:02:53 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 1
+[Sat, 20 Nov 2021 00:02:53 +0000] succes 502: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,1,'uploads/140/1/2.png','2.png')
+[Sat, 20 Nov 2021 00:02:53 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 1
+[Sat, 20 Nov 2021 00:02:53 +0000] succes 503: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,1,'uploads/140/1/3.png','3.png')
+[Sat, 20 Nov 2021 00:02:53 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 1
+[Sat, 20 Nov 2021 00:02:53 +0000] succes 504: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,1,'uploads/140/1/4.png','4.png')
+[Sat, 20 Nov 2021 00:02:53 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 1
+[Sat, 20 Nov 2021 00:02:53 +0000] succes 505: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,1,'uploads/140/1/5.png','5.png')
+[Sat, 20 Nov 2021 00:02:53 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 1
+[Sat, 20 Nov 2021 00:02:53 +0000] succes 506: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,1,'uploads/140/1/6.png','6.png')
+[Sat, 20 Nov 2021 00:02:53 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 1
+[Sat, 20 Nov 2021 00:02:53 +0000] succes 507: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,1,'uploads/140/1/7.png','7.png')
+[Sat, 20 Nov 2021 00:02:53 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 1
+[Sat, 20 Nov 2021 00:02:53 +0000] succes 508: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,1,'uploads/140/1/8.png','8.png')
+[Sat, 20 Nov 2021 00:02:53 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 1
+[Sat, 20 Nov 2021 00:02:53 +0000] succes 509: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,1,'uploads/140/1/9.png','9.png')
+[Sat, 20 Nov 2021 00:02:53 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 1
+[Sat, 20 Nov 2021 00:03:01 +0000] succes 0: select * from informe  where nFlag=0 and nId=140
+[Sat, 20 Nov 2021 00:03:01 +0000] succes 0: select * from tarea  where nFlag=0 and nId=1
+[Sat, 20 Nov 2021 00:03:01 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nOrden in (2)
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 00:03:01 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =100  AND cvalor NOT IN (100)
+[Sat, 20 Nov 2021 00:03:01 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)
+[Sat, 20 Nov 2021 00:03:01 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nId NOT IN (2) and nOrden >2
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 00:03:01 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=2
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 00:03:01 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		 and nOrden < 2 
+		ORDER BY norden desc LIMIT 0,1
+[Sat, 20 Nov 2021 00:03:49 +0000] succes 0: call spt_ins_documento_detalle(
+		"140",
+		"2",
+		"1",
+		"0",
+		"GRUPO DE TRABAJO, CUENTA CON MEDIOS DE SEÑALIZACIÓN MALLA TIPO FAENA Y PALITROQUES, PARA DELIMITAR ZONA DE TRABAJO. ")
+[Sat, 20 Nov 2021 00:03:49 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=2
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 00:04:01 +0000] succes 0: call spt_ins_documento_detalle(
+		"140",
+		"2",
+		"3",
+		"0",
+		"IMPLEMENTAR MAYOR CANTIDAD DE MEDIOS DE SEÑALIZACIÓN TALES COMO CONOS Y BARRAS RETRACTILES.")
+[Sat, 20 Nov 2021 00:04:01 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=2
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 00:04:24 +0000] succes 510: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,2,'uploads/140/2/10.png','10.png')
+[Sat, 20 Nov 2021 00:04:24 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 2
+[Sat, 20 Nov 2021 00:04:28 +0000] succes 0: select * from informe  where nFlag=0 and nId=140
+[Sat, 20 Nov 2021 00:04:28 +0000] succes 0: select * from tarea  where nFlag=0 and nId=1
+[Sat, 20 Nov 2021 00:04:28 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nOrden in (3)
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 00:04:28 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =100  AND cvalor NOT IN (100)
+[Sat, 20 Nov 2021 00:04:28 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)
+[Sat, 20 Nov 2021 00:04:28 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nId NOT IN (3) and nOrden >3
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 00:04:28 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=3
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 00:04:28 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		 and nOrden < 3 
+		ORDER BY norden desc LIMIT 0,1
+[Sat, 20 Nov 2021 00:04:41 +0000] succes 0: call spt_ins_documento_detalle(
+		"140",
+		"3",
+		"1",
+		"0",
+		"UNIDAD MÓVIL DE PLACA (CAMIONETA), BHF-731, DESTINADA AL TRANSPORTE DE PERSONAL Y MATERIALES, CUENTA CON DOCUMENTACIÓN DE CIRCULACIÓN, ALARMA DE RETROCESO, CONOS, TACOS, EXTINTOR DE 6 KG Y HERRAMIENTAS VARIAS.")
+[Sat, 20 Nov 2021 00:04:41 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=3
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 00:05:39 +0000] succes 0: call spt_ins_documento_detalle(
+		"140",
+		"3",
+		"2",
+		"54",
+		"UNIDAD MÓVIL DE PLACA (CAMIONETA), BHF-731, DESTINADA AL TRANSPORTE DE PERSONAL Y MATERIALES, EVIDENCIA BOTIQUÍN DE PRIMEROS AUXILIOS PARCIALMENTE IMPLEMENTADO. INCUMPLIMIENTO AL ART. 41, 53, 121, 131 DEL RESESATE 2013.        ")
+[Sat, 20 Nov 2021 00:05:39 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=3
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 00:10:52 +0000] succes 511: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,3,'uploads/140/3/11.png','11.png')
+[Sat, 20 Nov 2021 00:10:52 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 3
+[Sat, 20 Nov 2021 00:10:52 +0000] succes 512: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,3,'uploads/140/3/12.png','12.png')
+[Sat, 20 Nov 2021 00:10:52 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 3
+[Sat, 20 Nov 2021 00:10:52 +0000] succes 513: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,3,'uploads/140/3/13.png','13.png')
+[Sat, 20 Nov 2021 00:10:52 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 3
+[Sat, 20 Nov 2021 00:10:52 +0000] succes 514: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,3,'uploads/140/3/14.png','14.png')
+[Sat, 20 Nov 2021 00:10:52 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 3
+[Sat, 20 Nov 2021 00:10:52 +0000] succes 515: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,3,'uploads/140/3/15.png','15.png')
+[Sat, 20 Nov 2021 00:10:52 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 3
+[Sat, 20 Nov 2021 00:10:52 +0000] succes 516: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,3,'uploads/140/3/16.png','16.png')
+[Sat, 20 Nov 2021 00:10:52 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 3
+[Sat, 20 Nov 2021 00:10:52 +0000] succes 517: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,3,'uploads/140/3/17.png','17.png')
+[Sat, 20 Nov 2021 00:10:52 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 3
+[Sat, 20 Nov 2021 00:10:52 +0000] succes 518: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,3,'uploads/140/3/18.png','18.png')
+[Sat, 20 Nov 2021 00:10:52 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 3
+[Sat, 20 Nov 2021 00:11:03 +0000] succes 0: select * from informe  where nFlag=0 and nId=140
+[Sat, 20 Nov 2021 00:11:03 +0000] succes 0: select * from tarea  where nFlag=0 and nId=1
+[Sat, 20 Nov 2021 00:11:03 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nOrden in (4)
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 00:11:03 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =100  AND cvalor NOT IN (100)
+[Sat, 20 Nov 2021 00:11:03 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)
+[Sat, 20 Nov 2021 00:11:03 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nId NOT IN (4) and nOrden >4
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 00:11:03 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=4
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 00:11:03 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		 and nOrden < 4 
+		ORDER BY norden desc LIMIT 0,1
+[Sat, 20 Nov 2021 00:11:20 +0000] succes 0: call spt_ins_documento_detalle(
+		"140",
+		"4",
+		"1",
+		"0",
+		"GRUPO DE TRABAJO, CUENTA CON REGISTRO DE CHARLA DE 5 MINUTOS, PREVIO AL DESARROLLO DE LA ACTIVIDAD")
+[Sat, 20 Nov 2021 00:11:20 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=4
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 00:11:30 +0000] succes 0: call spt_ins_documento_detalle(
+		"140",
+		"4",
+		"1",
+		"0",
+		"GRUPO DE TRABAJO CUENTA CON PETS Y PLAN DE CONTINGENCIA, DE LAS ACTIVIDADES QUE EJECUTAN EN CAMPO. ")
+[Sat, 20 Nov 2021 00:11:30 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=4
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 00:11:45 +0000] succes 0: call spt_ins_documento_detalle(
+		"140",
+		"4",
+		"2",
+		"72",
+		"GRUPO DE TRABAJO CARECE DE IPERC, DE LAS ACTIVIDADES QUE EJECUTAN EN CAMPO. INCUMPLIMIENTO DEL ART. ART. 10, 27 A), B), C) Y D), 37, 19, 20, 24, 25 P), 140, 25 S), 30, 45 E), 47, 54 R), 45 E), 111, 130, 57, 35 Y 127 DEL RESESATE 2013).")
+[Sat, 20 Nov 2021 00:11:45 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=4
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 00:12:00 +0000] succes 0: call spt_ins_documento_detalle(
+		"140",
+		"4",
+		"1",
+		"0",
+		"CONDUCTOR DE LA UNIDAD MÓVIL (CAMIONETA BFH-731), EDILBERTO RAMOS ARÉVALO, CUENTA CON LICENCIA DE CONDUCIR VIGENTE Y SEGÚN CATEGORÍA DE VEHÍCULO A CONDUCIR.")
+[Sat, 20 Nov 2021 00:12:00 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=4
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 00:12:09 +0000] succes 0: call spt_ins_documento_detalle(
+		"140",
+		"4",
+		"3",
+		"0",
+		"IMPLEMENTAR DE ESTÁNDAR DE CONDUCCIÓN DE VEHÍCULOS (PETS). ")
+[Sat, 20 Nov 2021 00:12:09 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=4
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 00:13:17 +0000] succes 519: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,4,'uploads/140/4/19.png','19.png')
+[Sat, 20 Nov 2021 00:13:17 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 4
+[Sat, 20 Nov 2021 00:13:17 +0000] succes 520: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,4,'uploads/140/4/20.png','20.png')
+[Sat, 20 Nov 2021 00:13:17 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 4
+[Sat, 20 Nov 2021 00:13:17 +0000] succes 521: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,4,'uploads/140/4/21.png','21.png')
+[Sat, 20 Nov 2021 00:13:17 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 4
+[Sat, 20 Nov 2021 00:13:17 +0000] succes 522: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,4,'uploads/140/4/22.png','22.png')
+[Sat, 20 Nov 2021 00:13:17 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 4
+[Sat, 20 Nov 2021 00:13:17 +0000] succes 523: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,4,'uploads/140/4/23.png','23.png')
+[Sat, 20 Nov 2021 00:13:17 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 4
+[Sat, 20 Nov 2021 00:13:28 +0000] succes 0: select * from informe  where nFlag=0 and nId=140
+[Sat, 20 Nov 2021 00:13:28 +0000] succes 0: select * from tarea  where nFlag=0 and nId=1
+[Sat, 20 Nov 2021 00:13:28 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nOrden in (5)
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 00:13:28 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =100  AND cvalor NOT IN (100)
+[Sat, 20 Nov 2021 00:13:28 +0000] succes 0: select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)
+[Sat, 20 Nov 2021 00:13:28 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		and nId NOT IN (5) and nOrden >5
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 20 Nov 2021 00:13:28 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=5
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 00:13:28 +0000] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=1
+		 and nOrden < 5 
+		ORDER BY norden desc LIMIT 0,1
+[Sat, 20 Nov 2021 00:13:47 +0000] succes 0: call spt_ins_documento_detalle(
+		"140",
+		"5",
+		"1",
+		"0",
+		"GRUPO DE TRABAJO, CUENTA CON HERRAMIENTAS Y ARNÉS COMPLETO CON ESTROBO, LÍNEA DE VIDA Y FAJA DE ANCLAJE, PARA EL DESARROLLO DE SUS ACTIVIDADES DE CAMPO.")
+[Sat, 20 Nov 2021 00:13:47 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=5
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 00:14:09 +0000] succes 0: call spt_ins_documento_detalle(
+		"140",
+		"5",
+		"2",
+		"72",
+		"GRUPO DE TRABAJO, CARECE DE IPERC, PARA EL DESARROLLO DE SUS ACTIVIDADES.")
+[Sat, 20 Nov 2021 00:14:09 +0000] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=5
+		AND i.nFlag = 0
+[Sat, 20 Nov 2021 00:37:14 +0000] succes 524: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,5,'uploads/140/5/24.png','24.png')
+[Sat, 20 Nov 2021 00:37:14 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 5
+[Sat, 20 Nov 2021 00:37:14 +0000] succes 525: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,5,'uploads/140/5/25.png','25.png')
+[Sat, 20 Nov 2021 00:37:14 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 5
+[Sat, 20 Nov 2021 00:37:14 +0000] succes 526: INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)
+		VALUES(140,5,'uploads/140/5/26.png','26.png')
+[Sat, 20 Nov 2021 00:37:14 +0000] succes 0: select * from inf_cumplimiento_img
+		where nIdInforme= 140 and nIdCumplimiento= 5

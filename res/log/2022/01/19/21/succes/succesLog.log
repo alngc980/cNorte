@@ -1,0 +1,5 @@
+[Wed, 19 Jan 2022 21:07:20 +0000] succes 0: select * from persona  where cDoi="40980455"
+[Wed, 19 Jan 2022 21:07:28 +0000] succes 0: select * from empresa where nFlag = 0
+[Wed, 19 Jan 2022 21:07:28 +0000] succes 0: select * from supervision  where nFlag=0
+[Wed, 19 Jan 2022 21:07:28 +0000] succes 0: select * from uunn  where nFlag=0
+[Wed, 19 Jan 2022 21:07:36 +0000] succes 0: call spt_sel_obtienedocumento (17)

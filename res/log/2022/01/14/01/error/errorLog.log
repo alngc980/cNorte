@@ -1,0 +1,24 @@
+[***INICIO: 1 ***]
+[14/01/22 01:11 am] [1. FIC] :user Controller
+[14/01/22 01:11 am] [2. LIN] : 1218
+[14/01/22 01:11 am] [3. DES] : verifcasesion
+[14/01/22 01:11 am] [4. CON] : ""
+[***FIN***]
+[***INICIO: 8 ***]
+[14/01/22 01:11 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/layouts/layoutuser.php
+[14/01/22 01:11 am] [2. LIN] : 280
+[14/01/22 01:11 am] [3. DES] : Undefined index: datEmpresa
+[14/01/22 01:11 am] [4. CON] : {"cntrllr":{"default_layout":"layoutuser.php","smsbot":"","nestadoDoi":0,"nestadoSMS":0,"nestadoCalendario":0,"creditocab":[],"cuser":[],"creditodet":[],"codigo":"","nestado":0,"nEstadoLogueo":0,"cCargo":"","cargando":"<img src=\"res\/img\/load-espera.gif\" style=\"width:30px;heigth:30px\" \/>"},"view":"user\/index","data":{"meta":{"title":"CONSORCIO NORTE","subtitulo":"Inicio","menu":1,"newHeader":1}},"meta":{"title":"CONSORCIO NORTE","subtitulo":"Inicio","menu":1,"newHeader":1}}
+[***FIN***]
+[***INICIO: 8 ***]
+[14/01/22 01:11 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/layouts/layoutuser.php
+[14/01/22 01:11 am] [2. LIN] : 346
+[14/01/22 01:11 am] [3. DES] : Trying to get property 'cNombre' of non-object
+[14/01/22 01:11 am] [4. CON] : {"cntrllr":{"default_layout":"layoutuser.php","smsbot":"","nestadoDoi":0,"nestadoSMS":0,"nestadoCalendario":0,"creditocab":[],"cuser":[],"creditodet":[],"codigo":"","nestado":0,"nEstadoLogueo":0,"cCargo":"","cargando":"<img src=\"res\/img\/load-espera.gif\" style=\"width:30px;heigth:30px\" \/>"},"view":"user\/index","data":{"meta":{"title":"CONSORCIO NORTE","subtitulo":"Inicio","menu":1,"newHeader":1}},"meta":{"title":"CONSORCIO NORTE","subtitulo":"Inicio","menu":1,"newHeader":1},"datEmpresa":null}
+[***FIN***]
+[***INICIO: 8 ***]
+[14/01/22 01:11 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/layouts/layoutuser.php
+[14/01/22 01:11 am] [2. LIN] : 347
+[14/01/22 01:11 am] [3. DES] : Trying to get property 'cRazonSocial' of non-object
+[14/01/22 01:11 am] [4. CON] : {"cntrllr":{"default_layout":"layoutuser.php","smsbot":"","nestadoDoi":0,"nestadoSMS":0,"nestadoCalendario":0,"creditocab":[],"cuser":[],"creditodet":[],"codigo":"","nestado":0,"nEstadoLogueo":0,"cCargo":"","cargando":"<img src=\"res\/img\/load-espera.gif\" style=\"width:30px;heigth:30px\" \/>"},"view":"user\/index","data":{"meta":{"title":"CONSORCIO NORTE","subtitulo":"Inicio","menu":1,"newHeader":1}},"meta":{"title":"CONSORCIO NORTE","subtitulo":"Inicio","menu":1,"newHeader":1},"datEmpresa":null}
+[***FIN***]

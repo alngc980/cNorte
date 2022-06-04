@@ -1,0 +1,24 @@
+[***INICIO: 1 ***]
+[21/12/21 03:45 am] [1. FIC] :user Controller
+[21/12/21 03:45 am] [2. LIN] : 1218
+[21/12/21 03:45 am] [3. DES] : verifcasesion
+[21/12/21 03:45 am] [4. CON] : ""
+[***FIN***]
+[***INICIO: 8 ***]
+[21/12/21 03:45 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/controllers/userController.php
+[21/12/21 03:45 am] [2. LIN] : 1408
+[21/12/21 03:45 am] [3. DES] : Undefined index: datakey
+[21/12/21 03:45 am] [4. CON] : []
+[***FIN***]
+[***INICIO: 8 ***]
+[21/12/21 03:45 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/controllers/userController.php
+[21/12/21 03:45 am] [2. LIN] : 1409
+[21/12/21 03:45 am] [3. DES] : Undefined index: dataInicia
+[21/12/21 03:45 am] [4. CON] : {"idInforme":null}
+[***FIN***]
+[***INICIO: 8 ***]
+[21/12/21 03:45 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/controllers/userController.php
+[21/12/21 03:45 am] [2. LIN] : 1410
+[21/12/21 03:45 am] [3. DES] : Undefined index: dataTotal
+[21/12/21 03:45 am] [4. CON] : {"idInforme":null,"nSeccion":null}
+[***FIN***]

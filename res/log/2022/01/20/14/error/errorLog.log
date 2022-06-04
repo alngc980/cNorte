@@ -1,0 +1,36 @@
+[***INICIO: 2 ***]
+[20/01/22 14:22 pm] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/01/22 14:22 pm] [2. LIN] : 20
+[20/01/22 14:22 pm] [3. DES] : A non-numeric value encountered
+[20/01/22 14:22 pm] [4. CON] : {"sql":"select * from persona  where cDoi=\"40980455\"","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 8 ***]
+[20/01/22 14:23 pm] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/layouts/layoutuser.php
+[20/01/22 14:23 pm] [2. LIN] : 280
+[20/01/22 14:23 pm] [3. DES] : Undefined index: datEmpresa
+[20/01/22 14:23 pm] [4. CON] : {"cntrllr":{"default_layout":"layoutuser.php","smsbot":"","nestadoDoi":0,"nestadoSMS":0,"nestadoCalendario":0,"creditocab":[],"cuser":[],"creditodet":[],"codigo":"","nestado":0,"nEstadoLogueo":0,"cCargo":"","cargando":"<img src=\"res\/img\/load-espera.gif\" style=\"width:30px;heigth:30px\" \/>","usuario":"17"},"view":"user\/index","data":{"meta":{"title":"CONSORCIO NORTE","subtitulo":"Inicio","menu":1,"newHeader":1}},"meta":{"title":"CONSORCIO NORTE","subtitulo":"Inicio","menu":1,"newHeader":1}}
+[***FIN***]
+[***INICIO: 8 ***]
+[20/01/22 14:23 pm] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/layouts/layoutuser.php
+[20/01/22 14:23 pm] [2. LIN] : 346
+[20/01/22 14:23 pm] [3. DES] : Trying to get property 'cNombre' of non-object
+[20/01/22 14:23 pm] [4. CON] : {"cntrllr":{"default_layout":"layoutuser.php","smsbot":"","nestadoDoi":0,"nestadoSMS":0,"nestadoCalendario":0,"creditocab":[],"cuser":[],"creditodet":[],"codigo":"","nestado":0,"nEstadoLogueo":0,"cCargo":"","cargando":"<img src=\"res\/img\/load-espera.gif\" style=\"width:30px;heigth:30px\" \/>","usuario":"17"},"view":"user\/index","data":{"meta":{"title":"CONSORCIO NORTE","subtitulo":"Inicio","menu":1,"newHeader":1}},"meta":{"title":"CONSORCIO NORTE","subtitulo":"Inicio","menu":1,"newHeader":1},"datEmpresa":null}
+[***FIN***]
+[***INICIO: 8 ***]
+[20/01/22 14:23 pm] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/layouts/layoutuser.php
+[20/01/22 14:23 pm] [2. LIN] : 347
+[20/01/22 14:23 pm] [3. DES] : Trying to get property 'cRazonSocial' of non-object
+[20/01/22 14:23 pm] [4. CON] : {"cntrllr":{"default_layout":"layoutuser.php","smsbot":"","nestadoDoi":0,"nestadoSMS":0,"nestadoCalendario":0,"creditocab":[],"cuser":[],"creditodet":[],"codigo":"","nestado":0,"nEstadoLogueo":0,"cCargo":"","cargando":"<img src=\"res\/img\/load-espera.gif\" style=\"width:30px;heigth:30px\" \/>","usuario":"17"},"view":"user\/index","data":{"meta":{"title":"CONSORCIO NORTE","subtitulo":"Inicio","menu":1,"newHeader":1}},"meta":{"title":"CONSORCIO NORTE","subtitulo":"Inicio","menu":1,"newHeader":1},"datEmpresa":null}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/01/22 14:23 pm] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/01/22 14:23 pm] [2. LIN] : 20
+[20/01/22 14:23 pm] [3. DES] : A non-numeric value encountered
+[20/01/22 14:23 pm] [4. CON] : {"sql":"call spt_sel_all_User('17')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/01/22 14:36 pm] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/01/22 14:36 pm] [2. LIN] : 20
+[20/01/22 14:36 pm] [3. DES] : A non-numeric value encountered
+[20/01/22 14:36 pm] [4. CON] : {"sql":"call spt_sel_obtienedocumento (17)","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]

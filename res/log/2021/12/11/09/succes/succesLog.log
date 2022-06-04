@@ -1,0 +1,23 @@
+[Sat, 11 Dec 2021 09:52:46 +0100] succes 0: select * from informe  where nFlag=0 and nId=152
+[Sat, 11 Dec 2021 09:52:46 +0100] succes 0: select * from tarea  where nFlag=0 and nId=3
+[Sat, 11 Dec 2021 09:52:46 +0100] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=3
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 11 Dec 2021 09:59:28 +0100] succes 0: select * from informe  where nFlag=0 and nId=152
+[Sat, 11 Dec 2021 09:59:28 +0100] succes 0: select * from tarea  where nFlag=0 and nId=3
+[Sat, 11 Dec 2021 09:59:28 +0100] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=3
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 11 Dec 2021 09:59:28 +0100] succes 0: select * from codigos  where nFlag=0 and cCodigo =300  AND cvalor NOT IN (300)
+[Sat, 11 Dec 2021 09:59:28 +0100] succes 0: select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)
+[Sat, 11 Dec 2021 09:59:28 +0100] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=3
+		and nId NOT IN (22) and nOrden >0
+		ORDER BY norden ASC LIMIT 0,1
+[Sat, 11 Dec 2021 09:59:28 +0100] succes 0: 
+		SELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` 
+		FROM `inf_cumplimiento_des` i
+		JOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`
+		JOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`
+ 		WHERE `nIdInforme`=152 AND i.`nIdCumplimiento`=22
+		AND i.nFlag = 0
+[Sat, 11 Dec 2021 09:59:28 +0100] succes 0: select * from cumplimiento  where nFlag=0 and nidTarea=3
+		 and nOrden < 0 
+		ORDER BY norden desc LIMIT 0,1

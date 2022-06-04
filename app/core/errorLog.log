@@ -1,0 +1,48 @@
+[***INICIO: CDTAM0001  ***]
+[19/03/20 18:18 pm] [1. FIC] :call spt_ins_solicitud ("dayer",
+		"asdasd",
+		"45645645",
+		"56765765",
+		"34534534",
+		"",
+		"","dgdfgdfgdfg")
+[19/03/20 18:18 pm] [2. LIN] : lin:17
+[19/03/20 18:18 pm] [3. DES] : Column count doesn't match value count at row 1
+[19/03/20 18:18 pm] [4. CON] : "executor.php"
+[***FIN***]
+[***INICIO: 8 ***]
+[19/03/20 18:21 pm] [1. FIC] :C:\xampp\htdocs\cmacm\app\controllers\indexController.php
+[19/03/20 18:21 pm] [2. LIN] : 41
+[19/03/20 18:21 pm] [3. DES] : Undefined property: clienteData::$correo
+[19/03/20 18:21 pm] [4. CON] : {"jsondata":{"success":false,"message":"..."},"user":{"nombres":"dayer","apellidos":"asdasd","dni":"45645645","telefono":"56765765","telefono2":"34534534","agencia":"","comentario":"dgdfgdfgdfg","codigo":""},"valida":[true,0],"msg":"<body><h1>Solicitud de reprogramaci\u00f3n <\/h1>\r\n                    <\/body>","from":"dtambo@dtambo.com"}
+[***FIN***]
+[***INICIO: 2 ***]
+[19/03/20 18:21 pm] [1. FIC] :C:\xampp\htdocs\cmacm\app\controllers\indexController.php
+[19/03/20 18:21 pm] [2. LIN] : 47
+[19/03/20 18:21 pm] [3. DES] : mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+[19/03/20 18:21 pm] [4. CON] : {"jsondata":{"success":false,"message":"..."},"user":{"nombres":"dayer","apellidos":"asdasd","dni":"45645645","telefono":"56765765","telefono2":"34534534","agencia":"","comentario":"dgdfgdfgdfg","codigo":""},"valida":[true,0],"msg":"<body><h1>Solicitud de reprogramaci\u00f3n <\/h1>\r\n                    <\/body>","from":"dtambo@dtambo.com","to":null,"subject":"Solicitud de reprogramaci\u00f3n","message":"<body><h1>Solicitud de reprogramaci\u00f3n <\/h1>\r\n                    <\/body>","headers":"From:dtambo@dtambo.com"}
+[***FIN***]
+[***INICIO: 8 ***]
+[19/03/20 18:23 pm] [1. FIC] :C:\xampp\htdocs\cmacm\app\controllers\indexController.php
+[19/03/20 18:23 pm] [2. LIN] : 41
+[19/03/20 18:23 pm] [3. DES] : Undefined property: clienteData::$correo
+[19/03/20 18:23 pm] [4. CON] : {"jsondata":{"success":false,"message":"..."},"user":{"nombres":"\u00f1a\u00f1o","apellidos":"luis","dni":"64564564","telefono":"91232312","telefono2":"23423423","agencia":"","comentario":"promo dfsdgf fgdfg","codigo":""},"valida":[true,0],"msg":"<body><h1>Solicitud de reprogramaci\u00f3n <\/h1>\r\n                    <\/body>","from":"dtambo@dtambo.com"}
+[***FIN***]
+[***INICIO: 2 ***]
+[19/03/20 18:23 pm] [1. FIC] :C:\xampp\htdocs\cmacm\app\controllers\indexController.php
+[19/03/20 18:23 pm] [2. LIN] : 47
+[19/03/20 18:23 pm] [3. DES] : mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+[19/03/20 18:23 pm] [4. CON] : {"jsondata":{"success":false,"message":"..."},"user":{"nombres":"\u00f1a\u00f1o","apellidos":"luis","dni":"64564564","telefono":"91232312","telefono2":"23423423","agencia":"","comentario":"promo dfsdgf fgdfg","codigo":""},"valida":[true,0],"msg":"<body><h1>Solicitud de reprogramaci\u00f3n <\/h1>\r\n                    <\/body>","from":"dtambo@dtambo.com","to":null,"subject":"Solicitud de reprogramaci\u00f3n","message":"<body><h1>Solicitud de reprogramaci\u00f3n <\/h1>\r\n                    <\/body>","headers":"From:dtambo@dtambo.com"}
+[***FIN***]
+[***INICIO: 8 ***]
+[19/03/20 18:24 pm] [1. FIC] :C:\xampp\htdocs\cmacm\app\controllers\indexController.php
+[19/03/20 18:24 pm] [2. LIN] : 41
+[19/03/20 18:24 pm] [3. DES] : Undefined property: clienteData::$correo
+[19/03/20 18:24 pm] [4. CON] : {"jsondata":{"success":false,"message":"..."},"user":{"nombres":"\u00f1a\u00f1o","apellidos":"luis","dni":"47657567","telefono":"91232312","telefono2":"23423423","agencia":"","comentario":"promo dfsdwerwergf fgdfg","codigo":""},"valida":[true,0],"msg":"<body><h1>Solicitud de reprogramaci\u00f3n <\/h1>\r\n                    <\/body>","from":"dtambo@dtambo.com"}
+[***FIN***]
+[***INICIO: 2 ***]
+[19/03/20 18:24 pm] [1. FIC] :C:\xampp\htdocs\cmacm\app\controllers\indexController.php
+[19/03/20 18:24 pm] [2. LIN] : 47
+[19/03/20 18:24 pm] [3. DES] : mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+[19/03/20 18:24 pm] [4. CON] : {"jsondata":{"success":false,"message":"..."},"user":{"nombres":"\u00f1a\u00f1o","apellidos":"luis","dni":"47657567","telefono":"91232312","telefono2":"23423423","agencia":"","comentario":"promo dfsdwerwergf fgdfg","codigo":""},"valida":[true,0],"msg":"<body><h1>Solicitud de reprogramaci\u00f3n <\/h1>\r\n                    <\/body>","from":"dtambo@dtambo.com","to":null,"subject":"Solicitud de reprogramaci\u00f3n","message":"<body><h1>Solicitud de reprogramaci\u00f3n <\/h1>\r\n                    <\/body>","headers":"From:dtambo@dtambo.com"}
+[***FIN***]

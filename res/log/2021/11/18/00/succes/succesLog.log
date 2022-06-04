@@ -1,0 +1,17 @@
+[Thu, 18 Nov 2021 00:59:12 +0000] succes 0: select * from persona  where cDoi="44335153"
+[Thu, 18 Nov 2021 00:59:16 +0000] succes 0: call spt_sel_all_User('20')
+[Thu, 18 Nov 2021 00:59:19 +0000] succes 0: select * from empresa  where nTipo=1
+[Thu, 18 Nov 2021 00:59:19 +0000] succes 0: select * from empresa  where nTipo=0
+[Thu, 18 Nov 2021 00:59:19 +0000] succes 0: select * from tipo_documento  where nFlag=0
+[Thu, 18 Nov 2021 00:59:19 +0000] succes 0: select * from tarea  where nFlag=0
+[Thu, 18 Nov 2021 00:59:19 +0000] succes 0: select * from uunn  where nFlag=0
+[Thu, 18 Nov 2021 00:59:19 +0000] succes 0: select * from programa  where nFlag=0
+[Thu, 18 Nov 2021 00:59:19 +0000] succes 0: select * from supervision  where nFlag=0
+[Thu, 18 Nov 2021 00:59:21 +0000] succes 0: SELECT EC.`nId`, E.`cNombre`,EC.`cCargo` FROM `empresa` E 
+		INNER JOIN `empresa_cargo` EC ON E.`nId`=EC.`nIdEmpresa` 
+		WHERE E.`nId` = 0 
+[Thu, 18 Nov 2021 00:59:24 +0000] succes 0: SELECT r.`nId`,p.`cNombres`,p.`cApellidos` FROM responsable r
+	JOIN persona p ON p.`nId` = r.`nIdPersona`
+	JOIN empresa e ON e.`nId`=r.`nIdEmpresa` 
+	WHERE e.nId = 0
+	/*WHERE e.`nTipo`=1*/

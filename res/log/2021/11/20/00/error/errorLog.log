@@ -1,0 +1,744 @@
+[***INICIO: 2 ***]
+[20/11/21 00:00 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:00 am] [2. LIN] : 20
+[20/11/21 00:00 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:00 am] [4. CON] : {"sql":"call spt_ins_documento(\n\t\t\"18\",\n\t\t\"1\",\n\t\t\"1\",\n\t\t\"1\",\n\t\t\"8\",\n\t\t\"8\",\n\t\t\"67\",\n\t\t\"100\",\n\t\t\"4\",\n\t\t\"INSPECCI\u00d3N DE EPPS, EQUIPOS Y HERRAMIENTAS, UNIDAD M\u00d3VIL Y PERSONAL OPERATIVO, PREVIO AL INICIO DE ACTIVIDADES \u2013 INSTALACI\u00d3N DE MEDIDORES POR TELEMETR\u00cdA.\",\n\t\t\"ACTIVIDADES T\u00c9CNICO COMERCIALES DE CLIENTES MAYORES.\",\n\t\t\"AV. S\u00c1ENZ PE\u00d1A 1750 - CHICLAYO\",\n\t\t\"COMERCIAL\",\n\t\t\"2021-11-12\",\n\t\t\"2004\",\n\t\t\"ENSA\")","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:00 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:00 am] [2. LIN] : 20
+[20/11/21 00:00 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:00 am] [4. CON] : {"sql":"select * from informe  where nFlag=0 and nId=140","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:00 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:00 am] [2. LIN] : 20
+[20/11/21 00:00 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:00 am] [4. CON] : {"sql":"select * from tarea  where nFlag=0 and nId=1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:00 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:00 am] [2. LIN] : 20
+[20/11/21 00:00 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:00 am] [4. CON] : {"sql":"select * from cumplimiento  where nFlag=0 and nidTarea=1\n\t\tORDER BY norden ASC LIMIT 0,1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:00 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:00 am] [2. LIN] : 20
+[20/11/21 00:00 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:00 am] [4. CON] : {"sql":"select * from codigos  where nFlag=0 and cCodigo =100  AND cvalor NOT IN (100)","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:00 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:00 am] [2. LIN] : 20
+[20/11/21 00:00 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:00 am] [4. CON] : {"sql":"select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:00 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:00 am] [2. LIN] : 20
+[20/11/21 00:00 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:00 am] [4. CON] : {"sql":"select * from cumplimiento  where nFlag=0 and nidTarea=1\n\t\tand nId NOT IN (1) and nOrden >0\n\t\tORDER BY norden ASC LIMIT 0,1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:00 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:00 am] [2. LIN] : 20
+[20/11/21 00:00 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:00 am] [4. CON] : {"sql":"\n\t\tSELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` \n\t\tFROM `inf_cumplimiento_des` i\n\t\tJOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`\n\t\tJOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`\n \t\tWHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=1\n\t\tAND i.nFlag = 0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:00 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:00 am] [2. LIN] : 20
+[20/11/21 00:00 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:00 am] [4. CON] : {"sql":"select * from cumplimiento  where nFlag=0 and nidTarea=1\n\t\t and nOrden < 0 \n\t\tORDER BY norden desc LIMIT 0,1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 8 ***]
+[20/11/21 00:00 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/controllers/userController.php
+[20/11/21 00:00 am] [2. LIN] : 1461
+[20/11/21 00:00 am] [3. DES] : Trying to get property 'nOrden' of non-object
+[20/11/21 00:00 am] [4. CON] : {"idInforme":"140","nSeccion":"0","nTotalSeccion":"9","bInicia":1,"bFinaliza":0,"informe":{"nId":"140","nIdUserRegistro":"","nIdPrograma":"","nIdTarea":"","nIdTipoDocumento":"","nIdEmpresa":"","nIdUUNN":"","nIdCargo":"","nIdResponsable":"","nIdSupervision":"","cNombreInforme":"","cActividad":"","cObra":"","cLugar":"","cArea":"","cFecha":"","nActa":"","cESAS":""},"datInforme":{"nId":"140","nIdUserRegistro":"18","nIdPrograma":"1","nIdTarea":"1","nIdTipoDocumento":"1","nIdEmpresa":"8","nIdUUNN":"8","nIdCargo":"67","nIdResponsable":"100","nIdSupervision":"4","cNombreInforme":"","cActividad":"INSPECCI\u00d3N DE EPPS, EQUIPOS Y HERRAMIENTAS, UNIDAD M\u00d3VIL Y PERSONAL OPERATIVO, PREVIO AL INICIO DE ACTIVIDADES \u2013 INSTALACI\u00d3N DE MEDIDORES POR TELEMETR\u00cdA.","cObra":"ACTIVIDADES T\u00c9CNICO COMERCIALES DE CLIENTES MAYORES.","cLugar":"AV. S\u00c1ENZ PE\u00d1A 1750 - CHICLAYO","cArea":"COMERCIAL","cFecha":"2021-11-12 00:00:00","nActa":"2004","cESAS":"ENSA","nFlag":"0","nEstado":"1","dRegistro":"2021-11-19 19:00:10","cRutaActa":null,"dUpdate":"2021-11-19 19:00:10","nIdAux":"428","cRutaActaReverso":""},"DatNumMostrar":"428","idTarea":"1","tarea":{"nId":"1","cNombre":"","nFlag":""},"datTarea":{"nId":"1","cNombre":"SUPERVISI\u00d3N (INSPECCI\u00d3N \/ OBSERVACI\u00d3N) EN SEGURIDAD Y SALUD EN EL TRABAJO","nFlag":"0","dRegistro":"2021-06-26 16:25:35"},"cumpliento":{"nId":"1","nIdTarea":"1","cCodigo":"","cNombre":"","nOrden":"0"},"datCumpliento":{"nId":"1","nIdTarea":"1","cCodigo":"EPP","cNombre":"EQUIPO DE PROTECCI\u00d3N (PERSONAL Y\/O COLECTIVO)","nOrden":"1","nTipo":"100","nModelo":"0","nFlag":"0","nEstado":"1","dCreate":"2021-06-27 03:17:12"},"codigos":{"nId":"","cCodigo":"100","cValor":"","cDescripcion":"","nFlag":""},"dataCodigos":[{"nId":"2","cCodigo":"100","cValor":"1","cDescripcion":"(NC)","nFlag":"0","dCreate":"2021-06-27 15:14:04"},{"nId":"3","cCodigo":"100","cValor":"2","cDescripcion":"(NI)","nFlag":"0","dCreate":"2021-06-27 15:14:17"},{"nId":"4","cCodigo":"100","cValor":"3","cDescripcion":"(-)","nFlag":"0","dCreate":"2021-06-27 15:14:23"},{"nId":"16","cCodigo":"100","cValor":"4","cDescripcion":"(NC) SUBSANADO","nFlag":"0","dCreate":"2021-07-21 20:59:50"},{"nId":"17","cCodigo":"100","cValor":"5","cDescripcion":"(NI) REITERATIVO","nFlag":"0","dCreate":"2021-07-21 21:00:38"}],"dataImcumplimineto":[{"nId":"21","cCodigo":"500","cValor":"1","cDescripcion":"Operar equipo sin autorizaci\u00f3n","nFlag":"0","dCreate":"2021-10-23 15:04:06"},{"nId":"22","cCodigo":"500","cValor":"2","cDescripcion":"Omisi\u00f3n de advertir - Falta de Se\u00f1alizaci\u00f3n","nFlag":"0","dCreate":"2021-10-23 15:04:06"},{"nId":"23","cCodigo":"500","cValor":"3","cDescripcion":"Omisi\u00f3n de Asegurar (Herramientas, Equipo o Materiales)","nFlag":"0","dCreate":"2021-10-23 15:04:06"},{"nId":"24","cCodigo":"500","cValor":"4","cDescripcion":"Conducir unidad movil a velocidad indebida","nFlag":"0","dCreate":"2021-10-23 15:04:06"},{"nId":"25","cCodigo":"500","cValor":"5","cDescripcion":"Desactivar dispositivos de seguridad","nFlag":"0","dCreate":"2021-10-23 15:04:06"},{"nId":"26","cCodigo":"500","cValor":"6","cDescripcion":"Usar EPP. Maquinas o Herramientas defectuoso","nFlag":"0","dCreate":"2021-10-23 15:04:06"},{"nId":"27","cCodigo":"500","cValor":"7","cDescripcion":"No usar el EPP o usarlo incorrectamente","nFlag":"0","dCreate":"2021-10-23 15:04:06"},{"nId":"28","cCodigo":"500","cValor":"8","cDescripcion":"Trasladar Carga en forma Incorrecta","nFlag":"0","dCreate":"2021-10-23 15:04:06"},{"nId":"29","cCodigo":"500","cValor":"9","cDescripcion":"Aplicacion incorrecta","nFlag":"0","dCreate":"2021-10-23 15:04:06"},{"nId":"30","cCodigo":"500","cValor":"10","cDescripcion":"Levantar incorrectamente una carga","nFlag":"0","dCreate":"2021-10-23 15:04:06"},{"nId":"31","cCodigo":"500","cValor":"11","cDescripcion":"Postura Inadecuada para el Trabajo","nFlag":"0","dCreate":"2021-10-23 15:04:06"},{"nId":"32","cCodigo":"500","cValor":"12","cDescripcion":"No cuenta con herramienytas aisladas y\/o materiales adecuados o en buen estado","nFlag":"0","dCreate":"2021-10-23 15:04:06"},{"nId":"33","cCodigo":"500","cValor":"13","cDescripcion":"Distracci\u00f3n en el trabajo","nFlag":"0","dCreate":"2021-10-23 15:04:06"},{"nId":"34","cCodigo":"500","cValor":"14","cDescripcion":"Laborar bajo la influencia del alcohol y\/o drogas","nFlag":"0","dCreate":"2021-10-23 15:04:06"},{"nId":"35","cCodigo":"500","cValor":"15","cDescripcion":"Uso indebido del Equipo (maquinas o herramientas)","nFlag":"0","dCreate":"2021-10-23 15:04:06"},{"nId":"36","cCodigo":"500","cValor":"16","cDescripcion":"Trabajar bajo carga suspendida","nFlag":"0","dCreate":"2021-10-23 15:04:06"},{"nId":"37","cCodigo":"500","cValor":"17","cDescripcion":"Realiza la tarea sin cumplir con el PETS.","nFlag":"0","dCreate":"2021-10-23 15:04:06"},{"nId":"38","cCodigo":"500","cValor":"18","cDescripcion":"No cumple con los controles establecidos en el IPERC.","nFlag":"0","dCreate":"2021-10-23 15:04:06"},{"nId":"39","cCodigo":"500","cValor":"19","cDescripcion":"No se cuenta con el acta de charla 5 minutos","nFlag":"0","dCreate":"2021-10-23 15:04:06"},{"nId":"40","cCodigo":"500","cValor":"20","cDescripcion":"No cumple con los controles establecidos en la charla 5 minutos","nFlag":"0","dCreate":"2021-10-23 15:04:06"},{"nId":"41","cCodigo":"500","cValor":"21","cDescripcion":"No existe supervisi\u00f3n o ineficiente supervisi\u00f3n","nFlag":"0","dCreate":"2021-10-23 15:04:06"},{"nId":"42","cCodigo":"500","cValor":"22","cDescripcion":"Escala o ascender estructuras defectuosas","nFlag":"0","dCreate":"2021-11-06 17:56:27"},{"nId":"43","cCodigo":"500","cValor":"23","cDescripcion":"Licencia de conducir no adecuada para el vehiculo","nFlag":"0","dCreate":"2021-11-06 17:56:27"},{"nId":"44","cCodigo":"500","cValor":"24","cDescripcion":"Licencia de conducir vencida","nFlag":"0","dCreate":"2021-11-06 17:59:26"},{"nId":"45","cCodigo":"500","cValor":"25","cDescripcion":"Soat vencido ","nFlag":"0","dCreate":"2021-11-06 17:59:26"},{"nId":"46","cCodigo":"500","cValor":"26","cDescripcion":"Iniciar actividades sin pasar controles iniciales de SSTMA","nFlag":"0","dCreate":"2021-11-06 18:01:08"},{"nId":"47","cCodigo":"500","cValor":"27","cDescripcion":"No contar con SCTR y\/o Seguro Vida Ley","nFlag":"0","dCreate":"2021-11-06 18:01:08"},{"nId":"48","cCodigo":"500","cValor":"28","cDescripcion":"Transporte de personal sobrepasa el l\u00edmite maximo de capacidad y\/o en la tolva","nFlag":"0","dCreate":"2021-11-06 18:01:08"},{"nId":"49","cCodigo":"500","cValor":"29","cDescripcion":"No utilizar implementos de bioseguridad (Mascarilla, distanciamiento, alcohol en gel)","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"50","cCodigo":"500","cValor":"30","cDescripcion":"No contar con Orden de Trabajo","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"51","cCodigo":"500","cValor":"31","cDescripcion":"Orden trabajo no corresponde con la actividad realizada en campo","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"52","cCodigo":"500","cValor":"32","cDescripcion":"EMO vencidos y\/o no los evidencian","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"53","cCodigo":"500","cValor":"33","cDescripcion":"No evidenciar registro de ficha de sintomatolog\u00eda de COVID-19","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"54","cCodigo":"500","cValor":"34","cDescripcion":"No contar con fotocheck de identificaci\u00f3n en el lugar de trabajo","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"55","cCodigo":"500","cValor":"35","cDescripcion":"Estructuras en mal estado ","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"56","cCodigo":"500","cValor":"36","cDescripcion":"Guardas o Barreras Inadecuadas","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"57","cCodigo":"500","cValor":"37","cDescripcion":"No cuenta o mal estado de los equipos de protecci\u00f3n","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"58","cCodigo":"500","cValor":"38","cDescripcion":"Equipo de protecci\u00f3n Inadecuado","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"59","cCodigo":"500","cValor":"39","cDescripcion":"Herramientas, Equipo o Materiales defectuosos","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"60","cCodigo":"500","cValor":"40","cDescripcion":"Espacios reducidos","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"61","cCodigo":"500","cValor":"41","cDescripcion":"Sistema de Advertencia - Se\u00f1alizaci\u00f2n Inadecuada","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"62","cCodigo":"500","cValor":"42","cDescripcion":"Peligros de Incendio y Explosi\u00f3n","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"63","cCodigo":"500","cValor":"43","cDescripcion":"Orden y Limpieza deficientes\/ Desorden","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"64","cCodigo":"500","cValor":"44","cDescripcion":"Exposici\u00f3n al Ruido","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"65","cCodigo":"500","cValor":"45","cDescripcion":"Exposici\u00f3n a la Radiaci\u00f3n","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"66","cCodigo":"500","cValor":"46","cDescripcion":"Temperaturas Extremas","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"67","cCodigo":"500","cValor":"47","cDescripcion":"Iluminaci\u00f3n Deficiente","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"68","cCodigo":"500","cValor":"48","cDescripcion":"Ventilaci\u00f3n Inadecuada","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"69","cCodigo":"500","cValor":"49","cDescripcion":"Condiciones Ambientales Peligrosas","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"70","cCodigo":"500","cValor":"50","cDescripcion":"Infraestructuras el\u00e9ctricas en mal estado","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"71","cCodigo":"500","cValor":"51","cDescripcion":"Tener EPP defectuoso o no contar con EPP","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"72","cCodigo":"500","cValor":"52","cDescripcion":"Extintor defectuoso o vencido ","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"73","cCodigo":"500","cValor":"53","cDescripcion":"Auscencia de extintor","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"74","cCodigo":"500","cValor":"54","cDescripcion":"Botiqu\u00edn incompleto y\/o medicamentos vencidos","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"75","cCodigo":"500","cValor":"55","cDescripcion":"Ausencia de botiqu\u00edn ","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"76","cCodigo":"500","cValor":"56","cDescripcion":"No cumplir con las 5 Reglas de Oro","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"77","cCodigo":"500","cValor":"57","cDescripcion":"Caminos, accesos inadecuadas","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"78","cCodigo":"500","cValor":"58","cDescripcion":"L\u00edneas, redes, equipos incumpliendo DMS.","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"79","cCodigo":"500","cValor":"59","cDescripcion":"Otros (especificar) - Luces de emergencia, camilla, soat de uso particular, no tiene tarjeta de propiedad, carece de cable corriente, fundido","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"80","cCodigo":"500","cValor":"60","cDescripcion":"Revisi\u00f3n t\u00e9cnica veh\u00edcular vencida","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"81","cCodigo":"500","cValor":"61","cDescripcion":"Instalaciones no cuentan con licencia de funcionamiento","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"82","cCodigo":"500","cValor":"62","cDescripcion":"Instalaciones no cuentan con certificado de defensa civil","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"83","cCodigo":"500","cValor":"63","cDescripcion":"Instalaciones no cuentan con certificado de saneamiento ambiental (Fumigaci\u00f3n, desinfecci\u00f3n, desinsectaci\u00f3n, desratizaci\u00f3n y limpieza de reservoriso de agua) o se encuentran vencido","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"84","cCodigo":"500","cValor":"64","cDescripcion":"Sillas, mesas y\/o escritorios No ergon\u00f3micas","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"85","cCodigo":"500","cValor":"65","cDescripcion":"Fuga de hidrocarburos y derivados en el suelo.","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"86","cCodigo":"500","cValor":"66","cDescripcion":"No se cuenta con contenedores de residuos s\u00f3lidos, mala segregaci\u00f3n o estan saturados","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"87","cCodigo":"500","cValor":"67","cDescripcion":"No cuenta con jab\u00f3n l\u00edquido desinfectante y\/o  alcohol u otros insumos sanitarios","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"88","cCodigo":"500","cValor":"68","cDescripcion":"Falta de agua para beber y\/o lavarse","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"89","cCodigo":"500","cValor":"69","cDescripcion":"Elementos de se\u00f1alizaci\u00f3n en mal estado","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"90","cCodigo":"500","cValor":"70","cDescripcion":"Ausencia de implementos de bioseguridad  (Mascarilla, distanciamiento, alcohol en gel, etc)","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"91","cCodigo":"500","cValor":"71","cDescripcion":"Brazo hidr\u00e1ulico \/ gr\u00faa no cuenta con certificado de operatividad o dicho certificado no se encuentra vigente","nFlag":"0","dCreate":"2021-11-06 18:09:55"},{"nId":"92","cCodigo":"500","cValor":"72","cDescripcion":"OTROS (Documentos PETS E IPERC) no cuenta con documentos de seguridad, Plan de contigencia,","nFlag":"0","dCreate":"2021-11-06 18:09:55"}],"cumplientoProx":{"nId":"2","nIdTarea":"1","cCodigo":"SE","cNombre":"SE\u00d1ALIZACI\u00d3N Y DELIMITACI\u00d3N","nOrden":"2","nTipo":"100","nModelo":"0","nFlag":"0","nEstado":"1","dCreate":"2021-06-27 03:21:06"},"proximoCumpliento":"2","cumplientoRegistrados":{"nId":"","nIdTarea":"","cCodigo":"","cNombre":"","nOrden":"","nIdInforme":"140","nIdCumplimiento":"1"},"datCumplientoRegistrados":[],"cumplientoAnt":null}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:00 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:00 am] [2. LIN] : 20
+[20/11/21 00:00 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:00 am] [4. CON] : {"sql":"call spt_ins_documento_detalle(\n\t\t\"140\",\n\t\t\"1\",\n\t\t\"1\",\n\t\t\"0\",\n\t\t\"GRUPO DE TRABAJO, CONTIENEN DE EPPS B\u00c1SICOS: CASCO DIEL\u00c9CTRICO CON BARBIQUEJO, ROPA DE TRABAJO (ANTIFLAMA), GUANTES DE CUERO, CALZADO DIEL\u00c9CTRICO, GUANTES DE MT, CHALECO DE ALTA VISIBILIDAD Y FOTOCHECK DE IDENTIFICACI\u00d3N.\")","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:00 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:00 am] [2. LIN] : 20
+[20/11/21 00:00 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:00 am] [4. CON] : {"sql":"\n\t\tSELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` \n\t\tFROM `inf_cumplimiento_des` i\n\t\tJOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`\n\t\tJOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`\n \t\tWHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=1\n\t\tAND i.nFlag = 0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:00 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:00 am] [2. LIN] : 20
+[20/11/21 00:00 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:00 am] [4. CON] : {"sql":"call spt_ins_documento_detalle(\n\t\t\"140\",\n\t\t\"1\",\n\t\t\"1\",\n\t\t\"0\",\n\t\t\"GRUPO DE TRABAJO, QUE REALIZA TRABAJOS EN ALTURA CONTIENE DE ESTROBOS \u00d3 PASOS DE ESCALAMIENTO, EQUIPO DE PROTECCI\u00d3N CONTRA CA\u00cdDAS (ARN\u00c9S DE SEGURIDAD TIPO LINIERO, L\u00cdNEA Y FAJA DE ANCLAJE) Y ESCALERA TELESC\u00d3PICA (NUEVA) Y BANDER\u00cdN. \")","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:00 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:00 am] [2. LIN] : 20
+[20/11/21 00:00 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:00 am] [4. CON] : {"sql":"\n\t\tSELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` \n\t\tFROM `inf_cumplimiento_des` i\n\t\tJOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`\n\t\tJOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`\n \t\tWHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=1\n\t\tAND i.nFlag = 0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:00 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:00 am] [2. LIN] : 20
+[20/11/21 00:00 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:00 am] [4. CON] : {"sql":"call spt_ins_documento_detalle(\n\t\t\"140\",\n\t\t\"1\",\n\t\t\"1\",\n\t\t\"0\",\n\t\t\"T\u00c9CNICO CESAR AUGUSTO DIOSES LEZCANO, EVIDENCIA PINZA AMPER\u00cdMETRICA CON CERTIFICADO DE CALIBRACI\u00d3N VIGENTE. \")","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:00 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:00 am] [2. LIN] : 20
+[20/11/21 00:00 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:00 am] [4. CON] : {"sql":"\n\t\tSELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` \n\t\tFROM `inf_cumplimiento_des` i\n\t\tJOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`\n\t\tJOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`\n \t\tWHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=1\n\t\tAND i.nFlag = 0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:01 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:01 am] [2. LIN] : 20
+[20/11/21 00:01 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:01 am] [4. CON] : {"sql":"call spt_ins_documento_detalle(\n\t\t\"140\",\n\t\t\"1\",\n\t\t\"2\",\n\t\t\"6\",\n\t\t\"PERSONAL OPERATIVO MANUEL D\u00c1VILA MENOR, CESAR AUGUSTO DIOSES LEZCANO, EDILBERTO RAMOS AR\u00c9VALO, CARECE DE PANTALLA DE PROTECCI\u00d3N FACIAL (CARETA ANTI-ARCO, AS\u00cd MISMO CARECEN DE SOGAS DE AMARRE Y SISTEMA DE ESCALAMIENTO PARA USO CON ESCALERA TELESC\u00d3PICA. INCUMPLIMIENTO ART. 25 J, 45 B, 54 C, E, G, O, 102, 104, 109 B, DEL RESESATE 2013 \u2013 REGLA 411.B.2, 420 K DEL CNE SUMINISTRO 2011. ART. 60 LEY 29783\")","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:01 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:01 am] [2. LIN] : 20
+[20/11/21 00:01 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:01 am] [4. CON] : {"sql":"\n\t\tSELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` \n\t\tFROM `inf_cumplimiento_des` i\n\t\tJOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`\n\t\tJOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`\n \t\tWHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=1\n\t\tAND i.nFlag = 0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:02 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:02 am] [2. LIN] : 20
+[20/11/21 00:02 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:02 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,1,'uploads\/140\/1\/1.png','1.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":501}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:02 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:02 am] [2. LIN] : 20
+[20/11/21 00:02 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:02 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:02 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:02 am] [2. LIN] : 20
+[20/11/21 00:02 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:02 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,1,'uploads\/140\/1\/2.png','2.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":502}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:02 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:02 am] [2. LIN] : 20
+[20/11/21 00:02 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:02 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:02 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:02 am] [2. LIN] : 20
+[20/11/21 00:02 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:02 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,1,'uploads\/140\/1\/3.png','3.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":503}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:02 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:02 am] [2. LIN] : 20
+[20/11/21 00:02 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:02 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:02 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:02 am] [2. LIN] : 20
+[20/11/21 00:02 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:02 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,1,'uploads\/140\/1\/4.png','4.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":504}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:02 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:02 am] [2. LIN] : 20
+[20/11/21 00:02 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:02 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:02 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:02 am] [2. LIN] : 20
+[20/11/21 00:02 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:02 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,1,'uploads\/140\/1\/5.png','5.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":505}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:02 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:02 am] [2. LIN] : 20
+[20/11/21 00:02 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:02 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:02 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:02 am] [2. LIN] : 20
+[20/11/21 00:02 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:02 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,1,'uploads\/140\/1\/6.png','6.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":506}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:02 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:02 am] [2. LIN] : 20
+[20/11/21 00:02 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:02 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:02 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:02 am] [2. LIN] : 20
+[20/11/21 00:02 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:02 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,1,'uploads\/140\/1\/7.png','7.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":507}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:02 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:02 am] [2. LIN] : 20
+[20/11/21 00:02 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:02 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:02 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:02 am] [2. LIN] : 20
+[20/11/21 00:02 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:02 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,1,'uploads\/140\/1\/8.png','8.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":508}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:02 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:02 am] [2. LIN] : 20
+[20/11/21 00:02 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:02 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:02 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:02 am] [2. LIN] : 20
+[20/11/21 00:02 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:02 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,1,'uploads\/140\/1\/9.png','9.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":509}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:02 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:02 am] [2. LIN] : 20
+[20/11/21 00:02 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:02 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:03 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:03 am] [2. LIN] : 20
+[20/11/21 00:03 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:03 am] [4. CON] : {"sql":"select * from informe  where nFlag=0 and nId=140","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:03 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:03 am] [2. LIN] : 20
+[20/11/21 00:03 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:03 am] [4. CON] : {"sql":"select * from tarea  where nFlag=0 and nId=1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:03 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:03 am] [2. LIN] : 20
+[20/11/21 00:03 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:03 am] [4. CON] : {"sql":"select * from cumplimiento  where nFlag=0 and nidTarea=1\n\t\tand nOrden in (2)\n\t\tORDER BY norden ASC LIMIT 0,1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:03 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:03 am] [2. LIN] : 20
+[20/11/21 00:03 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:03 am] [4. CON] : {"sql":"select * from codigos  where nFlag=0 and cCodigo =100  AND cvalor NOT IN (100)","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:03 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:03 am] [2. LIN] : 20
+[20/11/21 00:03 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:03 am] [4. CON] : {"sql":"select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:03 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:03 am] [2. LIN] : 20
+[20/11/21 00:03 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:03 am] [4. CON] : {"sql":"select * from cumplimiento  where nFlag=0 and nidTarea=1\n\t\tand nId NOT IN (2) and nOrden >2\n\t\tORDER BY norden ASC LIMIT 0,1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:03 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:03 am] [2. LIN] : 20
+[20/11/21 00:03 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:03 am] [4. CON] : {"sql":"\n\t\tSELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` \n\t\tFROM `inf_cumplimiento_des` i\n\t\tJOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`\n\t\tJOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`\n \t\tWHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=2\n\t\tAND i.nFlag = 0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:03 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:03 am] [2. LIN] : 20
+[20/11/21 00:03 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:03 am] [4. CON] : {"sql":"select * from cumplimiento  where nFlag=0 and nidTarea=1\n\t\t and nOrden < 2 \n\t\tORDER BY norden desc LIMIT 0,1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:03 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:03 am] [2. LIN] : 20
+[20/11/21 00:03 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:03 am] [4. CON] : {"sql":"call spt_ins_documento_detalle(\n\t\t\"140\",\n\t\t\"2\",\n\t\t\"1\",\n\t\t\"0\",\n\t\t\"GRUPO DE TRABAJO, CUENTA CON MEDIOS DE SE\u00d1ALIZACI\u00d3N MALLA TIPO FAENA Y PALITROQUES, PARA DELIMITAR ZONA DE TRABAJO. \")","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:03 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:03 am] [2. LIN] : 20
+[20/11/21 00:03 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:03 am] [4. CON] : {"sql":"\n\t\tSELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` \n\t\tFROM `inf_cumplimiento_des` i\n\t\tJOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`\n\t\tJOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`\n \t\tWHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=2\n\t\tAND i.nFlag = 0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:04 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:04 am] [2. LIN] : 20
+[20/11/21 00:04 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:04 am] [4. CON] : {"sql":"call spt_ins_documento_detalle(\n\t\t\"140\",\n\t\t\"2\",\n\t\t\"3\",\n\t\t\"0\",\n\t\t\"IMPLEMENTAR MAYOR CANTIDAD DE MEDIOS DE SE\u00d1ALIZACI\u00d3N TALES COMO CONOS Y BARRAS RETRACTILES.\")","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:04 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:04 am] [2. LIN] : 20
+[20/11/21 00:04 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:04 am] [4. CON] : {"sql":"\n\t\tSELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` \n\t\tFROM `inf_cumplimiento_des` i\n\t\tJOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`\n\t\tJOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`\n \t\tWHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=2\n\t\tAND i.nFlag = 0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:04 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:04 am] [2. LIN] : 20
+[20/11/21 00:04 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:04 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,2,'uploads\/140\/2\/10.png','10.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":510}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:04 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:04 am] [2. LIN] : 20
+[20/11/21 00:04 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:04 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 2","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:04 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:04 am] [2. LIN] : 20
+[20/11/21 00:04 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:04 am] [4. CON] : {"sql":"select * from informe  where nFlag=0 and nId=140","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:04 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:04 am] [2. LIN] : 20
+[20/11/21 00:04 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:04 am] [4. CON] : {"sql":"select * from tarea  where nFlag=0 and nId=1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:04 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:04 am] [2. LIN] : 20
+[20/11/21 00:04 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:04 am] [4. CON] : {"sql":"select * from cumplimiento  where nFlag=0 and nidTarea=1\n\t\tand nOrden in (3)\n\t\tORDER BY norden ASC LIMIT 0,1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:04 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:04 am] [2. LIN] : 20
+[20/11/21 00:04 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:04 am] [4. CON] : {"sql":"select * from codigos  where nFlag=0 and cCodigo =100  AND cvalor NOT IN (100)","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:04 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:04 am] [2. LIN] : 20
+[20/11/21 00:04 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:04 am] [4. CON] : {"sql":"select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:04 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:04 am] [2. LIN] : 20
+[20/11/21 00:04 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:04 am] [4. CON] : {"sql":"select * from cumplimiento  where nFlag=0 and nidTarea=1\n\t\tand nId NOT IN (3) and nOrden >3\n\t\tORDER BY norden ASC LIMIT 0,1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:04 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:04 am] [2. LIN] : 20
+[20/11/21 00:04 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:04 am] [4. CON] : {"sql":"\n\t\tSELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` \n\t\tFROM `inf_cumplimiento_des` i\n\t\tJOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`\n\t\tJOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`\n \t\tWHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=3\n\t\tAND i.nFlag = 0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:04 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:04 am] [2. LIN] : 20
+[20/11/21 00:04 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:04 am] [4. CON] : {"sql":"select * from cumplimiento  where nFlag=0 and nidTarea=1\n\t\t and nOrden < 3 \n\t\tORDER BY norden desc LIMIT 0,1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:04 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:04 am] [2. LIN] : 20
+[20/11/21 00:04 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:04 am] [4. CON] : {"sql":"call spt_ins_documento_detalle(\n\t\t\"140\",\n\t\t\"3\",\n\t\t\"1\",\n\t\t\"0\",\n\t\t\"UNIDAD M\u00d3VIL DE PLACA (CAMIONETA), BHF-731, DESTINADA AL TRANSPORTE DE PERSONAL Y MATERIALES, CUENTA CON DOCUMENTACI\u00d3N DE CIRCULACI\u00d3N, ALARMA DE RETROCESO, CONOS, TACOS, EXTINTOR DE 6 KG Y HERRAMIENTAS VARIAS.\")","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:04 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:04 am] [2. LIN] : 20
+[20/11/21 00:04 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:04 am] [4. CON] : {"sql":"\n\t\tSELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` \n\t\tFROM `inf_cumplimiento_des` i\n\t\tJOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`\n\t\tJOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`\n \t\tWHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=3\n\t\tAND i.nFlag = 0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:05 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:05 am] [2. LIN] : 20
+[20/11/21 00:05 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:05 am] [4. CON] : {"sql":"call spt_ins_documento_detalle(\n\t\t\"140\",\n\t\t\"3\",\n\t\t\"2\",\n\t\t\"54\",\n\t\t\"UNIDAD M\u00d3VIL DE PLACA (CAMIONETA), BHF-731, DESTINADA AL TRANSPORTE DE PERSONAL Y MATERIALES, EVIDENCIA BOTIQU\u00cdN DE PRIMEROS AUXILIOS PARCIALMENTE IMPLEMENTADO. INCUMPLIMIENTO AL ART. 41, 53, 121, 131 DEL RESESATE 2013.        \")","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:05 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:05 am] [2. LIN] : 20
+[20/11/21 00:05 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:05 am] [4. CON] : {"sql":"\n\t\tSELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` \n\t\tFROM `inf_cumplimiento_des` i\n\t\tJOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`\n\t\tJOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`\n \t\tWHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=3\n\t\tAND i.nFlag = 0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:10 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:10 am] [2. LIN] : 20
+[20/11/21 00:10 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:10 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,3,'uploads\/140\/3\/11.png','11.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":511}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:10 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:10 am] [2. LIN] : 20
+[20/11/21 00:10 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:10 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 3","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:10 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:10 am] [2. LIN] : 20
+[20/11/21 00:10 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:10 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,3,'uploads\/140\/3\/12.png','12.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":512}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:10 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:10 am] [2. LIN] : 20
+[20/11/21 00:10 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:10 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 3","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:10 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:10 am] [2. LIN] : 20
+[20/11/21 00:10 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:10 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,3,'uploads\/140\/3\/13.png','13.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":513}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:10 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:10 am] [2. LIN] : 20
+[20/11/21 00:10 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:10 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 3","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:10 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:10 am] [2. LIN] : 20
+[20/11/21 00:10 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:10 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,3,'uploads\/140\/3\/14.png','14.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":514}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:10 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:10 am] [2. LIN] : 20
+[20/11/21 00:10 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:10 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 3","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:10 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:10 am] [2. LIN] : 20
+[20/11/21 00:10 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:10 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,3,'uploads\/140\/3\/15.png','15.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":515}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:10 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:10 am] [2. LIN] : 20
+[20/11/21 00:10 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:10 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 3","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:10 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:10 am] [2. LIN] : 20
+[20/11/21 00:10 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:10 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,3,'uploads\/140\/3\/16.png','16.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":516}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:10 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:10 am] [2. LIN] : 20
+[20/11/21 00:10 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:10 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 3","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:10 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:10 am] [2. LIN] : 20
+[20/11/21 00:10 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:10 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,3,'uploads\/140\/3\/17.png','17.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":517}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:10 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:10 am] [2. LIN] : 20
+[20/11/21 00:10 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:10 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 3","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:10 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:10 am] [2. LIN] : 20
+[20/11/21 00:10 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:10 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,3,'uploads\/140\/3\/18.png','18.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":518}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:10 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:10 am] [2. LIN] : 20
+[20/11/21 00:10 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:10 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 3","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:11 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:11 am] [2. LIN] : 20
+[20/11/21 00:11 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:11 am] [4. CON] : {"sql":"select * from informe  where nFlag=0 and nId=140","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:11 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:11 am] [2. LIN] : 20
+[20/11/21 00:11 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:11 am] [4. CON] : {"sql":"select * from tarea  where nFlag=0 and nId=1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:11 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:11 am] [2. LIN] : 20
+[20/11/21 00:11 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:11 am] [4. CON] : {"sql":"select * from cumplimiento  where nFlag=0 and nidTarea=1\n\t\tand nOrden in (4)\n\t\tORDER BY norden ASC LIMIT 0,1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:11 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:11 am] [2. LIN] : 20
+[20/11/21 00:11 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:11 am] [4. CON] : {"sql":"select * from codigos  where nFlag=0 and cCodigo =100  AND cvalor NOT IN (100)","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:11 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:11 am] [2. LIN] : 20
+[20/11/21 00:11 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:11 am] [4. CON] : {"sql":"select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:11 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:11 am] [2. LIN] : 20
+[20/11/21 00:11 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:11 am] [4. CON] : {"sql":"select * from cumplimiento  where nFlag=0 and nidTarea=1\n\t\tand nId NOT IN (4) and nOrden >4\n\t\tORDER BY norden ASC LIMIT 0,1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:11 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:11 am] [2. LIN] : 20
+[20/11/21 00:11 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:11 am] [4. CON] : {"sql":"\n\t\tSELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` \n\t\tFROM `inf_cumplimiento_des` i\n\t\tJOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`\n\t\tJOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`\n \t\tWHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=4\n\t\tAND i.nFlag = 0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:11 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:11 am] [2. LIN] : 20
+[20/11/21 00:11 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:11 am] [4. CON] : {"sql":"select * from cumplimiento  where nFlag=0 and nidTarea=1\n\t\t and nOrden < 4 \n\t\tORDER BY norden desc LIMIT 0,1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:11 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:11 am] [2. LIN] : 20
+[20/11/21 00:11 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:11 am] [4. CON] : {"sql":"call spt_ins_documento_detalle(\n\t\t\"140\",\n\t\t\"4\",\n\t\t\"1\",\n\t\t\"0\",\n\t\t\"GRUPO DE TRABAJO, CUENTA CON REGISTRO DE CHARLA DE 5 MINUTOS, PREVIO AL DESARROLLO DE LA ACTIVIDAD\")","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:11 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:11 am] [2. LIN] : 20
+[20/11/21 00:11 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:11 am] [4. CON] : {"sql":"\n\t\tSELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` \n\t\tFROM `inf_cumplimiento_des` i\n\t\tJOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`\n\t\tJOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`\n \t\tWHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=4\n\t\tAND i.nFlag = 0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:11 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:11 am] [2. LIN] : 20
+[20/11/21 00:11 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:11 am] [4. CON] : {"sql":"call spt_ins_documento_detalle(\n\t\t\"140\",\n\t\t\"4\",\n\t\t\"1\",\n\t\t\"0\",\n\t\t\"GRUPO DE TRABAJO CUENTA CON PETS Y PLAN DE CONTINGENCIA, DE LAS ACTIVIDADES QUE EJECUTAN EN CAMPO. \")","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:11 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:11 am] [2. LIN] : 20
+[20/11/21 00:11 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:11 am] [4. CON] : {"sql":"\n\t\tSELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` \n\t\tFROM `inf_cumplimiento_des` i\n\t\tJOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`\n\t\tJOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`\n \t\tWHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=4\n\t\tAND i.nFlag = 0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:11 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:11 am] [2. LIN] : 20
+[20/11/21 00:11 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:11 am] [4. CON] : {"sql":"call spt_ins_documento_detalle(\n\t\t\"140\",\n\t\t\"4\",\n\t\t\"2\",\n\t\t\"72\",\n\t\t\"GRUPO DE TRABAJO CARECE DE IPERC, DE LAS ACTIVIDADES QUE EJECUTAN EN CAMPO. INCUMPLIMIENTO DEL ART. ART. 10, 27 A), B), C) Y D), 37, 19, 20, 24, 25 P), 140, 25 S), 30, 45 E), 47, 54 R), 45 E), 111, 130, 57, 35 Y 127 DEL RESESATE 2013).\")","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:11 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:11 am] [2. LIN] : 20
+[20/11/21 00:11 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:11 am] [4. CON] : {"sql":"\n\t\tSELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` \n\t\tFROM `inf_cumplimiento_des` i\n\t\tJOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`\n\t\tJOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`\n \t\tWHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=4\n\t\tAND i.nFlag = 0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:12 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:12 am] [2. LIN] : 20
+[20/11/21 00:12 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:12 am] [4. CON] : {"sql":"call spt_ins_documento_detalle(\n\t\t\"140\",\n\t\t\"4\",\n\t\t\"1\",\n\t\t\"0\",\n\t\t\"CONDUCTOR DE LA UNIDAD M\u00d3VIL (CAMIONETA BFH-731), EDILBERTO RAMOS AR\u00c9VALO, CUENTA CON LICENCIA DE CONDUCIR VIGENTE Y SEG\u00daN CATEGOR\u00cdA DE VEH\u00cdCULO A CONDUCIR.\")","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:12 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:12 am] [2. LIN] : 20
+[20/11/21 00:12 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:12 am] [4. CON] : {"sql":"\n\t\tSELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` \n\t\tFROM `inf_cumplimiento_des` i\n\t\tJOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`\n\t\tJOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`\n \t\tWHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=4\n\t\tAND i.nFlag = 0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:12 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:12 am] [2. LIN] : 20
+[20/11/21 00:12 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:12 am] [4. CON] : {"sql":"call spt_ins_documento_detalle(\n\t\t\"140\",\n\t\t\"4\",\n\t\t\"3\",\n\t\t\"0\",\n\t\t\"IMPLEMENTAR DE EST\u00c1NDAR DE CONDUCCI\u00d3N DE VEH\u00cdCULOS (PETS). \")","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:12 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:12 am] [2. LIN] : 20
+[20/11/21 00:12 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:12 am] [4. CON] : {"sql":"\n\t\tSELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` \n\t\tFROM `inf_cumplimiento_des` i\n\t\tJOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`\n\t\tJOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`\n \t\tWHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=4\n\t\tAND i.nFlag = 0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:13 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:13 am] [2. LIN] : 20
+[20/11/21 00:13 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:13 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,4,'uploads\/140\/4\/19.png','19.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":519}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:13 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:13 am] [2. LIN] : 20
+[20/11/21 00:13 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:13 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 4","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:13 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:13 am] [2. LIN] : 20
+[20/11/21 00:13 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:13 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,4,'uploads\/140\/4\/20.png','20.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":520}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:13 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:13 am] [2. LIN] : 20
+[20/11/21 00:13 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:13 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 4","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:13 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:13 am] [2. LIN] : 20
+[20/11/21 00:13 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:13 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,4,'uploads\/140\/4\/21.png','21.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":521}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:13 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:13 am] [2. LIN] : 20
+[20/11/21 00:13 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:13 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 4","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:13 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:13 am] [2. LIN] : 20
+[20/11/21 00:13 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:13 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,4,'uploads\/140\/4\/22.png','22.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":522}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:13 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:13 am] [2. LIN] : 20
+[20/11/21 00:13 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:13 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 4","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:13 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:13 am] [2. LIN] : 20
+[20/11/21 00:13 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:13 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,4,'uploads\/140\/4\/23.png','23.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":523}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:13 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:13 am] [2. LIN] : 20
+[20/11/21 00:13 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:13 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 4","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:13 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:13 am] [2. LIN] : 20
+[20/11/21 00:13 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:13 am] [4. CON] : {"sql":"select * from informe  where nFlag=0 and nId=140","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:13 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:13 am] [2. LIN] : 20
+[20/11/21 00:13 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:13 am] [4. CON] : {"sql":"select * from tarea  where nFlag=0 and nId=1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:13 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:13 am] [2. LIN] : 20
+[20/11/21 00:13 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:13 am] [4. CON] : {"sql":"select * from cumplimiento  where nFlag=0 and nidTarea=1\n\t\tand nOrden in (5)\n\t\tORDER BY norden ASC LIMIT 0,1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:13 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:13 am] [2. LIN] : 20
+[20/11/21 00:13 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:13 am] [4. CON] : {"sql":"select * from codigos  where nFlag=0 and cCodigo =100  AND cvalor NOT IN (100)","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:13 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:13 am] [2. LIN] : 20
+[20/11/21 00:13 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:13 am] [4. CON] : {"sql":"select * from codigos  where nFlag=0 and cCodigo =500  AND cvalor NOT IN (500)","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:13 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:13 am] [2. LIN] : 20
+[20/11/21 00:13 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:13 am] [4. CON] : {"sql":"select * from cumplimiento  where nFlag=0 and nidTarea=1\n\t\tand nId NOT IN (5) and nOrden >5\n\t\tORDER BY norden ASC LIMIT 0,1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:13 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:13 am] [2. LIN] : 20
+[20/11/21 00:13 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:13 am] [4. CON] : {"sql":"\n\t\tSELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` \n\t\tFROM `inf_cumplimiento_des` i\n\t\tJOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`\n\t\tJOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`\n \t\tWHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=5\n\t\tAND i.nFlag = 0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:13 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:13 am] [2. LIN] : 20
+[20/11/21 00:13 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:13 am] [4. CON] : {"sql":"select * from cumplimiento  where nFlag=0 and nidTarea=1\n\t\t and nOrden < 5 \n\t\tORDER BY norden desc LIMIT 0,1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:13 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:13 am] [2. LIN] : 20
+[20/11/21 00:13 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:13 am] [4. CON] : {"sql":"call spt_ins_documento_detalle(\n\t\t\"140\",\n\t\t\"5\",\n\t\t\"1\",\n\t\t\"0\",\n\t\t\"GRUPO DE TRABAJO, CUENTA CON HERRAMIENTAS Y ARN\u00c9S COMPLETO CON ESTROBO, L\u00cdNEA DE VIDA Y FAJA DE ANCLAJE, PARA EL DESARROLLO DE SUS ACTIVIDADES DE CAMPO.\")","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:13 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:13 am] [2. LIN] : 20
+[20/11/21 00:13 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:13 am] [4. CON] : {"sql":"\n\t\tSELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` \n\t\tFROM `inf_cumplimiento_des` i\n\t\tJOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`\n\t\tJOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`\n \t\tWHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=5\n\t\tAND i.nFlag = 0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:14 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:14 am] [2. LIN] : 20
+[20/11/21 00:14 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:14 am] [4. CON] : {"sql":"call spt_ins_documento_detalle(\n\t\t\"140\",\n\t\t\"5\",\n\t\t\"2\",\n\t\t\"72\",\n\t\t\"GRUPO DE TRABAJO, CARECE DE IPERC, PARA EL DESARROLLO DE SUS ACTIVIDADES.\")","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:14 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:14 am] [2. LIN] : 20
+[20/11/21 00:14 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:14 am] [4. CON] : {"sql":"\n\t\tSELECT  i.`nId`, i.`nIdInforme`, i.`nIdCumplimiento`,cod.`cValor` nValorTipo, c.`cNombre` Cumpliento, cod.`cDescripcion` descripcionTipo,i.`cDescripcion` detalle,i.`dCreate` \n\t\tFROM `inf_cumplimiento_des` i\n\t\tJOIN `cumplimiento` c ON c.`nId`= i.`nIdCumplimiento`\n\t\tJOIN `codigos` cod ON cod.`cCodigo`=c.`nTipo` AND cod.`cValor`=i.`nValor`\n \t\tWHERE `nIdInforme`=140 AND i.`nIdCumplimiento`=5\n\t\tAND i.nFlag = 0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:37 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:37 am] [2. LIN] : 20
+[20/11/21 00:37 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:37 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,5,'uploads\/140\/5\/24.png','24.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":524}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:37 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:37 am] [2. LIN] : 20
+[20/11/21 00:37 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:37 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 5","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:37 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:37 am] [2. LIN] : 20
+[20/11/21 00:37 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:37 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,5,'uploads\/140\/5\/25.png','25.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":525}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:37 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:37 am] [2. LIN] : 20
+[20/11/21 00:37 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:37 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 5","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:37 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:37 am] [2. LIN] : 20
+[20/11/21 00:37 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:37 am] [4. CON] : {"sql":"INSERT INTO inf_cumplimiento_img(`nIdInforme`,`nIdCumplimiento`,cruta,cNombre)\n\t\tVALUES(140,5,'uploads\/140\/5\/26.png','26.png')","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":true,"temp":true,"id_gen":526}
+[***FIN***]
+[***INICIO: 2 ***]
+[20/11/21 00:37 am] [1. FIC] :/home/gqouvkku/public_html/cNorte/app/core/Executor.php
+[20/11/21 00:37 am] [2. LIN] : 20
+[20/11/21 00:37 am] [3. DES] : A non-numeric value encountered
+[20/11/21 00:37 am] [4. CON] : {"sql":"select * from inf_cumplimiento_img\n\t\twhere nIdInforme= 140 and nIdCumplimiento= 5","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]

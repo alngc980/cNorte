@@ -1,0 +1,19 @@
+[Fri, 14 Jan 2022 03:19:54 +0000] succes 0: select * from empresa  where nTipo=1
+[Fri, 14 Jan 2022 03:19:54 +0000] succes 0: select * from empresa  where nTipo=0
+[Fri, 14 Jan 2022 03:19:54 +0000] succes 0: select * from tipo_documento  where nFlag=0
+[Fri, 14 Jan 2022 03:19:54 +0000] succes 0: select * from tarea  where nFlag=0
+[Fri, 14 Jan 2022 03:19:54 +0000] succes 0: select * from uunn  where nFlag=0
+[Fri, 14 Jan 2022 03:19:54 +0000] succes 0: select * from programa  where nFlag=0
+[Fri, 14 Jan 2022 03:19:54 +0000] succes 0: select * from supervision  where nFlag=0
+[Fri, 14 Jan 2022 03:21:50 +0000] succes 0: SELECT * FROM `inf_cumplimiento_des` 
+		where nValor in (2,5) AND UPPER(cDescripcion) like '%PARALIZACIÒN%' 
+		UNION 
+		SELECT * FROM `inf_cumplimiento_des` 
+		where nValor in (2,5) AND UPPER(cDescripcion) like '%PARALIZACIÓN%' 
+		UNION 
+		SELECT * FROM `inf_cumplimiento_des` 
+		where nValor in (2,5) AND UPPER(cDescripcion) like '%PARALIZACION%';
+		
+[Fri, 14 Jan 2022 03:21:52 +0000] succes 0: select * from empresa where nFlag = 0
+[Fri, 14 Jan 2022 03:21:52 +0000] succes 0: select * from supervision  where nFlag=0
+[Fri, 14 Jan 2022 03:21:52 +0000] succes 0: select * from uunn  where nFlag=0

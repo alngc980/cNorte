@@ -1,0 +1,120 @@
+[***INICIO: 2 ***]
+[05/07/21 00:05 am] [1. FIC] :/home/sitisafe/public_html/cnorte/app/core/Executor.php
+[05/07/21 00:05 am] [2. LIN] : 20
+[05/07/21 00:05 am] [3. DES] : A non-numeric value encountered
+[05/07/21 00:05 am] [4. CON] : {"sql":"select * from empresa  where nTipo=1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"stat":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[05/07/21 00:05 am] [1. FIC] :/home/sitisafe/public_html/cnorte/app/core/Executor.php
+[05/07/21 00:05 am] [2. LIN] : 20
+[05/07/21 00:05 am] [3. DES] : A non-numeric value encountered
+[05/07/21 00:05 am] [4. CON] : {"sql":"select * from empresa  where nTipo=0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"stat":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[05/07/21 00:05 am] [1. FIC] :/home/sitisafe/public_html/cnorte/app/core/Executor.php
+[05/07/21 00:05 am] [2. LIN] : 20
+[05/07/21 00:05 am] [3. DES] : A non-numeric value encountered
+[05/07/21 00:05 am] [4. CON] : {"sql":"select * from tipo_documento  where nFlag=0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"stat":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[05/07/21 00:05 am] [1. FIC] :/home/sitisafe/public_html/cnorte/app/core/Executor.php
+[05/07/21 00:05 am] [2. LIN] : 20
+[05/07/21 00:05 am] [3. DES] : A non-numeric value encountered
+[05/07/21 00:05 am] [4. CON] : {"sql":"select * from tarea  where nFlag=0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"stat":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: CDTAM0001  ***]
+[05/07/21 00:05 am] [1. FIC] :select * from uunn  where nFlag=0
+[05/07/21 00:05 am] [2. LIN] : lin:17
+[05/07/21 00:05 am] [3. DES] : Table 'sitisafe_dbinterna.uunn' doesn't exist
+[05/07/21 00:05 am] [4. CON] : "executor.php"
+[***FIN***]
+[***INICIO: 2 ***]
+[05/07/21 00:08 am] [1. FIC] :/home/sitisafe/public_html/cnorte/app/core/Executor.php
+[05/07/21 00:08 am] [2. LIN] : 20
+[05/07/21 00:08 am] [3. DES] : A non-numeric value encountered
+[05/07/21 00:08 am] [4. CON] : {"sql":"select * from empresa  where nTipo=1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"stat":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[05/07/21 00:08 am] [1. FIC] :/home/sitisafe/public_html/cnorte/app/core/Executor.php
+[05/07/21 00:08 am] [2. LIN] : 20
+[05/07/21 00:08 am] [3. DES] : A non-numeric value encountered
+[05/07/21 00:08 am] [4. CON] : {"sql":"select * from empresa  where nTipo=0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"stat":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[05/07/21 00:08 am] [1. FIC] :/home/sitisafe/public_html/cnorte/app/core/Executor.php
+[05/07/21 00:08 am] [2. LIN] : 20
+[05/07/21 00:08 am] [3. DES] : A non-numeric value encountered
+[05/07/21 00:08 am] [4. CON] : {"sql":"select * from tipo_documento  where nFlag=0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"stat":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[05/07/21 00:08 am] [1. FIC] :/home/sitisafe/public_html/cnorte/app/core/Executor.php
+[05/07/21 00:08 am] [2. LIN] : 20
+[05/07/21 00:08 am] [3. DES] : A non-numeric value encountered
+[05/07/21 00:08 am] [4. CON] : {"sql":"select * from tarea  where nFlag=0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"stat":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[05/07/21 00:08 am] [1. FIC] :/home/sitisafe/public_html/cnorte/app/core/Executor.php
+[05/07/21 00:08 am] [2. LIN] : 20
+[05/07/21 00:08 am] [3. DES] : A non-numeric value encountered
+[05/07/21 00:08 am] [4. CON] : {"sql":"select * from uunn  where nFlag=0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"stat":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[05/07/21 00:08 am] [1. FIC] :/home/sitisafe/public_html/cnorte/app/core/Executor.php
+[05/07/21 00:08 am] [2. LIN] : 20
+[05/07/21 00:08 am] [3. DES] : A non-numeric value encountered
+[05/07/21 00:08 am] [4. CON] : {"sql":"SELECT ec.* FROM empresa e\n\t\tINNER JOIN empresa_cargo ec ON e.`nId`= ec.`nIdEmpresa`\n\t\tWHERE e.`nTipo` =1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"stat":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: CDTAM0001  ***]
+[05/07/21 00:08 am] [1. FIC] :SELECT r.`nId`,P.`cNombres`,P.`cApellidos` FROM responsable r
+	JOIN persona p ON p.`nId` = r.`nIdPersona`
+	JOIN empresa e ON e.`nId`=r.`nIdEmpresa`
+	WHERE e.`nTipo`=1
+[05/07/21 00:08 am] [2. LIN] : lin:17
+[05/07/21 00:08 am] [3. DES] : Table 'sitisafe_dbinterna.responsable' doesn't exist
+[05/07/21 00:08 am] [4. CON] : "executor.php"
+[***FIN***]
+[***INICIO: 2 ***]
+[05/07/21 00:12 am] [1. FIC] :/home/sitisafe/public_html/cnorte/app/core/Executor.php
+[05/07/21 00:12 am] [2. LIN] : 20
+[05/07/21 00:12 am] [3. DES] : A non-numeric value encountered
+[05/07/21 00:12 am] [4. CON] : {"sql":"select * from empresa  where nTipo=1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"stat":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[05/07/21 00:12 am] [1. FIC] :/home/sitisafe/public_html/cnorte/app/core/Executor.php
+[05/07/21 00:12 am] [2. LIN] : 20
+[05/07/21 00:12 am] [3. DES] : A non-numeric value encountered
+[05/07/21 00:12 am] [4. CON] : {"sql":"select * from empresa  where nTipo=0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"stat":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[05/07/21 00:12 am] [1. FIC] :/home/sitisafe/public_html/cnorte/app/core/Executor.php
+[05/07/21 00:12 am] [2. LIN] : 20
+[05/07/21 00:12 am] [3. DES] : A non-numeric value encountered
+[05/07/21 00:12 am] [4. CON] : {"sql":"select * from tipo_documento  where nFlag=0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"stat":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[05/07/21 00:12 am] [1. FIC] :/home/sitisafe/public_html/cnorte/app/core/Executor.php
+[05/07/21 00:12 am] [2. LIN] : 20
+[05/07/21 00:12 am] [3. DES] : A non-numeric value encountered
+[05/07/21 00:12 am] [4. CON] : {"sql":"select * from tarea  where nFlag=0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"stat":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[05/07/21 00:12 am] [1. FIC] :/home/sitisafe/public_html/cnorte/app/core/Executor.php
+[05/07/21 00:12 am] [2. LIN] : 20
+[05/07/21 00:12 am] [3. DES] : A non-numeric value encountered
+[05/07/21 00:12 am] [4. CON] : {"sql":"select * from uunn  where nFlag=0","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"stat":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: 2 ***]
+[05/07/21 00:12 am] [1. FIC] :/home/sitisafe/public_html/cnorte/app/core/Executor.php
+[05/07/21 00:12 am] [2. LIN] : 20
+[05/07/21 00:12 am] [3. DES] : A non-numeric value encountered
+[05/07/21 00:12 am] [4. CON] : {"sql":"SELECT ec.* FROM empresa e\n\t\tINNER JOIN empresa_cargo ec ON e.`nId`= ec.`nIdEmpresa`\n\t\tWHERE e.`nTipo` =1","con":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"error_list":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"stat":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null},"resultado":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"temp":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null},"id_gen":0}
+[***FIN***]
+[***INICIO: CDTAM0001  ***]
+[05/07/21 00:12 am] [1. FIC] :SELECT r.`nId`,P.`cNombres`,P.`cApellidos` FROM responsable r
+	JOIN persona p ON p.`nId` = r.`nIdPersona`
+	JOIN empresa e ON e.`nId`=r.`nIdEmpresa`
+	WHERE e.`nTipo`=1
+[05/07/21 00:12 am] [2. LIN] : lin:17
+[05/07/21 00:12 am] [3. DES] : Unknown column 'P.cNombres' in 'field list'
+[05/07/21 00:12 am] [4. CON] : "executor.php"
+[***FIN***]

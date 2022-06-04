@@ -1,0 +1,2 @@
+[Wed, 15 Dec 2021 18:20:24 +0000] succes 0: select * from persona  where cDoi="40980455"
+[Wed, 15 Dec 2021 18:20:28 +0000] succes 0: call spt_sel_all_User('17')
